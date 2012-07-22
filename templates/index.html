@@ -54,16 +54,15 @@
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#divisions_accordion" href="#{{division.id}}_body">
               {{division.name}}
             </a>
-            <span class="pull-right">
-              <a href="#" class="ttip show pull-right" title="Show Companies" id="companies_{{division.id}}">
-                <i class="icon-share"></i>
-              </a> 
-              <a href="#" class="ttip show pull-right" title="Show Major Groups" id="children_{{division.id}}">
-                <i class="icon-share-alt"></i>
-              </a>
-            </span>
+              
           </div>
           <div class="accordion-body collapse" id="{{division.id}}_body">
+            <h6>Display:
+              <a href="#" class="changeData" title="Show Companies" id="companies_{{division.id}}">
+                 Companies</a> |
+              <a href="#" class="changeData" title="Show Major Groups" id="children_{{division.id}}">
+                Major Groups</a>
+            </h6>
             <div class="accordion minor" id="{{division.id}}_accordion">
               {% for major_group in division.major_groups %}
                 <div class="accordion-group" id="{{major_group.id}}_group">
@@ -71,14 +70,16 @@
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{division.id}}_accordion" href="#{{major_group.id}}_body">
                       {{major_group.name}}
                     </a>
-                    <a href="#" class="ttip show pull-right" title="Show Companies" id="companies_{{major_group.id}}">
-                      <i class="icon-share"></i>
-                    </a> 
-                    <a href="#" class="ttip show pull-right" title="Show Industry Groups" id="children_{{major_group.id}}">
-                      <i class="icon-share-alt"></i>
-                    </a>
+                    
                   </div>
                   <div class="accordion-body collapse" id="{{major_group.id}}_body">
+                    <h6>Display: 
+                      <a href="#" class="changeData" title="Show Companies" id="companies_{{major_group.id}}">
+                         Companies</a>  |
+                      <a href="#" class="changeData" title="Show Industry Groups" id="children_{{major_group.id}}">
+                        Industry Groups
+                      </a>
+                    </h6>
                     <div class="accordion minor" id="{{major_group.id}}_accordion">
                       {% for industry_group in major_group.industry_groups %}
                         <div class="accordion-group" id="{{industry_group.id}}_group">
@@ -86,20 +87,20 @@
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{industry_group.id}}_accordion" href="#{{industry_group.id}}_body">
                               {{industry_group.name}}
                             </a>
-                            <a href="#" class="ttip show pull-right" title="Show Companies" id="companies_{{industry_group.id}}">
-                              <i class="icon-share"></i>
-                            </a> 
-                            <a href="#" class="ttip show pull-right" title="Show Industries" id="children_{{industry_group.id}}">
-                              <i class="icon-share-alt"></i>
-                            </a>
                           </div>
                           <div class="accordion-body collapse" id="{{industry_group.id}}_body">
+                            <h6>Display: 
+                              <a href="#" class="changeData" title="Show Companies" id="companies_{{industry_group.id}}">
+                                Companies</a>  |
+                              <a href="#" class="changeData" title="Show Industries" id="children_{{industry_group.id}}">
+                                Industries
+                              </a>
                             <table class="table-striped table-condensed minor">
                               <tbody>
                                 {% for industry in industry_group.industries %}
                                   <tr>
                                     <td>
-                                      <a href="#" class="show" id="companies_{{industry.id}}">{{industry.name}}</a>
+                                      <a href="#" class="changeData" id="companies_{{industry.id}}">{{industry.name}}</a>
                                     </td>
                                   </tr>
                                 {% endfor %}
@@ -173,7 +174,7 @@ $(function(){
 
   $('.ttip').tooltip();
 
-  $('a.show').click(function(){
+  $('a.changeData').click(function(){
     app.sic = $(this).attr('id').split('_')[1]; // sic code, ie 2343
     app.type = $(this).attr('id').split('_')[0]; // companies or children
     newChart();
