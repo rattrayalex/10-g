@@ -3,6 +3,7 @@
 {% block content %}
 <div id="content-wrapper">
 	<div id="sidebar">
+    <h3>Data Fields</h3>
     <div class="accordion" id="statements_accordion">
       {% for statement in statements %}
         <div class="accordion-group" id="{{statement.slug}}_group">
@@ -17,10 +18,25 @@
                 {% for field in statement.fields %}
                   <tr>
                     <td>{{ field }}</td>
-                    <td>x</td>
-                    <td>y</td>
-                    <td>size</td>
-                    <td>color</td>
+                    <td>
+                      <a class="chartChanger" href="#" id="xAxis_{{loop.index + statement.offset}}">  X
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="chartChanger" id="yAxis_{{loop.index + statement.offset}}">
+                      Y
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="chartChanger" id="size_{{loop.index + statement.offset}}">
+                        Size
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="chartChanger" id="color_{{loop.index + statement.offset}}">
+                        Color
+                      </a>
+                    </td>
                   </tr>
                 {% endfor %}
               </tbody>
@@ -29,11 +45,12 @@
         </div>
       {% endfor %}
     </div>
-
 		<hr>
-     	<footer>
-        	<p>&copy; Company 2012</p>
-      	</footer>
+    <h3>Companies</h3>
+    <hr>
+   	<footer>
+      <p>&copy; Zach, Josh, Pulak, and Alex 2012</p>
+    </footer>
 	</div>
 	<div id="graph-wrapper">
 		<div id="chart_div" style="height:100%;">
@@ -54,15 +71,38 @@ function drawChart() {
     console.log(data)
     app.datatable = new google.visualization.DataTable(data, 1);
     console.log(app.datatable);
-    var options = {'title':'example'};
+    app.options = {
+      height:$('#chart_div').height(), 
+      width:$('#chart_div').width(),
+      // showXMetricPicker:false,
+      // showYMetricPicker:false,
+    };
     app.chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
-    app.chart.draw(app.datatable, {height:$('#chart_div').height(), width:$('#chart_div').width()});
+    app.chart.draw(app.datatable, app.options);
   });
   
 }
 
+$(function(){
+  $('.chartChanger').click(function(){
+    var index = $(this).attr('id').split('_')[1];
+    var axis = $(this).attr('id').split('_')[0];
+    var state = app.chart.getState();
+    state = $.parseJSON(state);
+    state[axis+'Option'] = index.toString();
+    // console.log(state)
+    state = JSON.stringify(state);
+    // console.log(state);
+    app.options.state = state;
+    app.chart.draw(app.datatable, app.options);
+  })
+});
+
+
 function redrawChart() {
-  app.chart.draw(app.datatable, {height:$('#chart_div').height(), width:$('#chart_div').width()});
+  app.options.height = $('#chart_div').height();
+  app.options.width = $('#chart_div').width();
+  app.chart.draw(app.datatable, app.options);
 }
 
 window.onresize = redrawChart;
