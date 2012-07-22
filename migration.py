@@ -73,8 +73,9 @@ def do_db_query(cik):
 
 companies_dict = get_companies_dict()
 connection = Connection()
-db = connection.sec_data
+db = connection.sec_data2
 companies = db.companies
+companies.remove()
 
 count = 0
 for company_ticker, company in companies_dict.items():
@@ -83,7 +84,18 @@ for company_ticker, company in companies_dict.items():
     print "###%d %s ###" % (count, company_name)
     company_cik = company['cik']
     #make json shit
-    company_json = do_db_query(company_cik)
+
+    cur = PG_CONN.cursor()
+    cur.execute("""select sic_code_id, description 
+                   from sic_code natural join
+                   accession natural join entity
+                   where entity_code = '%s'""" % (company_cik))
+    
+    company_json = {}
+    company_data = cur.fetchone()
+    company_json['sic_code'] = company_data[0]
+    company_json['sic_desc'] = company_data[1]
+    company_json['values'] = do_db_query(company_cik)
     company_json['ticker'] = company_ticker
     company_json['name'] = company_name
     company_json['cik'] = company_cik
