@@ -39,7 +39,7 @@ StockholdersEquity
 f = open('database_info.txt')
 conn = psycopg2.connect(f.read())
 
-connection = Connection()
+connection = Connection('data.10-g.com', 27017)
 
 result_keys = ["ticker", "entity_name", "effective_value", "fiscal_year",
                "calendar_period", "field_name"]
@@ -114,7 +114,9 @@ def get_listings(ciks):
     output = []
     for cik in ciks:
         company = companies.find_one({'cik' : cik})
-	temp_dic = defaultdict(dict)
+        temp_dic = defaultdict(dict)
+        if not company:
+            continue
         for key, values in company['values'].items():
             for value in values:
                 if len(value['period']) == 2 and value['period'][1] == 'Q':
