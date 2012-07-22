@@ -120,6 +120,15 @@ def api_example():
       print this_date
       thing = [item['entity_name'], this_date, ev, ev, ev]
       google_friendly_data.append(thing)
+'''
+  TO JOSH: 
+   google_friendly_data should take the form:
+  [
+  [str('entity_name'), str('fiscal_period'), float('CashAtCarryingValue'), etc... str('SIC')]
+  eg:
+  ['Google', '2012Q1', 234234324.35, 234234,67,5456,546, etc ... '5464'] 
+  ]
+'''
   data_table = gviz_api.DataTable(description)
   data_table.LoadData(google_friendly_data)
   jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
