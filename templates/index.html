@@ -54,6 +54,10 @@
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#divisions_accordion" href="#{{division.id}}_body">
               {{division.name}}
             </a>
+            <span class="pull-right">
+              <a href="#" class="ttip" title="Show Companies"><i class="icon-share-alt"></i></a> 
+              <a href="#" class="ttip" title="Show Major Groups"><i class="icon-share"></i></a>
+            </span>
           </div>
           <div class="accordion-body collapse" id="{{division.id}}_body">
             <div class="accordion minor" id="{{division.id}}_accordion">
@@ -63,20 +67,34 @@
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{division.id}}_accordion" href="#{{major_group.id}}_body">
                       {{major_group.name}}
                     </a>
-                    <a href="#"><i class="icon-share-alt"></i></a>
+                    <a href="#" class="pull-right"><i class="icon-share-alt"></i></a>
                   </div>
                   <div class="accordion-body collapse" id="{{major_group.id}}_body">
-                    <table class="table-striped table-condensed">
-                      <tbody>
-                        {% for industry_group in major_group.industry_groups %}
-                          <tr>
-                            <td>
-                              <a href="#">{{industry_group.name}}</a>
-                            </td>
-                          </tr>
-                        {% endfor %}
-                      </tbody>
-                    </table>
+                    <div id="accordion minor" id="{{major_group.id}}_accordion">
+                      {% for industry_group in major_group.industry_groups %}
+                        <div class="accordion-group" id="{{industry_group.id}}_group">
+                          <div class="according-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{industry_group.id}}_accordion" href="#{{industry_group.id}}_body">
+                              {{industry_group.name}}
+                            </a>
+                            <a href="#" class="pull-right"><i class="icon-share-alt"></i></a>
+                          </div>
+                          <div class="accordion-body collapse" id="{{industry_group.id}}_body">
+                            <table class="table-striped table-condensed">
+                              <tbody>
+                                {% for industry in industry_group.industries %}
+                                  <tr>
+                                    <td>
+                                      <a href="#">{{industry.name}}</a>
+                                    </td>
+                                  </tr>
+                                {% endfor %}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
                   </div>
                 </div>
               {% endfor %}
@@ -135,6 +153,8 @@ $(function(){
     app.options.state = state;
     app.chart.draw(app.datatable, app.options);
   })
+
+  $('.ttip').tooltip();
 });
 
 

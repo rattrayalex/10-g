@@ -42,7 +42,10 @@ def index():
   divisions = [ 
     {'name':'Agriculture, Forestry, And Fishing', 'id':'A', 'start':'01', 'end':'09', 'major_groups': [
       {'name':'Agricultural Production Crops', 'id':'01', 'industry_groups': [
-        {'name':'Wheat', 'id':'0111'},
+        {'name':'Cash Grains', 'id':'011', 'industries':[
+          {'name':'Wheat', 'id':'0111'}, 
+          ],
+        },
         ]
       },
       ]
@@ -79,7 +82,7 @@ def api_example():
     ('EPS','number','Earnings Per Share'),
 
     # statement of cash flows
-    ('CapEx','number','Capital Expenditures')
+    ('CapEx','number','Capital Expenditures'),
     # ('','number','Net Cash from Operations'),
     # ('NetCashFromFinancingNetIncome','number','Net Cash from Financing'),
     # ('','number','Net Cash used in Investing'),
@@ -120,15 +123,15 @@ def api_example():
       print this_date
       thing = [item['entity_name'], this_date, ev, ev, ev]
       google_friendly_data.append(thing)
-'''
-  TO JOSH: 
-   google_friendly_data should take the form:
-  [
-  [str('entity_name'), str('fiscal_period'), float('CashAtCarryingValue'), etc... str('SIC')]
-  eg:
-  ['Google', '2012Q1', 234234324.35, 234234,67,5456,546, etc ... '5464'] 
-  ]
-'''
+  '''
+    TO JOSH: 
+     google_friendly_data should take the form:
+    [
+      [str('entity_name'), str('fiscal_period'), float('CashAtCarryingValue'), etc... str('SIC')]
+      eg:
+      ['Google', '2012Q1', 234234324.35, 234234,67,5456,546, etc ... '5464'] 
+    ]
+  '''
   data_table = gviz_api.DataTable(description)
   data_table.LoadData(google_friendly_data)
   jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
