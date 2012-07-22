@@ -36,35 +36,9 @@ SGnA
 StockholdersEquity
 """
 
-f = open('database_info.txt')
-conn = psycopg2.connect(f.read())
 
 connection = Connection()
 
-result_keys = ["ticker", "entity_name", "effective_value", "fiscal_year",
-               "calendar_period", "field_name"]
-
-base_query = """select
-                    ticker(entity_id),
-                    entity_name,
-                    effective_value,
-                    fiscal_year,
-                    calendar_period,
-                    local_name
-                from
-                    entity
-                natural join
-                    accession
-                natural join
-                    fact
-                natural join
-                    element
-                natural join
-                    qname
-                natural join
-                    context
-                natural join
-                    context_aug"""
 
 def get_companies_dict(infile="cik_ticker.txt"):
     companies = {}
@@ -97,7 +71,7 @@ if __name__ == "__main__":
     for ticker, company in companies.items():
         print company['cik'], ticker, company['name']
 
-company_info = [ "CashAtCarryingValue",
+ALL_INFO = [ "CashAtCarryingValue",
 "AccountsReceivable", "Inventories",
 "PPE", "AssetsCurrent", "AssetsLongTerm",
 "Assets", "Debt", "Liabilities",
@@ -108,7 +82,7 @@ company_info = [ "CashAtCarryingValue",
 "CommonStockValue", "SIC" ]
 
 
-def get_listings(ciks):
+def get_listings(ciks, company_info = ALL_INFO):
     db = connection.sec_data2
     companies = db.companies
     output = []
