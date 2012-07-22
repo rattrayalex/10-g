@@ -104,18 +104,48 @@ def get_listings(ciks, company_info = ALL_INFO):
             output.append(line)
     return output
 
-def get_ciks_for_group(x):
+def get_ciks_for_group(group):
+    return [ x['cik'] for x in get_companies_for_group(group)]
+
+def get_agg_stats_for_group(group, company_info = ALL_INFO):
+    companies = get_companies_for_group(group)
+    output_dict = defaultdict(list)
+    for company in companies:
+        for key, values in company['values'].items():
+            output_dict[key].extend(values)
+    temp_dic = defaultdict(lambda : defaultdict(int))
+    for key, values in output_dict.items():
+        for value in values:
+            if len(value['period']) == 2 and value['period'][1] == 'Q':
+                temp_dic[str(value['year']) + value['period'][::-1]][key] =+ value['value']
+    output = []
+    for time, info in temp_dic.items():
+        line = [group, time]
+        for values in company_info:
+            if values in info:
+                line.append(info[values])
+            else:
+                line.append(0)
+        output.append(line)
+    return output
+    
+
+def get_companies_for_group(x):
     divisions = connection.sec_data2.devisions
     companies = connection.sec_data.companies
-    if type(x) == str:
-        division = divisions.find({'id' : x})
+    if len(x) == 1:
+        division = divisions.find_one({'id' : x})
         start_num = int(division['start'] + '00')
         end_num = int(division['end'] + '99')
-
+        results = companies.find({"sic_code" : {'$gte' : start_num, '$lte' : end_num}})
     elif len(x) == 2:
-        pass
+        start_num = int(x + '00')
+        end_num = int(x + '99')
+        results = companies.find({"sic_code" : {'$gte' : start_num, '$lte' : end_num}})
     elif len(x) == 3:
-        pass
+        start_num = int(x + '0')
+        end_num = int(x + '9')
+        results = companies.find({"sic_code" : {'$gte' : start_num, '$lte': end_num}})
     elif len(x) == 4:
-        pass
-        
+        results = companies.find({"sic_code" : int(x)}) 
+    return results    
