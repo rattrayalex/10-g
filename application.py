@@ -121,7 +121,7 @@ def get_company_shit(ciks, x, y, color, size):
   columns_order = tuple(i[0] for i in short_description)
   order_by = columns_order[0]
   listings = api.get_listings(ciks, params)
-  print listings
+  # print listings
   data_table = gviz_api.DataTable(short_description)
   data_table.LoadData(listings)
   jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
@@ -150,7 +150,7 @@ def api_children_sic_four(sic, x, y, color, size):
   columns_order = tuple(i[0] for i in short_description)
   order_by = columns_order[0]
   listings = [api.get_agg_stats_for_group(s, params) for s in sics]
-  print listings
+  # print listings
   data_table = gviz_api.DataTable(short_description)
   data_table.LoadData(listings)
   jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
@@ -171,7 +171,7 @@ def api_example():
     '0001288776', #goog
   ]
   listings = api.get_listings(ciks)
-  print listings
+  # print listings
   # print json.dumps(listings[0])
   # # {"effective_value": 18235000000.0, "entity_name": "Google Inc.", "calendar_period": "Y", "fiscal_year": 2010, "ticker": "goog", "field_name": "CommonStockIncludingAdditionalPaidInCapital"}
   # google_friendly_data = []

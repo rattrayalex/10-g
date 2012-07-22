@@ -144,8 +144,8 @@ function drawChart() {
   app.Y = 'COGS';
   app.Color = 'NetIncome';
   app.Size = 'Assets';
-  app.sic = '0000789019,0000320193,0001288776';
-  app.type = 'ciks';
+  app.sic = '7370';
+  app.type = 'companies';
   app.params = ['api', app.type, app.sic, app.X, app.Y, app.Color, app.Size];
   var url = app.params.join('/');
   console.log(url)
@@ -183,6 +183,7 @@ $(function(){
 });
 
 function newChart () {
+  $('#chart_div').html('<center><img src="/static/img/ajax-loader.gif"></center>');
   var url = '/api/'+app.type+'/'+app.sic+'/'+app.X+'/'+app.Y+'/'+app.Color+'/'+app.Size+'/';
   $.get(url, function(data){
     console.log(data);
@@ -190,6 +191,7 @@ function newChart () {
     console.log(data);
     delete app.datatable;
     app.datatable = new google.visualization.DataTable(data, 1);
+    app.chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
     console.log(app.datatable);
     redrawChart();
   });
