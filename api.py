@@ -1,7 +1,7 @@
 import sys
 import re
 import psycopg2
-from psycopg2 import Connection
+from pymongo import Connection
 from collections import defaultdict
 
 """
@@ -38,6 +38,8 @@ StockholdersEquity
 
 f = open('database_info.txt')
 conn = psycopg2.connect(f.read())
+
+connection = Connection()
 
 result_keys = ["ticker", "entity_name", "effective_value", "fiscal_year",
                "calendar_period", "field_name"]
@@ -107,22 +109,22 @@ company_info = [ "CashAtCarryingValue",
 
 
 def get_listings(ciks):
-    connection = Connection()
     db = connection.sec_data2
     companies = db.companies
     output = []
     for cik in ciks:
         company = companies.find_one({'cik' : cik})
 	temp_dic = defaultdict(dict)
-        for keys, values in company['values'].items():
+        for key, values in company['values'].items():
             for value in values:
-                if len(value['period']) == 2 and value['period'] == 'Q':
-	            temp_dic[value['period']][key] = value
-        for time, info in temp_doc.items():
+                if len(value['period']) == 2 and value['period'][1] == 'Q':
+	            temp_dic[str(value['year']) + value['period'][::-1]][key] = value
+        for time, info in temp_dic.items():
+            print info
             line = [company['name'], time]
             for values in company_info:
                 if values in info:
-                    line.append(info[values])
+                    line.append(info[values]['value'])
                 else:
                     line.append(0)
             output.append(line)
