@@ -47,6 +47,45 @@
     </div>
 		<hr>
     <h3>Companies</h3>
+    <div class="accordion" id="divisions_accordion">
+      {% for division in divisions %}
+        <div class="accordion-group" id="{{division.id}}_group">
+          <div class="according-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#divisions_accordion" href="#{{division.id}}_body">
+              {{division.name}}
+            </a>
+          </div>
+          <div class="accordion-body collapse" id="{{division.id}}_body">
+            <div class="accordion minor" id="{{division.id}}_accordion">
+              {% for major_group in division.major_groups %}
+                <div class="accordion-group" id="{{major_group.id}}_group">
+                  <div class="according-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{division.id}}_accordion" href="#{{major_group.id}}_body">
+                      {{major_group.name}}
+                    </a>
+                    <a href="#"><i class="icon-share-alt"></i></a>
+                  </div>
+                  <div class="accordion-body collapse" id="{{major_group.id}}_body">
+                    <table class="table-striped table-condensed">
+                      <tbody>
+                        {% for industry_group in major_group.industry_groups %}
+                          <tr>
+                            <td>
+                              <a href="#">{{industry_group.name}}</a>
+                            </td>
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
     <hr>
    	<footer>
       <p>&copy; Zach, Josh, Pulak, and Alex 2012</p>
@@ -100,6 +139,7 @@ $(function(){
 
 
 function redrawChart() {
+  app.options = app.options || {};
   app.options.height = $('#chart_div').height();
   app.options.width = $('#chart_div').width();
   app.chart.draw(app.datatable, app.options);

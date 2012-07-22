@@ -10,41 +10,86 @@ def index():
       'Accounts Receivable',
       'Inventories',
       'PP&E',
+      'Current Assets'
       'Long Term Assets', # total - current
       'Total Assets', 
-      'Current Liabilities',
+      'Debt',
       'Long-Term Liabilities',
       'Total Liabilities',
+      'Retained Earnings',
       'Total Equity',
     ]}, 
-    {'name':'Income Statement', 'slug':'income_statement', 'offset':12, 'fields':[
+    {'name':'Income Statement', 'slug':'income_statement', 'offset':13, 'fields':[
       'Total Revenue',
       'Cost of Revenue',
-      'SG&A', # calc: oi - rev + cogs
-      # 'Research and Development',
-      'Operating Expense', # calc: cogs + sga
+      'SG&A', 
+      'Operating Expense', 
       'Operating Income',
+      'Gross Profit',
       'Net Income',
+      'Earnings per Share',
     ]},
-    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'offset':18, 'fields':[
-      'Net Cash from Operations',
-      'Net Cash from Financing',
-      'Net Cash used in Investing',
-      'Net Change in Cash',
+    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'offset':19, 'fields':[
+      'Capital Expenditures',
+      # 'Net Cash from Operations',
+      # 'Net Cash from Financing',
+      # 'Net Cash used in Investing',
+      # 'Net Change in Cash',
       'Depreciation & Amortization',
+      'Common Stock Value',
     ]},
   ]
-  return render_template('index.html', statements=statements)
+  divisions = [ 
+    {'name':'Agriculture, Forestry, And Fishing', 'id':'A', 'start':'01', 'end':'09', 'major_groups': [
+      {'name':'Agricultural Production Crops', 'id':'01', 'industry_groups': [
+        {'name':'Wheat', 'id':'0111'},
+        ]
+      },
+      ]
+    },
+  ]
+  return render_template('index.html', statements=statements, divisions=divisions)
 
 @app.route('/api/example/')
 def api_example():
   description = [
     ('entity_name','string','Entity Name'),
-    ('fiscal_year', 'number','Fiscal Year'),
-    ('effective_value','number','Effective Value'),
-    ('effective_value_2','number','Effective Value 2'),
-    ('effective_value_3','number','Effective Value 3'),
-    ]
+    ('fiscal_period', 'number','Period'),
+    # balance sheet
+    ('CashAtCarryingValue','number','Total Cash'),
+    ('AccountsReceivable','number','Accounts Receivable'),
+    ('Inventories','number','Inventories'),
+    ('PPE','number','PP&E'),
+    ('AssetsCurrent','number','Current Assets'),
+    ('AssetsLongTerm','number','Long Term Assets'), # WE NEED TO CALCULATE THIS
+    ('Assets','number','Total Assets'),
+    ('Debt','number','Debt'),
+    ('Liabilities','number','Total Liabilities'),
+    ('RetainedEarnings','number','RetainedEarnings')
+    ('StockholdersEquity','number','Total Equity'),
+
+    # income statement
+    ('Revenues','number','Total Revenue'),
+    ('COGS','number','Cost of Revenue'),
+    ('SGnA','number','SG&A'),
+    ('OperatingExpenses','number','Operating Expense'),
+    ('OperatingIncome','number','Operating Income'),
+    ('Gross Profit','number','Gross Profit')
+    ('NetIncome','number','Net Income'),
+    ('EPS','number','Earnings Per Share'),
+
+    # statement of cash flows
+    ('CapEx','number','Capital Expenditures')
+    # ('','number','Net Cash from Operations'),
+    # ('NetCashFromFinancingNetIncome','number','Net Cash from Financing'),
+    # ('','number','Net Cash used in Investing'),
+    # ('','number','Net Change in Cash'),
+    ('DepreciationAndAmortization','number','Depreciation & Amortization'),
+    ('CommonStockValue','number','Common Stock Value'),
+    
+    ('SIC','string','SIC'),
+
+  ]
   columns_order = (
     'entity_name',
     'fiscal_year',
@@ -80,49 +125,6 @@ def api_example():
   jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
   return jsonstuff
 
-@app.route('/old/')
-def old_index():
-  # size = assets, color = NI/Revenue, x = revenue, y = cogs/Revenue
-  statements = [
-    {'name':'Balance Sheet', 'slug':'balance_sheet', 'fields':[
-      'Total Cash',
-      'Accounts Receivable',
-      'Inventories',
-      'PP&E',
-      'Long Term Assets', # total - current
-      'Total Assets', 
-      'Current Liabilities',
-      'Long-Term Liabilities',
-      'Total Liabilities',
-      'Total Equity',
-    ]}, 
-    {'name':'Income Statement', 'slug':'income_statement', 'fields':[
-      'Total Revenue',
-      'Cost of Revenue',
-      'SG&A', # calc: oi - rev + cogs
-      # 'Research and Development',
-      'Operating Expense', # calc: cogs + sga
-      'Operating Income',
-      'Net Income',
-    ]},
-    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'fields':[
-      'Net Cash from Operations',
-      'Net Cash from Financing',
-      'Net Cash used in Investing',
-      'Net Change in Cash',
-      'Depreciation & Amortization',
-    ]},
-  ]
-  divisions = [ 
-    {'name':'Agriculture, Forestry, And Fishing', 'id':'A', 'start':'01', 'end':'09', 'major_groups': [
-      {'name':'Agricultural Production Crops', 'id':'01', 'industry_groups': [
-        {'name':'Wheat', 'id':'0111'},
-        ]
-      },
-      ]
-    },
-  ]
-  return render_template('old_index.html', statements=statements)
 
 if __name__ == '__main__':
   app.debug = True

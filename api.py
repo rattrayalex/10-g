@@ -14,20 +14,20 @@ COGS
 CommonStockValue
 CostOfGoodsSold
 Debt
-Depreciation
+Depreciation #
 DepreciationAndAmortization
-EarningsPerShare
+EarningsPerShare 
 GrossProfit
-IncomeTaxes
+IncomeTaxes #
 Inventories
-Inventory
+Inventory #
 Liabilities
 NetCashFromFinancing
 NetIncome
 OperatingExpenses
 OperatingIncome
 PPE
-Profit
+Profit #
 RetainedEarnings
 Revenues
 SGnA
