@@ -96,7 +96,7 @@ def get_listings(ciks, company_info = ALL_INFO):
                 if len(value['period']) == 2 and value['period'][1] == 'Q':
 	            temp_dic[str(value['year']) + value['period'][::-1]][key] = value
         for time, info in temp_dic.items():
-            print info
+            # print info
             line = [company['name'], time]
             for values in company_info:
                 if values in info:

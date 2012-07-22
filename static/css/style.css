@@ -11,6 +11,7 @@
 	right: 0;
 	left: 0;
 	top:65px;
+	overflow-y: scroll;
 }
 #graph-wrapper {
 	margin-left: 320px;
@@ -26,11 +27,21 @@
 .accordion-group {
 	padding:10px;
 	border:0px;
-	border-left:3px solid #DDD;
+	border-left:3px solid #E6E6E6;
+	border-top:1px solid #DDD;
 	border-radius:0px;
 	-webkit-border-radius:0px;
 	-moz-border-radius:0px;
 }
-.accordion.minor {
+.minor {
 	margin-bottom:0px;
+	margin-top:10px;
+}
+table.minor {
+	border-top:1px solid #DDD;
+	border-left:3px solid #E6E6E6;
+	width:100%;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
 }

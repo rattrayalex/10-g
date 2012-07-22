@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import gviz_api, json, api, datetime
+import gviz_api, json, api, datetime, pickle
 app = Flask(__name__)
 
 description = [
@@ -43,38 +43,37 @@ description = [
 @app.route('/')
 def index():
   statements = [
-    {'name':'Balance Sheet', 'slug':'balance_sheet', 'offset':2, 'fields':[
-      'Total Cash',
-      'Accounts Receivable',
-      'Inventories',
-      'PP&E',
-      'Current Assets'
-      'Long Term Assets', # total - current
-      'Total Assets', 
-      'Debt',
-      'Long-Term Liabilities',
-      'Total Liabilities',
-      'Retained Earnings',
-      'Total Equity',
+    {'name':'Balance Sheet', 'slug':'balance_sheet', 'fields':[
+      ('CashAtCarryingValue','number','Total Cash'),
+      ('AccountsReceivable','number','Accounts Receivable'),
+      ('Inventories','number','Inventories'),
+      ('PPE','number','PP&E'),
+      ('AssetsCurrent','number','Current Assets'),
+      ('AssetsLongTerm','number','Long Term Assets'), # WE NEED TO CALCULATE THIS
+      ('Assets','number','Total Assets'),
+      ('Debt','number','Debt'),
+      ('Liabilities','number','Total Liabilities'),
+      ('RetainedEarnings','number','RetainedEarnings'),
+      ('StockholdersEquity','number','Total Equity'),
     ]}, 
-    {'name':'Income Statement', 'slug':'income_statement', 'offset':13, 'fields':[
-      'Total Revenue',
-      'Cost of Revenue',
-      'SG&A', 
-      'Operating Expense', 
-      'Operating Income',
-      'Gross Profit',
-      'Net Income',
-      'Earnings per Share',
+    {'name':'Income Statement', 'slug':'income_statement', 'fields':[
+      ('Revenues','number','Total Revenue'),
+      ('COGS','number','Cost of Revenue'),
+      ('SGnA','number','SG&A'),
+      ('OperatingExpenses','number','Operating Expense'),
+      ('OperatingIncome','number','Operating Income'),
+      ('Gross Profit','number','Gross Profit'),
+      ('NetIncome','number','Net Income'),
+      ('EPS','number','Earnings Per Share'),
     ]},
-    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'offset':19, 'fields':[
-      'Capital Expenditures',
-      # 'Net Cash from Operations',
-      # 'Net Cash from Financing',
-      # 'Net Cash used in Investing',
-      # 'Net Change in Cash',
-      'Depreciation & Amortization',
-      'Common Stock Value',
+    {'name':'Statement of Cash Flows', 'slug':'cash_flows','fields':[
+      ('CapEx','number','Capital Expenditures'),
+      # ('','number','Net Cash from Operations'),
+      # ('NetCashFromFinancingNetIncome','number','Net Cash from Financing'),
+      # ('','number','Net Cash used in Investing'),
+      # ('','number','Net Change in Cash'),
+      ('DepreciationAndAmortization','number','Depreciation & Amortization'),
+      ('CommonStockValue','number','Common Stock Value'),
     ]},
   ]
   divisions = [ 
@@ -89,24 +88,39 @@ def index():
       ]
     },
   ]
+  divisions = pickle.load(open('divisions.txt', 'rb'))
   return render_template('index.html', statements=statements, divisions=divisions)
 
-@app.route('/api/<ciks>/<x>/<y>/<size>/<color>/')
-def api_ciks_four(ciks, x, y, size, color):
+@app.route('/api/ciks/<ciks>/<x>/<y>/<color>/<size>/')
+def api_ciks_four(ciks, x, y, color, size):
   ciks = ciks.split(',')
-  params = [x, y, size, color]
+  return get_company_shit(ciks, x, y, color, size)
+
+def get_company_shit(ciks, x, y, color, size):
+  params = [x, y, color, size]
   long_params = [description[0][0],description[1][0]]
   long_params += params
-  short_description = [d for d in description if d[0] in long_params]
-  short_description.append(description[-1])
+  # long_params.append(description[-1][0])
+  print long_params
+  short_description = []
+  for p in long_params:
+    for d in description:
+      if d[0] == p:
+        short_description.append(d)
   print short_description
   columns_order = tuple(i[0] for i in short_description)
   order_by = columns_order[0]
   listings = api.get_listings(ciks, params)
+  print listings
   data_table = gviz_api.DataTable(short_description)
   data_table.LoadData(listings)
   jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
   return jsonstuff
+
+@app.route('/api/companies/<sic>/<x>/<y>/<color>/<size>/')
+def api_children_sic_four(sic, x, y, color, size):
+  ciks = api.get_ciks_for_group(sic)
+  return get_company_shit(ciks, x, y, color, size)
 
 @app.route('/api/example/')
 def api_example():

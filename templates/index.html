@@ -17,23 +17,23 @@
               <tbody>
                 {% for field in statement.fields %}
                   <tr>
-                    <td>{{ field }}</td>
+                    <td>{{ field.2 }}</td>
                     <td>
-                      <a class="chartChanger" href="#" id="xAxis_{{loop.index + statement.offset}}">  X
+                      <a class="chartChanger" href="#" id="X_{{field.0}}">  X
                       </a>
                     </td>
                     <td>
-                      <a href="#" class="chartChanger" id="yAxis_{{loop.index + statement.offset}}">
+                      <a href="#" class="chartChanger" id="Y_{{field.0}}">
                       Y
                       </a>
                     </td>
                     <td>
-                      <a href="#" class="chartChanger" id="size_{{loop.index + statement.offset}}">
+                      <a href="#" class="chartChanger" id="Size_{{field.0}}">
                         Size
                       </a>
                     </td>
                     <td>
-                      <a href="#" class="chartChanger" id="color_{{loop.index + statement.offset}}">
+                      <a href="#" class="chartChanger" id="Color_{{field.0}}">
                         Color
                       </a>
                     </td>
@@ -55,11 +55,11 @@
               {{division.name}}
             </a>
             <span class="pull-right">
-              <a href="#" class="ttip show" title="Show Companies" id="showCompanies_{{division.id}}">
-                <i class="icon-share-alt"></i>
-              </a> 
-              <a href="#" class="ttip show" title="Show Major Groups" id="showChildren_{{division.id}}">
+              <a href="#" class="ttip show pull-right" title="Show Companies" id="companies_{{division.id}}">
                 <i class="icon-share"></i>
+              </a> 
+              <a href="#" class="ttip show pull-right" title="Show Major Groups" id="children_{{division.id}}">
+                <i class="icon-share-alt"></i>
               </a>
             </span>
           </div>
@@ -71,39 +71,35 @@
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{division.id}}_accordion" href="#{{major_group.id}}_body">
                       {{major_group.name}}
                     </a>
-                    <span class="pull-right">
-                      <a href="#" class="ttip show" title="Show Companies" id="showCompanies_{{major_group.id}}">
-                        <i class="icon-share-alt"></i>
-                      </a> 
-                      <a href="#" class="ttip show" title="Show Industry Groups" id="showChildren_{{major_group.id}}">
-                        <i class="icon-share"></i>
-                      </a>
-                    </span>
+                    <a href="#" class="ttip show pull-right" title="Show Companies" id="companies_{{major_group.id}}">
+                      <i class="icon-share"></i>
+                    </a> 
+                    <a href="#" class="ttip show pull-right" title="Show Industry Groups" id="children_{{major_group.id}}">
+                      <i class="icon-share-alt"></i>
+                    </a>
                   </div>
                   <div class="accordion-body collapse" id="{{major_group.id}}_body">
-                    <div id="accordion minor" id="{{major_group.id}}_accordion">
+                    <div class="accordion minor" id="{{major_group.id}}_accordion">
                       {% for industry_group in major_group.industry_groups %}
                         <div class="accordion-group" id="{{industry_group.id}}_group">
                           <div class="according-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{industry_group.id}}_accordion" href="#{{industry_group.id}}_body">
                               {{industry_group.name}}
                             </a>
-                            <span class="pull-right">
-                              <a href="#" class="ttip show" title="Show Companies" id="showCompanies_{{industry_group.id}}">
-                                <i class="icon-share-alt"></i>
-                              </a> 
-                              <a href="#" class="ttip show" title="Show Industries" id="showChildren_{{industry_group.id}}">
-                                <i class="icon-share"></i>
-                              </a>
-                            </span>
+                            <a href="#" class="ttip show pull-right" title="Show Companies" id="companies_{{industry_group.id}}">
+                              <i class="icon-share"></i>
+                            </a> 
+                            <a href="#" class="ttip show pull-right" title="Show Industries" id="children_{{industry_group.id}}">
+                              <i class="icon-share-alt"></i>
+                            </a>
                           </div>
                           <div class="accordion-body collapse" id="{{industry_group.id}}_body">
-                            <table class="table-striped table-condensed">
+                            <table class="table-striped table-condensed minor">
                               <tbody>
                                 {% for industry in industry_group.industries %}
                                   <tr>
                                     <td>
-                                      <a href="#" class="show" id="showCompanies_{{industry.id}}">{{industry.name}}</a>
+                                      <a href="#" class="show" id="companies_{{industry.id}}">{{industry.name}}</a>
                                     </td>
                                   </tr>
                                 {% endfor %}
@@ -142,7 +138,16 @@ var app = {};
 google.load('visualization', '1', {'packages':['motionchart']});
 google.setOnLoadCallback(drawChart);
 function drawChart() {
-  $.get('/api/example/', function(data){
+  app.X = 'Revenues';
+  app.Y = 'COGS';
+  app.Color = 'NetIncome';
+  app.Size = 'Assets';
+  app.sic = '0000789019,0000320193,0001288776';
+  app.type = 'ciks';
+  app.params = ['api', app.type, app.sic, app.X, app.Y, app.Color, app.Size];
+  var url = app.params.join('/');
+  console.log(url)
+  $.get(url, function(data){
     console.log(data)
     app.datatable = new google.visualization.DataTable(data, 1);
     console.log(app.datatable);
@@ -160,21 +165,33 @@ function drawChart() {
 
 $(function(){
   $('.chartChanger').click(function(){
-    var index = $(this).attr('id').split('_')[1];
+    var field = $(this).attr('id').split('_')[1];
     var axis = $(this).attr('id').split('_')[0];
-    var state = app.chart.getState();
-    state = $.parseJSON(state);
-    state[axis+'Option'] = index.toString();
-    // console.log(state)
-    state = JSON.stringify(state);
-    // console.log(state);
-    app.options.state = state;
-    app.chart.draw(app.datatable, app.options);
+    app[axis] = field;
+    newChart();
   })
 
   $('.ttip').tooltip();
+
+  $('a.show').click(function(){
+    app.sic = $(this).attr('id').split('_')[1]; // sic code, ie 2343
+    app.type = $(this).attr('id').split('_')[0]; // companies or children
+    newChart();
+  });
 });
 
+function newChart () {
+  var url = '/api/'+app.type+'/'+app.sic+'/'+app.X+'/'+app.Y+'/'+app.Color+'/'+app.Size+'/';
+  $.get(url, function(data){
+    console.log(data);
+    data = $.parseJSON(data);
+    console.log(data);
+    delete app.datatable;
+    app.datatable = new google.visualization.DataTable(data, 1);
+    console.log(app.datatable);
+    redrawChart();
+  });
+};
 
 function redrawChart() {
   app.options = app.options || {};
