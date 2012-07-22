@@ -10,7 +10,7 @@
 	bottom: 0;
 	right: 0;
 	left: 0;
-	top:65px;
+	top:0px;
 	overflow-y: scroll;
 }
 #graph-wrapper {
@@ -22,7 +22,7 @@
 	right:0px;
 	left:0px;
 	bottom:0px;
-	top:65px;
+	top:0px;
 }
 .accordion-group {
 	padding:10px;
