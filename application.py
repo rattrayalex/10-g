@@ -2,6 +2,8 @@ from flask import Flask, render_template
 import gviz_api, json, api, datetime, pickle
 app = Flask(__name__)
 
+children_sics = []
+
 description = [
   ('entity_name','string','Entity Name'),
   ('fiscal_period', 'string','Period'),
@@ -89,6 +91,26 @@ def index():
     },
   ]
   divisions = pickle.load(open('divisions.txt', 'rb'))
+
+  for division in divisions:
+    division_id = division['id']
+    division_children = []
+    for major_group in division:
+      mg_id = major_group['id']
+      division_children.append(mg_id)
+      mg_children = []
+      for industry_group in major_group:
+        ig_id = industry_group['id']
+        mg_id.append(ig_id)
+        ig_children = []
+        for industry in industry_group:
+          ind_id = industry['id']
+          ig_children.append(ind_id)
+        children_sics[ig_id] = ig_children
+      children_sics[mg_id] = mg_children
+    children_sics[division_id] = division_children
+ 
+
   return render_template('index.html', statements=statements, divisions=divisions)
 
 @app.route('/api/ciks/<ciks>/<x>/<y>/<color>/<size>/')
