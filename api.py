@@ -37,13 +37,7 @@ SGnA
 StockholdersEquity
 """
 
-
-<<<<<<< HEAD
 connection = Connection('data.10-g.com', 27017)
-=======
-connection = Connection("data.10-g.com", 27017)
->>>>>>> 8808aaca7c61a41ea6bae601a0c5e1a336207a84
-
 
 def get_companies_dict(infile="cik_ticker.txt"):
     companies = {}

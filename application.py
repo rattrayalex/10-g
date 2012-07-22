@@ -118,9 +118,15 @@ def get_company_shit(ciks, x, y, color, size):
   return jsonstuff
 
 @app.route('/api/companies/<sic>/<x>/<y>/<color>/<size>/')
-def api_children_sic_four(sic, x, y, color, size):
+def api_companies_sic_four(sic, x, y, color, size):
   ciks = api.get_ciks_for_group(sic)
   return get_company_shit(ciks, x, y, color, size)
+
+@app.route('/api/children/<sic>/<x>/<y>/<color>/<size>/')
+def api_children_sic_four(sic, x, y, color, size):
+  divisions = pickle.load(open('divisions.txt', 'rb'))
+  children = api.get_agg_stats_for_group(sic)
+  pass
 
 @app.route('/api/example/')
 def api_example():
