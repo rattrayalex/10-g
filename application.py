@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
   statements = [
-    {'name':'Balance Sheet', 'slug':'balance_sheet', 'fields':[
+    {'name':'Balance Sheet', 'slug':'balance_sheet', 'offset':2, 'fields':[
       'Total Cash',
       'Accounts Receivable',
       'Inventories',
@@ -17,7 +17,7 @@ def index():
       'Total Liabilities',
       'Total Equity',
     ]}, 
-    {'name':'Income Statement', 'slug':'income_statement', 'fields':[
+    {'name':'Income Statement', 'slug':'income_statement', 'offset':12, 'fields':[
       'Total Revenue',
       'Cost of Revenue',
       'SG&A', # calc: oi - rev + cogs
@@ -26,7 +26,7 @@ def index():
       'Operating Income',
       'Net Income',
     ]},
-    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'fields':[
+    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'offset':18, 'fields':[
       'Net Cash from Operations',
       'Net Cash from Financing',
       'Net Cash used in Investing',
@@ -63,7 +63,7 @@ def api_example():
     '0000320193', #appl
     '0001288776', #goog
   ]
-  listings = api.get_listings({'entity_codes' : ciks, "field_name": '%Capital'})
+  listings = api.get_listings({'entity_codes' : ciks, "field_name": '%Revenue'})
   print listings[0]
   print json.dumps(listings[0])
   # {"effective_value": 18235000000.0, "entity_name": "Google Inc.", "calendar_period": "Y", "fiscal_year": 2010, "ticker": "goog", "field_name": "CommonStockIncludingAdditionalPaidInCapital"}
