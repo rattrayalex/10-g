@@ -2,10 +2,42 @@ import sys
 import re
 import psycopg2
 
+"""
+The mongo database now contains the following data
+(for any company we could find a suitable mapping for):
+AccountsReceivable
+Assets
+AssetsCurrent
+CapEx
+CashAtCarryingValue
+COGS
+CommonStockValue
+CostOfGoodsSold
+Debt
+Depreciation
+DepreciationAndAmortization
+EarningsPerShare
+GrossProfit
+IncomeTaxes
+Inventories
+Inventory
+Liabilities
+NetCashFromFinancing
+NetIncome
+OperatingExpenses
+OperatingIncome
+PPE
+Profit
+RetainedEarnings
+Revenues
+SGnA
+StockholdersEquity
+"""
+
 f = open('database_info.txt')
 conn = psycopg2.connect(f.read())
 
-result_keys = ["ticker", "entity_name", "effective_value", "fiscal_year", 
+result_keys = ["ticker", "entity_name", "effective_value", "fiscal_year",
                "calendar_period", "field_name"]
 
 base_query = """select
@@ -16,7 +48,7 @@ base_query = """select
                     calendar_period,
                     local_name
                 from
-                    entity 
+                    entity
                 natural join
                     accession
                 natural join
@@ -30,7 +62,7 @@ base_query = """select
                 natural join
                     context_aug"""
 
-def get_companies_dict(infile):
+def get_companies_dict(infile="cik_ticker.txt"):
     companies = {}
     for line in open(infile):
         try:
@@ -70,10 +102,10 @@ def get_listings(params):
     if "entity_codes" in params:
         params['entity_codes'] = tuple(params['entity_codes'])
         conditions.append("entity_code in %(entity_codes)s")
-    
+
     if "entity_code" in params:
         conditions.append("entity_code = %(entity_code)s")
-    
+
     if "field_name" in params:
         conditions.append("local_name like %(field_name)s")
 
