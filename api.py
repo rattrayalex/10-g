@@ -83,7 +83,7 @@ ALL_INFO = [ "CashAtCarryingValue",
 
 
 def get_listings(ciks, company_info = ALL_INFO):
-    db = connection.sec_data2
+    db = connection.sec_data
     companies = db.companies
     output = []
     for cik in ciks:
@@ -104,10 +104,18 @@ def get_listings(ciks, company_info = ALL_INFO):
             output.append(line)
     return output
 
-def clean(query_results):
-    answer = []
-    for result in query_results:
-        out_res = dict(zip(result_keys, result))
-        out_res['effective_value'] = float(out_res['effective_value'])
-        answer.append(out_res)
-    return answer
+def get_ciks_for_group(x):
+    divisions = connection.sec_data2.devisions
+    companies = connection.sec_data.companies
+    if type(x) == str:
+        division = divisions.find({'id' : x})
+        start_num = int(division['start'] + '00')
+        end_num = int(division['end'] + '99')
+
+    elif len(x) == 2:
+        pass
+    elif len(x) == 3:
+        pass
+    elif len(x) == 4:
+        pass
+        
