@@ -31,3 +31,6 @@
 	-webkit-border-radius:0px;
 	-moz-border-radius:0px;
 }
+.accordion.minor {
+	margin-bottom:0px;
+}
