@@ -2,7 +2,6 @@ from flask import Flask, render_template
 import gviz_api, json, api, datetime, pickle
 app = Flask(__name__)
 
-children_sics = []
 
 description = [
   ('entity_name','string','Entity Name'),
@@ -42,6 +41,28 @@ description = [
   ('SIC','string','SIC'),
 ]
 
+divisions = pickle.load(open('divisions.txt', 'rb'))
+
+children_sics = {}
+for division in divisions:
+  division_id = division['id']
+  division_children = []
+  for major_group in division['major_groups']:
+    mg_id = major_group['id']
+    division_children.append(mg_id)
+    mg_children = []
+    for industry_group in major_group['industry_groups']:
+      ig_id = industry_group['id']
+      mg_children.append(ig_id)
+      ig_children = []
+      for industry in industry_group['industries']:
+        ind_id = industry['id']
+        ig_children.append(ind_id)
+      children_sics[ig_id] = ig_children
+    children_sics[mg_id] = mg_children
+  children_sics[division_id] = division_children
+
+
 @app.route('/')
 def index():
   statements = [
@@ -78,39 +99,6 @@ def index():
       ('CommonStockValue','number','Common Stock Value'),
     ]},
   ]
-  divisions = [ 
-    {'name':'Agriculture, Forestry, And Fishing', 'id':'A', 'start':'01', 'end':'09', 'major_groups': [
-      {'name':'Agricultural Production Crops', 'id':'01', 'industry_groups': [
-        {'name':'Cash Grains', 'id':'011', 'industries':[
-          {'name':'Wheat', 'id':'0111'}, 
-          ],
-        },
-        ]
-      },
-      ]
-    },
-  ]
-  divisions = pickle.load(open('divisions.txt', 'rb'))
-
-  for division in divisions:
-    division_id = division['id']
-    division_children = []
-    for major_group in division:
-      mg_id = major_group['id']
-      division_children.append(mg_id)
-      mg_children = []
-      for industry_group in major_group:
-        ig_id = industry_group['id']
-        mg_id.append(ig_id)
-        ig_children = []
-        for industry in industry_group:
-          ind_id = industry['id']
-          ig_children.append(ind_id)
-        children_sics[ig_id] = ig_children
-      children_sics[mg_id] = mg_children
-    children_sics[division_id] = division_children
- 
-
   return render_template('index.html', statements=statements, divisions=divisions)
 
 @app.route('/api/ciks/<ciks>/<x>/<y>/<color>/<size>/')
@@ -146,9 +134,27 @@ def api_companies_sic_four(sic, x, y, color, size):
 
 @app.route('/api/children/<sic>/<x>/<y>/<color>/<size>/')
 def api_children_sic_four(sic, x, y, color, size):
-  divisions = pickle.load(open('divisions.txt', 'rb'))
-  children = api.get_agg_stats_for_group(sic)
-  pass
+  # length = len(sic)
+  sics = children_sics[sic]
+  params = [x, y, color, size]
+  long_params = [description[0][0],description[1][0]]
+  long_params += params
+  # long_params.append(description[-1][0])
+  print long_params
+  short_description = []
+  for p in long_params:
+    for d in description:
+      if d[0] == p:
+        short_description.append(d)
+  print short_description
+  columns_order = tuple(i[0] for i in short_description)
+  order_by = columns_order[0]
+  listings = [api.get_agg_stats_for_group(s, params) for s in sics]
+  print listings
+  data_table = gviz_api.DataTable(short_description)
+  data_table.LoadData(listings)
+  jsonstuff = data_table.ToJSon(columns_order=columns_order, order_by=order_by)
+  return jsonstuff
 
 @app.route('/api/example/')
 def api_example():
