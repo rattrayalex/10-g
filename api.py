@@ -68,6 +68,7 @@ if __name__ == "__main__":
 def get_listings(params):
     conditions = []
     if "entity_codes" in params:
+        params['entity_codes'] = tuple(params['entity_codes'])
         conditions.append("entity_code in %(entity_codes)s")
     
     if "entity_code" in params:
@@ -93,5 +94,7 @@ def get_listings(params):
 def clean(query_results):
     answer = []
     for result in query_results:
-        answer.append(dict(zip(result_keys, result)))
+        out_res = dict(zip(result_keys, result))
+        out_res['effective_value'] = float(out_res['effective_value'])
+        answer.append(out_res)
     return answer
