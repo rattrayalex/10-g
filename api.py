@@ -102,10 +102,11 @@ def get_listings(ciks, company_info = ALL_INFO):
         for key, values in company['values'].items():
             for value in values:
                 if len(value['period']) == 2 and value['period'][1] == 'Q':
+                    if value['year'] < 2009 or value['year'] > 2012:
+                        continue
                     temp_dic[str(value['year']) + value['period'][::-1]][key] = value
         for time, info in sorted(temp_dic.items()):
             #sorted in chronological order
-            print info
             line = [company['name'], time]
             for values in company_info:
                 if values in info:
