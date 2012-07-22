@@ -1,0 +1,9364 @@
+(lp0
+(dp1
+S'start'
+p2
+V01
+p3
+sS'end'
+p4
+V09
+p5
+sS'name'
+p6
+VAgriculture, Forestry, And Fishing
+p7
+sS'major_groups'
+p8
+(lp9
+(dp10
+g6
+VAgricultural Production Crops
+p11
+sS'industry_groups'
+p12
+(lp13
+(dp14
+S'industries'
+p15
+(lp16
+(dp17
+S'id'
+p18
+V0111
+p19
+sg6
+VWheat
+p20
+sa(dp21
+g18
+V0112
+p22
+sg6
+VRice
+p23
+sa(dp24
+g18
+V0115
+p25
+sg6
+VCorn
+p26
+sa(dp27
+g18
+V0116
+p28
+sg6
+VSoybeans
+p29
+sa(dp30
+g18
+V0119
+p31
+sg6
+VCash Grains, Not Elsewhere Classified
+p32
+sasg6
+VCash Grains
+p33
+sg18
+V011
+p34
+sa(dp35
+g15
+(lp36
+(dp37
+g18
+V0131
+p38
+sg6
+VCotton
+p39
+sa(dp40
+g18
+V0132
+p41
+sg6
+VTobacco
+p42
+sa(dp43
+g18
+V0133
+p44
+sg6
+VSugarcane and Sugar Beets
+p45
+sa(dp46
+g18
+V0134
+p47
+sg6
+VIrish Potatoes
+p48
+sa(dp49
+g18
+V0139
+p50
+sg6
+VField Crops, Except Cash Grains, Not Elsewhere Classified
+p51
+sasg6
+VField Crops, Except Cash Grains
+p52
+sg18
+V013
+p53
+sa(dp54
+g15
+(lp55
+(dp56
+g18
+V0161
+p57
+sg6
+VVegetables and Melons
+p58
+sasg6
+VVegetables And Melons
+p59
+sg18
+V016
+p60
+sa(dp61
+g15
+(lp62
+(dp63
+g18
+V0171
+p64
+sg6
+VBerry Crops
+p65
+sa(dp66
+g18
+V0172
+p67
+sg6
+VGrapes
+p68
+sa(dp69
+g18
+V0173
+p70
+sg6
+VTree Nuts
+p71
+sa(dp72
+g18
+V0174
+p73
+sg6
+VCitrus Fruits
+p74
+sa(dp75
+g18
+V0175
+p76
+sg6
+VDeciduous Tree Fruits
+p77
+sa(dp78
+g18
+V0179
+p79
+sg6
+VFruits and Tree Nuts, Not Elsewhere Classified
+p80
+sasg6
+VFruits And Tree Nuts
+p81
+sg18
+V017
+p82
+sa(dp83
+g15
+(lp84
+(dp85
+g18
+V0181
+p86
+sg6
+VOrnamental Floriculture and Nursery Products
+p87
+sa(dp88
+g18
+V0182
+p89
+sg6
+VFood Crops Grown Under Cover
+p90
+sasg6
+VHorticultural Specialties
+p91
+sg18
+V018
+p92
+sasg18
+g3
+sa(dp93
+g6
+VAgriculture production livestock and animal specialties
+p94
+sg12
+(lp95
+(dp96
+g15
+(lp97
+(dp98
+g18
+V0211
+p99
+sg6
+VBeef Cattle Feedlots
+p100
+sa(dp101
+g18
+V0212
+p102
+sg6
+VBeef Cattle, Except Feedlots
+p103
+sa(dp104
+g18
+V0213
+p105
+sg6
+VHogs
+p106
+sa(dp107
+g18
+V0214
+p108
+sg6
+VSheep and Goats
+p109
+sa(dp110
+g18
+V0219
+p111
+sg6
+VGeneral Livestock, Except Dairy and Poultry
+p112
+sasg6
+VLivestock, Except Dairy And Poultry
+p113
+sg18
+V021
+p114
+sa(dp115
+g15
+(lp116
+(dp117
+g18
+V0241
+p118
+sg6
+VDairy Farms
+p119
+sasg6
+VDairy Farms
+p120
+sg18
+V024
+p121
+sa(dp122
+g15
+(lp123
+(dp124
+g18
+V0251
+p125
+sg6
+VBroiler, Fryer, and Roaster Chickens
+p126
+sa(dp127
+g18
+V0252
+p128
+sg6
+VChicken Eggs
+p129
+sa(dp130
+g18
+V0253
+p131
+sg6
+VTurkeys and Turkey Eggs
+p132
+sa(dp133
+g18
+V0254
+p134
+sg6
+VPoultry Hatcheries
+p135
+sa(dp136
+g18
+V0259
+p137
+sg6
+VPoultry and Eggs, Not Elsewhere Classified
+p138
+sasg6
+VPoultry And Eggs
+p139
+sg18
+V025
+p140
+sa(dp141
+g15
+(lp142
+(dp143
+g18
+V0271
+p144
+sg6
+VFur-Bearing Animals and Rabbits
+p145
+sa(dp146
+g18
+V0272
+p147
+sg6
+VHorses and Other Equines
+p148
+sa(dp149
+g18
+V0273
+p150
+sg6
+VAnimal Aquaculture
+p151
+sa(dp152
+g18
+V0279
+p153
+sg6
+VAnimal Specialties, Not Elsewhere Classified
+p154
+sasg6
+VAnimal Specialties
+p155
+sg18
+V027
+p156
+sasg18
+V02
+p157
+sa(dp158
+g6
+VAgricultural Services
+p159
+sg12
+(lp160
+(dp161
+g15
+(lp162
+(dp163
+g18
+V0711
+p164
+sg6
+VSoil Preparation Services
+p165
+sasg6
+VSoil Preparation Services
+p166
+sg18
+V071
+p167
+sa(dp168
+g15
+(lp169
+(dp170
+g18
+V0721
+p171
+sg6
+VCrop Planting, Cultivating, and Protecting
+p172
+sa(dp173
+g18
+V0722
+p174
+sg6
+VCrop Harvesting, Primarily by Machine
+p175
+sa(dp176
+g18
+V0723
+p177
+sg6
+VCrop Preparation Services for Market, Except Cotton Ginning
+p178
+sa(dp179
+g18
+V0724
+p180
+sg6
+VCotton Ginning
+p181
+sasg6
+VCrop Services
+p182
+sg18
+V072
+p183
+sa(dp184
+g15
+(lp185
+(dp186
+g18
+V0741
+p187
+sg6
+VVeterinary Services for Livestock
+p188
+sa(dp189
+g18
+V0742
+p190
+sg6
+VVeterinary Services for Animal Specialties
+p191
+sasg6
+VVeterinary Services
+p192
+sg18
+V074
+p193
+sa(dp194
+g15
+(lp195
+(dp196
+g18
+V0751
+p197
+sg6
+VLivestock Services, Except Veterinary
+p198
+sa(dp199
+g18
+V0752
+p200
+sg6
+VAnimal Specialty Services, Except Veterinary
+p201
+sasg6
+VAnimal Services, Except Veterinary
+p202
+sg18
+V075
+p203
+sa(dp204
+g15
+(lp205
+(dp206
+g18
+V0761
+p207
+sg6
+VFarm Labor Contractors and Crew Leaders
+p208
+sa(dp209
+g18
+V0762
+p210
+sg6
+VFarm Management Services
+p211
+sasg6
+VFarm Labor And Management Services
+p212
+sg18
+V076
+p213
+sasg18
+V07
+p214
+sa(dp215
+g6
+VForestry
+p216
+sg12
+(lp217
+(dp218
+g15
+(lp219
+(dp220
+g18
+V0811
+p221
+sg6
+VTimber Tracts
+p222
+sasg6
+VTimber Tracts
+p223
+sg18
+V081
+p224
+sa(dp225
+g15
+(lp226
+(dp227
+g18
+V0831
+p228
+sg6
+VForest Nurseries and Gathering of Forest Products
+p229
+sasg6
+VForest Nurseries And Gathering Of Forest
+p230
+sg18
+V083
+p231
+sasg18
+V08
+p232
+sa(dp233
+g6
+VFishing, hunting, and trapping
+p234
+sg12
+(lp235
+(dp236
+g15
+(lp237
+(dp238
+g18
+V0912
+p239
+sg6
+VFinfish
+p240
+sa(dp241
+g18
+V0913
+p242
+sg6
+VShellfish
+p243
+sa(dp244
+g18
+V0919
+p245
+sg6
+VMiscellaneous Marine Products
+p246
+sasg6
+VCommercial Fishing
+p247
+sg18
+V091
+p248
+sa(dp249
+g15
+(lp250
+(dp251
+g18
+V0921
+p252
+sg6
+VFish Hatcheries and Preserves
+p253
+sasg6
+VFish Hatcheries And Preserves
+p254
+sg18
+V092
+p255
+sasg18
+g5
+sasg18
+VA
+p256
+sa(dp257
+g2
+V10
+p258
+sg4
+V14
+p259
+sg6
+VMining
+p260
+sg8
+(lp261
+(dp262
+g6
+VMetal Mining
+p263
+sg12
+(lp264
+(dp265
+g15
+(lp266
+(dp267
+g18
+V1011
+p268
+sg6
+VIron Ores
+p269
+sasg6
+VIron Ores
+p270
+sg18
+V101
+p271
+sa(dp272
+g15
+(lp273
+(dp274
+g18
+V1021
+p275
+sg6
+VCopper Ores
+p276
+sasg6
+VCopper Ores
+p277
+sg18
+V102
+p278
+sa(dp279
+g15
+(lp280
+(dp281
+g18
+V1031
+p282
+sg6
+VLead and Zinc Ores
+p283
+sasg6
+VLead And Zinc Ores
+p284
+sg18
+V103
+p285
+sa(dp286
+g15
+(lp287
+(dp288
+g18
+V1041
+p289
+sg6
+VGold Ores
+p290
+sa(dp291
+g18
+V1044
+p292
+sg6
+VSilver Ores
+p293
+sasg6
+VGold And Silver Ores
+p294
+sg18
+V104
+p295
+sa(dp296
+g15
+(lp297
+(dp298
+g18
+V1061
+p299
+sg6
+VFerroalloy Ores, Except Vanadium
+p300
+sasg6
+VFerroalloy Ores, Except Vanadium
+p301
+sg18
+V106
+p302
+sa(dp303
+g15
+(lp304
+(dp305
+g18
+V1081
+p306
+sg6
+VMetal Mining Services
+p307
+sasg6
+VMetal Mining Services
+p308
+sg18
+V108
+p309
+sasg18
+g258
+sa(dp310
+g6
+VCoal Mining
+p311
+sg12
+(lp312
+(dp313
+g15
+(lp314
+(dp315
+g18
+V1221
+p316
+sg6
+VBituminous Coal and Lignite Surface Mining
+p317
+sa(dp318
+g18
+V1222
+p319
+sg6
+VBituminous Coal Underground Mining
+p320
+sasg6
+VBituminous Coal And Lignite Mining
+p321
+sg18
+V122
+p322
+sa(dp323
+g15
+(lp324
+(dp325
+g18
+V1231
+p326
+sg6
+VAnthracite Mining
+p327
+sasg6
+VAnthracite Mining
+p328
+sg18
+V123
+p329
+sasg18
+V12
+p330
+sa(dp331
+g6
+VOil And Gas Extraction
+p332
+sg12
+(lp333
+(dp334
+g15
+(lp335
+(dp336
+g18
+V1311
+p337
+sg6
+VCrude Petroleum and Natural Gas
+p338
+sasg6
+VCrude Petroleum And Natural Gas
+p339
+sg18
+V131
+p340
+sa(dp341
+g15
+(lp342
+(dp343
+g18
+V1321
+p344
+sg6
+VNatural Gas Liquids
+p345
+sasg6
+VNatural Gas Liquids
+p346
+sg18
+V132
+p347
+sasg18
+V13
+p348
+sa(dp349
+g6
+VMining And Quarrying Of Nonmetallic Minerals, Except Fuels
+p350
+sg12
+(lp351
+(dp352
+g15
+(lp353
+(dp354
+g18
+V1411
+p355
+sg6
+VDimension Stone
+p356
+sasg6
+VDimension Stone
+p357
+sg18
+V141
+p358
+sa(dp359
+g15
+(lp360
+(dp361
+g18
+V1422
+p362
+sg6
+VCrushed and Broken Limestone
+p363
+sa(dp364
+g18
+V1423
+p365
+sg6
+VCrushed and Broken Granite
+p366
+sa(dp367
+g18
+V1429
+p368
+sg6
+VCrushed and Broken Stone, Not Elsewhere Classified
+p369
+sasg6
+VCrushed And Broken Stone, Including Riprap
+p370
+sg18
+V142
+p371
+sa(dp372
+g15
+(lp373
+(dp374
+g18
+V1442
+p375
+sg6
+VConstruction Sand and Gravel
+p376
+sa(dp377
+g18
+V1446
+p378
+sg6
+VIndustrial Sand
+p379
+sasg6
+VSand And Gravel
+p380
+sg18
+V144
+p381
+sa(dp382
+g15
+(lp383
+(dp384
+g18
+V1455
+p385
+sg6
+VKaolin and Ball Clay
+p386
+sa(dp387
+g18
+V1459
+p388
+sg6
+VClay, Ceramic, and Refractory Minerals, Not Elsewhere Classified
+p389
+sasg6
+VClay, Ceramic, And Refractory Minerals
+p390
+sg18
+V145
+p391
+sa(dp392
+g15
+(lp393
+(dp394
+g18
+V1474
+p395
+sg6
+VPotash, Soda, and Borate Minerals
+p396
+sa(dp397
+g18
+V1475
+p398
+sg6
+VPhosphate Rock
+p399
+sa(dp400
+g18
+V1479
+p401
+sg6
+VChemical and Fertilizer Mineral Mining, Not Elsewhere Classified
+p402
+sasg6
+VChemical And Fertilizer Mineral Mining
+p403
+sg18
+V147
+p404
+sa(dp405
+g15
+(lp406
+(dp407
+g18
+V1481
+p408
+sg6
+VNonmetallic Minerals Services, Except Fuels
+p409
+sasg6
+VNonmetallic Minerals Services, Except Fuels
+p410
+sg18
+V148
+p411
+sasg18
+g259
+sasg18
+VB
+p412
+sa(dp413
+g2
+V15
+p414
+sg4
+V17
+p415
+sg6
+VConstruction
+p416
+sg8
+(lp417
+(dp418
+g6
+VBuilding Construction General Contractors And Operative Builders
+p419
+sg12
+(lp420
+(dp421
+g15
+(lp422
+(dp423
+g18
+V1521
+p424
+sg6
+VGeneral Contractors-Single-Family Houses
+p425
+sa(dp426
+g18
+V1522
+p427
+sg6
+VGeneral Contractors-Residential Buildings, Other Than Single-Family
+p428
+sasg6
+VGeneral Building Contractors-residential
+p429
+sg18
+V152
+p430
+sa(dp431
+g15
+(lp432
+(dp433
+g18
+V1531
+p434
+sg6
+VOperative Builders
+p435
+sasg6
+VOperative Builders
+p436
+sg18
+V153
+p437
+sasg18
+g414
+sa(dp438
+g6
+VHeavy Construction Other Than Building Construction Contractors
+p439
+sg12
+(lp440
+(dp441
+g15
+(lp442
+(dp443
+g18
+V1611
+p444
+sg6
+VHighway and Street Construction, Except Elevated Highways
+p445
+sasg6
+VHighway And Street Construction, Except
+p446
+sg18
+V161
+p447
+sasg18
+V16
+p448
+sa(dp449
+g6
+VConstruction Special Trade Contractors
+p450
+sg12
+(lp451
+(dp452
+g15
+(lp453
+(dp454
+g18
+V1711
+p455
+sg6
+VPlumbing, Heating and Air-Conditioning
+p456
+sasg6
+VPlumbing, Heating And Air-conditioning
+p457
+sg18
+V171
+p458
+sa(dp459
+g15
+(lp460
+(dp461
+g18
+V1721
+p462
+sg6
+VPainting and Paper Hanging
+p463
+sasg6
+VPainting And Paper Hanging
+p464
+sg18
+V172
+p465
+sa(dp466
+g15
+(lp467
+(dp468
+g18
+V1731
+p469
+sg6
+VElectrical Work
+p470
+sasg6
+VElectrical Work
+p471
+sg18
+V173
+p472
+sa(dp473
+g15
+(lp474
+(dp475
+g18
+V1741
+p476
+sg6
+VMasonry, Stone Setting, and Other Stone Work
+p477
+sa(dp478
+g18
+V1742
+p479
+sg6
+VPlastering, Drywall, Acoustical, and Insulation Work
+p480
+sa(dp481
+g18
+V1743
+p482
+sg6
+VTerrazzo, Tile, Marble, and Mosaic Work
+p483
+sasg6
+VMasonry, Stonework, Tile Setting, And Plastering
+p484
+sg18
+V174
+p485
+sa(dp486
+g15
+(lp487
+(dp488
+g18
+V1751
+p489
+sg6
+VCarpentry Work
+p490
+sa(dp491
+g18
+V1752
+p492
+sg6
+VFloor Laying and Other Floor Work, Not Elsewhere Classified
+p493
+sasg6
+VCarpentry And Floor Work
+p494
+sg18
+V175
+p495
+sa(dp496
+g15
+(lp497
+(dp498
+g18
+V1761
+p499
+sg6
+VRoofing, Siding, and Sheet Metal Work
+p500
+sasg6
+VRoofing, Siding, And Sheet Metal Work
+p501
+sg18
+V176
+p502
+sa(dp503
+g15
+(lp504
+(dp505
+g18
+V1771
+p506
+sg6
+VConcrete Work
+p507
+sasg6
+VConcrete Work
+p508
+sg18
+V177
+p509
+sa(dp510
+g15
+(lp511
+(dp512
+g18
+V1781
+p513
+sg6
+VWater Well Drilling
+p514
+sasg6
+VWater Well Drilling
+p515
+sg18
+V178
+p516
+sasg18
+g415
+sasg18
+VC
+p517
+sa(dp518
+g2
+V20
+p519
+sg4
+V39
+p520
+sg6
+VManufacturing
+p521
+sg8
+(lp522
+(dp523
+g6
+VFood And Kindred Products
+p524
+sg12
+(lp525
+(dp526
+g15
+(lp527
+(dp528
+g18
+V2011
+p529
+sg6
+VMeat Packing Plants
+p530
+sa(dp531
+g18
+V2013
+p532
+sg6
+VSausages and Other Prepared Meat Products
+p533
+sa(dp534
+g18
+V2015
+p535
+sg6
+VPoultry Slaughtering and Processing
+p536
+sasg6
+VMeat Products
+p537
+sg18
+V201
+p538
+sa(dp539
+g15
+(lp540
+(dp541
+g18
+V2021
+p542
+sg6
+VCreamery Butter
+p543
+sa(dp544
+g18
+V2022
+p545
+sg6
+VNatural, Processed, and Imitation Cheese
+p546
+sa(dp547
+g18
+V2023
+p548
+sg6
+VDry, Condensed, and Evaporated Dairy Products
+p549
+sa(dp550
+g18
+V2024
+p551
+sg6
+VIce Cream and Frozen Desserts
+p552
+sa(dp553
+g18
+V2026
+p554
+sg6
+VFluid Milk
+p555
+sasg6
+VDairy Products
+p556
+sg18
+V202
+p557
+sa(dp558
+g15
+(lp559
+(dp560
+g18
+V2032
+p561
+sg6
+VCanned Specialties
+p562
+sa(dp563
+g18
+V2033
+p564
+sg6
+VCanned Fruits, Vegetables, Preserves, Jams, and Jellies
+p565
+sa(dp566
+g18
+V2034
+p567
+sg6
+VDried and Dehydrated Fruits, Vegetables, and Soup Mixes
+p568
+sa(dp569
+g18
+V2035
+p570
+sg6
+VPickled Fruits and Vegetables, Vegetable Sauces and Seasonings, and Salad Dressings
+p571
+sa(dp572
+g18
+V2037
+p573
+sg6
+VFrozen Fruits, Fruit Juices, and Vegetables
+p574
+sa(dp575
+g18
+V2038
+p576
+sg6
+VFrozen Specialties, Not Elsewhere Classified
+p577
+sasg6
+VCanned, Frozen, And Preserved Fruits, Vegetables, and Food Specialties
+p578
+sg18
+V203
+p579
+sa(dp580
+g15
+(lp581
+(dp582
+g18
+V2041
+p583
+sg6
+VFlour and Other Grain Mill Products
+p584
+sa(dp585
+g18
+V2043
+p586
+sg6
+VCereal Breakfast Foods
+p587
+sa(dp588
+g18
+V2044
+p589
+sg6
+VRice Milling
+p590
+sa(dp591
+g18
+V2045
+p592
+sg6
+VPrepared Flour Mixes and Doughs
+p593
+sa(dp594
+g18
+V2046
+p595
+sg6
+VWet Corn Milling
+p596
+sa(dp597
+g18
+V2047
+p598
+sg6
+VDog and Cat Food
+p599
+sa(dp600
+g18
+V2048
+p601
+sg6
+VPrepared Feed and Feed Ingredients for Animals and Fowls, Except Dogs and Cats
+p602
+sasg6
+VGrain Mill Products
+p603
+sg18
+V204
+p604
+sa(dp605
+g15
+(lp606
+(dp607
+g18
+V2051
+p608
+sg6
+VBread and Other Bakery Products, Except Cookies and Crackers
+p609
+sa(dp610
+g18
+V2052
+p611
+sg6
+VCookies and Crackers
+p612
+sa(dp613
+g18
+V2053
+p614
+sg6
+VFrozen Bakery Products, Except Bread
+p615
+sasg6
+VBakery Products
+p616
+sg18
+V205
+p617
+sa(dp618
+g15
+(lp619
+(dp620
+g18
+V2061
+p621
+sg6
+VCane Sugar, Except Refining
+p622
+sa(dp623
+g18
+V2062
+p624
+sg6
+VCane Sugar Refining
+p625
+sa(dp626
+g18
+V2063
+p627
+sg6
+VBeet Sugar
+p628
+sa(dp629
+g18
+V2064
+p630
+sg6
+VCandy and Other Confectionery Products
+p631
+sa(dp632
+g18
+V2066
+p633
+sg6
+VChocolate and Cocoa Products
+p634
+sa(dp635
+g18
+V2067
+p636
+sg6
+VChewing Gum
+p637
+sa(dp638
+g18
+V2068
+p639
+sg6
+VSalted and Roasted Nuts and Seeds
+p640
+sasg6
+VSugar And Confectionery Products
+p641
+sg18
+V206
+p642
+sa(dp643
+g15
+(lp644
+(dp645
+g18
+V2074
+p646
+sg6
+VCottonseed Oil Mills
+p647
+sa(dp648
+g18
+V2075
+p649
+sg6
+VSoybean Oil Mills
+p650
+sa(dp651
+g18
+V2076
+p652
+sg6
+VVegetable Oil Mills, Except Corn, Cottonseed, and Soybean
+p653
+sa(dp654
+g18
+V2077
+p655
+sg6
+VAnimal and Marine Fats and Oils
+p656
+sa(dp657
+g18
+V2079
+p658
+sg6
+VShortening, Table Oils, Margarine, and Other Edible Fats and Oils, Not Elsewhere Classified
+p659
+sasg6
+VFats And Oils
+p660
+sg18
+V207
+p661
+sa(dp662
+g15
+(lp663
+(dp664
+g18
+V2082
+p665
+sg6
+VMalt Beverages
+p666
+sa(dp667
+g18
+V2083
+p668
+sg6
+VMalt
+p669
+sa(dp670
+g18
+V2084
+p671
+sg6
+VWines, Brandy, and Brandy Spirits
+p672
+sa(dp673
+g18
+V2085
+p674
+sg6
+VDistilled and Blended Liquors
+p675
+sa(dp676
+g18
+V2086
+p677
+sg6
+VBottled and Canned Soft Drinks and Carbonated Waters
+p678
+sa(dp679
+g18
+V2087
+p680
+sg6
+VFlavoring Extracts and Flavoring Syrups, Not Elsewhere Classified
+p681
+sasg6
+VBeverages
+p682
+sg18
+V208
+p683
+sasg18
+g519
+sa(dp684
+g6
+VTobacco Products
+p685
+sg12
+(lp686
+(dp687
+g15
+(lp688
+(dp689
+g18
+V2111
+p690
+sg6
+VCigarettes
+p691
+sasg6
+VCigarettes
+p692
+sg18
+V211
+p693
+sa(dp694
+g15
+(lp695
+(dp696
+g18
+V2121
+p697
+sg6
+VCigars
+p698
+sasg6
+VCigars
+p699
+sg18
+V212
+p700
+sa(dp701
+g15
+(lp702
+(dp703
+g18
+V2131
+p704
+sg6
+VChewing and Smoking Tobacco and Snuff
+p705
+sasg6
+VChewing And Smoking Tobacco And Snuff
+p706
+sg18
+V213
+p707
+sasg18
+V21
+p708
+sa(dp709
+g6
+VTextile Mill Products
+p710
+sg12
+(lp711
+(dp712
+g15
+(lp713
+(dp714
+g18
+V2211
+p715
+sg6
+VBroadwoven Fabric Mills, Cotton
+p716
+sasg6
+VBroadwoven Fabric Mills, Cotton
+p717
+sg18
+V221
+p718
+sa(dp719
+g15
+(lp720
+(dp721
+g18
+V2221
+p722
+sg6
+VBroadwoven Fabric Mills, Manmade Fiber and Silk
+p723
+sasg6
+VBroadwoven Fabric Mills, Manmade Fiber And Silk
+p724
+sg18
+V222
+p725
+sa(dp726
+g15
+(lp727
+(dp728
+g18
+V2231
+p729
+sg6
+VBroadwoven Fabric Mills, Wool (Including Dyeing and Finishing)
+p730
+sasg6
+VBroadwoven Fabric Mills, Wool (including Dyeing and Finishing)
+p731
+sg18
+V223
+p732
+sa(dp733
+g15
+(lp734
+(dp735
+g18
+V2241
+p736
+sg6
+VNarrow Fabric and Other Smallware Mills: Cotton, Wool, Silk, and Manmade Fiber
+p737
+sasg6
+VNarrow Fabric And Other Smallwares Mills, Cotton, Wool, Silk, and Manmade Fiber
+p738
+sg18
+V224
+p739
+sa(dp740
+g15
+(lp741
+(dp742
+g18
+V2251
+p743
+sg6
+VWomen's Full-Length and Knee-Length Hosiery, Except Socks
+p744
+sa(dp745
+g18
+V2252
+p746
+sg6
+VHosiery, Not Elsewhere Classified
+p747
+sa(dp748
+g18
+V2253
+p749
+sg6
+VKnit Outerwear Mills
+p750
+sa(dp751
+g18
+V2254
+p752
+sg6
+VKnit Underwear and Nightwear Mills
+p753
+sa(dp754
+g18
+V2257
+p755
+sg6
+VWeft Knit Fabric Mills
+p756
+sa(dp757
+g18
+V2258
+p758
+sg6
+VLace and Warp Knit Fabric Mills
+p759
+sa(dp760
+g18
+V2259
+p761
+sg6
+VKnitting Mills, Not Elsewhere Classified
+p762
+sasg6
+VKnitting Mills
+p763
+sg18
+V225
+p764
+sa(dp765
+g15
+(lp766
+(dp767
+g18
+V2261
+p768
+sg6
+VFinishers of Broadwoven Fabrics of Cotton
+p769
+sa(dp770
+g18
+V2262
+p771
+sg6
+VFinishers of Broadwoven Fabrics of Manmade Fiber and Silk
+p772
+sa(dp773
+g18
+V2269
+p774
+sg6
+VFinishers of Textiles, Not elsewhere Classified
+p775
+sasg6
+VDyeing And Finishing Textiles, Except Wool Fabrics
+p776
+sg18
+V226
+p777
+sa(dp778
+g15
+(lp779
+(dp780
+g18
+V2273
+p781
+sg6
+VCarpets and Rugs
+p782
+sasg6
+VCarpets And Rugs
+p783
+sg18
+V227
+p784
+sa(dp785
+g15
+(lp786
+(dp787
+g18
+V2281
+p788
+sg6
+VYarn Spinning Mills
+p789
+sa(dp790
+g18
+V2282
+p791
+sg6
+VYarn Texturizing, Throwing, Twisting, and Winding Mills
+p792
+sa(dp793
+g18
+V2284
+p794
+sg6
+VThread Mills
+p795
+sasg6
+VYarn And Thread Mills
+p796
+sg18
+V228
+p797
+sasg18
+V22
+p798
+sa(dp799
+g6
+VApparel And Other Finished Products Made From Fabrics And Similar Materials
+p800
+sg12
+(lp801
+(dp802
+g15
+(lp803
+(dp804
+g18
+V2311
+p805
+sg6
+VMen's and Boys' Suits, Coats, and Overcoats
+p806
+sasg6
+VMen's And Boys' Suits, Coats, And Overcoats
+p807
+sg18
+V231
+p808
+sa(dp809
+g15
+(lp810
+(dp811
+g18
+V2321
+p812
+sg6
+VMen's and Boys' Shirts, Except Work Shirts
+p813
+sa(dp814
+g18
+V2322
+p815
+sg6
+VMen's and Boys' Underwear and Nightwear
+p816
+sa(dp817
+g18
+V2323
+p818
+sg6
+VMen's and Boys' Neckwear
+p819
+sa(dp820
+g18
+V2325
+p821
+sg6
+VMen's and Boys' Separate Trousers and Slacks
+p822
+sa(dp823
+g18
+V2326
+p824
+sg6
+VMen's and Boys' Work Clothing
+p825
+sa(dp826
+g18
+V2329
+p827
+sg6
+VMen's and Boys' Clothing, Not Elsewhere Classified
+p828
+sasg6
+VMen's And Boys' Furnishings, Work Clothing, And Allied Garments
+p829
+sg18
+V232
+p830
+sa(dp831
+g15
+(lp832
+(dp833
+g18
+V2331
+p834
+sg6
+VWomen's, Misses', and Juniors' Blouses and Shirts
+p835
+sa(dp836
+g18
+V2335
+p837
+sg6
+VWomen's, Misses', and Juniors' Dresses
+p838
+sa(dp839
+g18
+V2337
+p840
+sg6
+VWomen's, Misses', and Juniors' Suits, Skirts, and Coats
+p841
+sa(dp842
+g18
+V2339
+p843
+sg6
+VWomen's, Misses', and Juniors' Outerwear, Not Elsewhere Classified
+p844
+sasg6
+VWomen's, Misses', And Juniors' Outerwear
+p845
+sg18
+V233
+p846
+sa(dp847
+g15
+(lp848
+(dp849
+g18
+V2341
+p850
+sg6
+VWomen's, Misses', Children's, and Infants' Underwear and Nightwear
+p851
+sa(dp852
+g18
+V2342
+p853
+sg6
+VBrassieres, Girdles, and Allied Garments
+p854
+sasg6
+VWomen's, Misses', Children's, And Infants'
+p855
+sg18
+V234
+p856
+sa(dp857
+g15
+(lp858
+(dp859
+g18
+V2353
+p860
+sg6
+VHats, Caps, and Millinery
+p861
+sasg6
+VHats, Caps, And Millinery
+p862
+sg18
+V235
+p863
+sa(dp864
+g15
+(lp865
+(dp866
+g18
+V2361
+p867
+sg6
+VGirls', Children's, and Infants' Dresses, Blouses, and Shirts
+p868
+sa(dp869
+g18
+V2369
+p870
+sg6
+VGirls', Children's, and Infants' Outerwear, Not Elsewhere Classified
+p871
+sasg6
+VGirls', Children's, And Infants' Outerwear
+p872
+sg18
+V236
+p873
+sa(dp874
+g15
+(lp875
+(dp876
+g18
+V2371
+p877
+sg6
+VFur Goods
+p878
+sasg6
+VFur Goods
+p879
+sg18
+V237
+p880
+sa(dp881
+g15
+(lp882
+(dp883
+g18
+V2381
+p884
+sg6
+VDress and Work Gloves, Except Knit and All-Leather
+p885
+sa(dp886
+g18
+V2384
+p887
+sg6
+VRobes and Dressing Gowns
+p888
+sa(dp889
+g18
+V2385
+p890
+sg6
+VWaterproof Outerwear
+p891
+sa(dp892
+g18
+V2386
+p893
+sg6
+VLeather and Sheep-Lined Clothing
+p894
+sa(dp895
+g18
+V2387
+p896
+sg6
+VApparel belts
+p897
+sa(dp898
+g18
+V2389
+p899
+sg6
+VApparel and Accessories, Not Elsewhere Classified
+p900
+sasg6
+VMiscellaneous Apparel And Accessories
+p901
+sg18
+V238
+p902
+sasg18
+V23
+p903
+sa(dp904
+g6
+VLumber And Wood Products, Except Furniture
+p905
+sg12
+(lp906
+(dp907
+g15
+(lp908
+(dp909
+g18
+V2411
+p910
+sg6
+VLogging
+p911
+sasg6
+VLogging
+p912
+sg18
+V241
+p913
+sa(dp914
+g15
+(lp915
+(dp916
+g18
+V2421
+p917
+sg6
+VSawmills and Planing Mills, General
+p918
+sa(dp919
+g18
+V2426
+p920
+sg6
+VHardwood Dimension and Flooring Mills
+p921
+sa(dp922
+g18
+V2429
+p923
+sg6
+VSpecial Product Sawmills, Not Elsewhere Classified
+p924
+sasg6
+VSawmills And Planing Mills
+p925
+sg18
+V242
+p926
+sa(dp927
+g15
+(lp928
+(dp929
+g18
+V2431
+p930
+sg6
+VMillwork
+p931
+sa(dp932
+g18
+V2434
+p933
+sg6
+VWood Kitchen Cabinets
+p934
+sa(dp935
+g18
+V2435
+p936
+sg6
+VHardwood Veneer and Plywood
+p937
+sa(dp938
+g18
+V2436
+p939
+sg6
+VSoftwood Veneer and Plywood
+p940
+sa(dp941
+g18
+V2439
+p942
+sg6
+VStructural Wood Members, Not Elsewhere Classified
+p943
+sasg6
+VMillwork, Veneer, Plywood, And Structural Wood
+p944
+sg18
+V243
+p945
+sa(dp946
+g15
+(lp947
+(dp948
+g18
+V2441
+p949
+sg6
+VNailed and Lock Corner Wood Boxes and Shook
+p950
+sa(dp951
+g18
+V2448
+p952
+sg6
+VWood Pallets and Skids
+p953
+sa(dp954
+g18
+V2449
+p955
+sg6
+VWood Containers, Not Elsewhere Classified
+p956
+sasg6
+VWood Containers
+p957
+sg18
+V244
+p958
+sa(dp959
+g15
+(lp960
+(dp961
+g18
+V2451
+p962
+sg6
+VMobile Homes
+p963
+sa(dp964
+g18
+V2452
+p965
+sg6
+VPrefabricated Wood Buildings and Components
+p966
+sasg6
+VWood Buildings And Mobile Homes
+p967
+sg18
+V245
+p968
+sasg18
+V24
+p969
+sa(dp970
+g6
+VFurniture And Fixtures
+p971
+sg12
+(lp972
+(dp973
+g15
+(lp974
+(dp975
+g18
+V2511
+p976
+sg6
+VWood Household Furniture, Except Upholstered
+p977
+sa(dp978
+g18
+V2512
+p979
+sg6
+VWood Household Furniture, Upholstered
+p980
+sa(dp981
+g18
+V2514
+p982
+sg6
+VMetal Household Furniture
+p983
+sa(dp984
+g18
+V2515
+p985
+sg6
+VMattresses, Foundations, and Convertible Beds
+p986
+sa(dp987
+g18
+V2517
+p988
+sg6
+VWood Television, Radio, Phonograph, and Sewing Machine Cabinets
+p989
+sa(dp990
+g18
+V2519
+p991
+sg6
+VHousehold Furniture, Not Elsewhere Classified
+p992
+sasg6
+VHousehold Furniture
+p993
+sg18
+V251
+p994
+sa(dp995
+g15
+(lp996
+(dp997
+g18
+V2521
+p998
+sg6
+VWood Office Furniture
+p999
+sa(dp1000
+g18
+V2522
+p1001
+sg6
+VOffice Furniture, Except Wood
+p1002
+sasg6
+VOffice Furniture
+p1003
+sg18
+V252
+p1004
+sa(dp1005
+g15
+(lp1006
+(dp1007
+g18
+V2531
+p1008
+sg6
+VPublic Building and Related Furniture
+p1009
+sasg6
+VPublic Building And Related Furniture
+p1010
+sg18
+V253
+p1011
+sa(dp1012
+g15
+(lp1013
+(dp1014
+g18
+V2541
+p1015
+sg6
+VWood Office and Store Fixtures, Partitions, Shelving, and Lockers
+p1016
+sa(dp1017
+g18
+V2542
+p1018
+sg6
+VOffice and Store Fixtures, Partitions, Shelving, and Lockers, Except Wood
+p1019
+sasg6
+VPartitions, Shelving, Lockers, And Office And
+p1020
+sg18
+V254
+p1021
+sasg18
+V25
+p1022
+sa(dp1023
+g6
+VPaper And Allied Products
+p1024
+sg12
+(lp1025
+(dp1026
+g15
+(lp1027
+(dp1028
+g18
+V2611
+p1029
+sg6
+VPulp Mills
+p1030
+sasg6
+VPulp Mills
+p1031
+sg18
+V261
+p1032
+sa(dp1033
+g15
+(lp1034
+(dp1035
+g18
+V2621
+p1036
+sg6
+VPaper Mills
+p1037
+sasg6
+VPaper Mills
+p1038
+sg18
+V262
+p1039
+sa(dp1040
+g15
+(lp1041
+(dp1042
+g18
+V2631
+p1043
+sg6
+VPaperboard Mills
+p1044
+sasg6
+VPaperboard Mills
+p1045
+sg18
+V263
+p1046
+sa(dp1047
+g15
+(lp1048
+(dp1049
+g18
+V2652
+p1050
+sg6
+VSetup Paperboard Boxes
+p1051
+sa(dp1052
+g18
+V2653
+p1053
+sg6
+VCorrugated and Solid Fiber Boxes
+p1054
+sa(dp1055
+g18
+V2655
+p1056
+sg6
+VFiber Cans, Tubes, Drums, and Similar Products
+p1057
+sa(dp1058
+g18
+V2656
+p1059
+sg6
+VSanitary Food Containers, Except Folding
+p1060
+sa(dp1061
+g18
+V2657
+p1062
+sg6
+VFolding Paperboard Boxes, Including Sanitary
+p1063
+sasg6
+VPaperboard Containers And Boxes
+p1064
+sg18
+V265
+p1065
+sasg18
+V26
+p1066
+sa(dp1067
+g6
+VPrinting, Publishing, And Allied Industries
+p1068
+sg12
+(lp1069
+(dp1070
+g15
+(lp1071
+(dp1072
+g18
+V2711
+p1073
+sg6
+VNewspapers: Publishing, or Publishing and Printing
+p1074
+sasg6
+VNewspapers
+p1075
+sg18
+V271
+p1076
+sa(dp1077
+g15
+(lp1078
+(dp1079
+g18
+V2721
+p1080
+sg6
+VPeriodicals: Publishing, or Publishing and Printing
+p1081
+sasg6
+VPeriodicals
+p1082
+sg18
+V272
+p1083
+sa(dp1084
+g15
+(lp1085
+(dp1086
+g18
+V2731
+p1087
+sg6
+VBooks: Publishing, or Publishing and Printing
+p1088
+sa(dp1089
+g18
+V2732
+p1090
+sg6
+VBook Printing
+p1091
+sasg6
+VBooks
+p1092
+sg18
+V273
+p1093
+sa(dp1094
+g15
+(lp1095
+(dp1096
+g18
+V2741
+p1097
+sg6
+VMiscellaneous Publishing
+p1098
+sasg6
+VMiscellaneous Publishing
+p1099
+sg18
+V274
+p1100
+sa(dp1101
+g15
+(lp1102
+(dp1103
+g18
+V2752
+p1104
+sg6
+VCommercial Printing, Lithographic
+p1105
+sa(dp1106
+g18
+V2754
+p1107
+sg6
+VCommercial Printing, Gravure
+p1108
+sa(dp1109
+g18
+V2759
+p1110
+sg6
+VCommercial Printing, Not Elsewhere Classified
+p1111
+sasg6
+VCommercial Printing
+p1112
+sg18
+V275
+p1113
+sa(dp1114
+g15
+(lp1115
+(dp1116
+g18
+V2761
+p1117
+sg6
+VManifold Business Forms
+p1118
+sasg6
+VManifold Business Forms
+p1119
+sg18
+V276
+p1120
+sa(dp1121
+g15
+(lp1122
+(dp1123
+g18
+V2771
+p1124
+sg6
+VGreeting Cards
+p1125
+sasg6
+VGreeting Cards
+p1126
+sg18
+V277
+p1127
+sa(dp1128
+g15
+(lp1129
+(dp1130
+g18
+V2782
+p1131
+sg6
+VBlankbooks, Looseleaf Binders and Devices
+p1132
+sa(dp1133
+g18
+V2789
+p1134
+sg6
+VBookbinding and Related Work
+p1135
+sasg6
+VBlankbooks, Looseleaf Binders, And Bookbinding
+p1136
+sg18
+V278
+p1137
+sasg18
+V27
+p1138
+sa(dp1139
+g6
+VChemicals And Allied Products
+p1140
+sg12
+(lp1141
+(dp1142
+g15
+(lp1143
+(dp1144
+g18
+V2812
+p1145
+sg6
+VAlkalies and Chlorine
+p1146
+sa(dp1147
+g18
+V2813
+p1148
+sg6
+VIndustrial Gases
+p1149
+sa(dp1150
+g18
+V2816
+p1151
+sg6
+VInorganic Pigments
+p1152
+sa(dp1153
+g18
+V2819
+p1154
+sg6
+VIndustrial Inorganic Chemicals, Not Elsewhere Classified
+p1155
+sasg6
+VIndustrial Inorganic Chemicals
+p1156
+sg18
+V281
+p1157
+sa(dp1158
+g15
+(lp1159
+(dp1160
+g18
+V2821
+p1161
+sg6
+VPlastics Materials, Synthetic Resins, and Nonvulcanizable Elastomers
+p1162
+sa(dp1163
+g18
+V2822
+p1164
+sg6
+VSynthetic Rubber (Vulcanizable Elastomers)
+p1165
+sa(dp1166
+g18
+V2823
+p1167
+sg6
+VCellulosic Manmade Fibers
+p1168
+sa(dp1169
+g18
+V2824
+p1170
+sg6
+VManmade Organic Fibers, Except Cellulosic
+p1171
+sasg6
+VPlastics Materials And Synthetic Resins, Synthetic
+p1172
+sg18
+V282
+p1173
+sa(dp1174
+g15
+(lp1175
+(dp1176
+g18
+V2833
+p1177
+sg6
+VMedicinal Chemicals and Botanical Products
+p1178
+sa(dp1179
+g18
+V2834
+p1180
+sg6
+VPharmaceutical Preparations
+p1181
+sa(dp1182
+g18
+V2835
+p1183
+sg6
+VIn Vitro and In Vivo Diagnostic Substances
+p1184
+sa(dp1185
+g18
+V2836
+p1186
+sg6
+VBiological Products, Except Diagnostic Substances
+p1187
+sasg6
+VDrugs
+p1188
+sg18
+V283
+p1189
+sa(dp1190
+g15
+(lp1191
+(dp1192
+g18
+V2841
+p1193
+sg6
+VSoap and Other Detergents, Except Specialty Cleaners
+p1194
+sa(dp1195
+g18
+V2842
+p1196
+sg6
+VSpecialty Cleaning, Polishing, and Sanitation Preparations
+p1197
+sa(dp1198
+g18
+V2843
+p1199
+sg6
+VSurface Active Agents, Finishing Agents, Sulfonated Oils, and Assistants
+p1200
+sa(dp1201
+g18
+V2844
+p1202
+sg6
+VPerfumes, Cosmetics, and Other Toilet Preparations
+p1203
+sasg6
+VSoap, Detergents, And Cleaning Preparations; Perfumes, Cosmetics, and Other Toilet Preparations
+p1204
+sg18
+V284
+p1205
+sa(dp1206
+g15
+(lp1207
+(dp1208
+g18
+V2851
+p1209
+sg6
+VPaints, Varnishes, Lacquers, Enamels, and Allied Products
+p1210
+sasg6
+VPaints, Varnishes, Lacquers, Enamels, And Allied
+p1211
+sg18
+V285
+p1212
+sa(dp1213
+g15
+(lp1214
+(dp1215
+g18
+V2861
+p1216
+sg6
+VGum and Wood Chemicals
+p1217
+sa(dp1218
+g18
+V2865
+p1219
+sg6
+VCyclic Organic Crudes and Intermediates, and Organic Dyes and Pigments
+p1220
+sa(dp1221
+g18
+V2869
+p1222
+sg6
+VIndustrial Organic Chemicals, Not Elsewhere Classified
+p1223
+sasg6
+VIndustrial Organic Chemicals
+p1224
+sg18
+V286
+p1225
+sa(dp1226
+g15
+(lp1227
+(dp1228
+g18
+V2873
+p1229
+sg6
+VNitrogenous Fertilizers
+p1230
+sa(dp1231
+g18
+V2874
+p1232
+sg6
+VPhosphatic Fertilizers
+p1233
+sa(dp1234
+g18
+V2875
+p1235
+sg6
+VFertilizers, Mixing Only
+p1236
+sa(dp1237
+g18
+V2879
+p1238
+sg6
+VPesticides and Agricultural Chemicals, Not Elsewhere Classified
+p1239
+sasg6
+VAgricultural Chemicals
+p1240
+sg18
+V287
+p1241
+sasg18
+V28
+p1242
+sa(dp1243
+g6
+VPetroleum Refining And Related Industries
+p1244
+sg12
+(lp1245
+(dp1246
+g15
+(lp1247
+(dp1248
+g18
+V2911
+p1249
+sg6
+VPetroleum Refining
+p1250
+sasg6
+VPetroleum Refining
+p1251
+sg18
+V291
+p1252
+sa(dp1253
+g15
+(lp1254
+(dp1255
+g18
+V2951
+p1256
+sg6
+VAsphalt Paving Mixtures and Blocks
+p1257
+sa(dp1258
+g18
+V2952
+p1259
+sg6
+VAsphalt Felts and Coatings
+p1260
+sasg6
+VAsphalt Paving And Roofing Materials
+p1261
+sg18
+V295
+p1262
+sasg18
+V29
+p1263
+sa(dp1264
+g6
+VRubber And Miscellaneous Plastics Products
+p1265
+sg12
+(lp1266
+(dp1267
+g15
+(lp1268
+(dp1269
+g18
+V3011
+p1270
+sg6
+VTires and Inner Tubes
+p1271
+sasg6
+VTires And Inner Tubes
+p1272
+sg18
+V301
+p1273
+sa(dp1274
+g15
+(lp1275
+(dp1276
+g18
+V3021
+p1277
+sg6
+VRubber and Plastics Footwear
+p1278
+sasg6
+VRubber And Plastics Footwear
+p1279
+sg18
+V302
+p1280
+sa(dp1281
+g15
+(lp1282
+(dp1283
+g18
+V3052
+p1284
+sg6
+VRubber and Plastics Hose and Belting
+p1285
+sa(dp1286
+g18
+V3053
+p1287
+sg6
+VGaskets, Packing, and Sealing Devices
+p1288
+sasg6
+VGaskets, Packing, And Sealing Devices And Rubber
+p1289
+sg18
+V305
+p1290
+sa(dp1291
+g15
+(lp1292
+(dp1293
+g18
+V3061
+p1294
+sg6
+VMolded, Extruded, and Lathe-Cut Mechanical Rubber Goods
+p1295
+sa(dp1296
+g18
+V3069
+p1297
+sg6
+VFabricated Rubber Products, Not Elsewhere Classified
+p1298
+sasg6
+VFabricated Rubber Products, Not Elsewhere
+p1299
+sg18
+V306
+p1300
+sasg18
+V30
+p1301
+sa(dp1302
+g6
+VLeather And Leather Products
+p1303
+sg12
+(lp1304
+(dp1305
+g15
+(lp1306
+(dp1307
+g18
+V3111
+p1308
+sg6
+VLeather Tanning and Finishing
+p1309
+sasg6
+VLeather Tanning And Finishing
+p1310
+sg18
+V311
+p1311
+sa(dp1312
+g15
+(lp1313
+(dp1314
+g18
+V3131
+p1315
+sg6
+VBoot and Shoe Cut Stock and Findings
+p1316
+sasg6
+VBoot And Shoe Cut Stock And Findings
+p1317
+sg18
+V313
+p1318
+sa(dp1319
+g15
+(lp1320
+(dp1321
+g18
+V3142
+p1322
+sg6
+VHouse Slippers
+p1323
+sa(dp1324
+g18
+V3143
+p1325
+sg6
+VMen's Footwear, Except Athletic
+p1326
+sa(dp1327
+g18
+V3144
+p1328
+sg6
+VWomen's Footwear, Except Athletic
+p1329
+sa(dp1330
+g18
+V3149
+p1331
+sg6
+VFootwear, Except Rubber, Not Elsewhere Classified
+p1332
+sasg6
+VFootwear, Except Rubber
+p1333
+sg18
+V314
+p1334
+sa(dp1335
+g15
+(lp1336
+(dp1337
+g18
+V3151
+p1338
+sg6
+VLeather Gloves and Mittens
+p1339
+sasg6
+VLeather Gloves And Mittens
+p1340
+sg18
+V315
+p1341
+sa(dp1342
+g15
+(lp1343
+(dp1344
+g18
+V3161
+p1345
+sg6
+VLuggage
+p1346
+sasg6
+VLuggage
+p1347
+sg18
+V316
+p1348
+sa(dp1349
+g15
+(lp1350
+(dp1351
+g18
+V3171
+p1352
+sg6
+VWomen's Handbags and Purses
+p1353
+sa(dp1354
+g18
+V3172
+p1355
+sg6
+VPersonal Leather Goods, Except Women's Handbags and Purses
+p1356
+sasg6
+VHandbags And Other Personal Leather Goods
+p1357
+sg18
+V317
+p1358
+sasg18
+V31
+p1359
+sa(dp1360
+g6
+VStone, Clay, Glass, And Concrete Products
+p1361
+sg12
+(lp1362
+(dp1363
+g15
+(lp1364
+(dp1365
+g18
+V3211
+p1366
+sg6
+VFlat Glass
+p1367
+sasg6
+VFlat Glass
+p1368
+sg18
+V321
+p1369
+sa(dp1370
+g15
+(lp1371
+(dp1372
+g18
+V3221
+p1373
+sg6
+VGlass Containers
+p1374
+sa(dp1375
+g18
+V3229
+p1376
+sg6
+VPressed and Blown Glass and Glassware, Not Elsewhere Classified
+p1377
+sasg6
+VGlass And Glassware, Pressed Or Blown
+p1378
+sg18
+V322
+p1379
+sa(dp1380
+g15
+(lp1381
+(dp1382
+g18
+V3231
+p1383
+sg6
+VGlass Products, Made of Purchased Glass
+p1384
+sasg6
+VGlass Products, Made Of Purchased Glass
+p1385
+sg18
+V323
+p1386
+sa(dp1387
+g15
+(lp1388
+(dp1389
+g18
+V3241
+p1390
+sg6
+VCement, Hydraulic
+p1391
+sasg6
+VCement, Hydraulic
+p1392
+sg18
+V324
+p1393
+sa(dp1394
+g15
+(lp1395
+(dp1396
+g18
+V3251
+p1397
+sg6
+VBrick and Structural Clay Tile
+p1398
+sa(dp1399
+g18
+V3253
+p1400
+sg6
+VCeramic Wall and Floor Tile
+p1401
+sa(dp1402
+g18
+V3255
+p1403
+sg6
+VClay Refractories
+p1404
+sa(dp1405
+g18
+V3259
+p1406
+sg6
+VStructural Clay Products, Not Elsewhere Classified
+p1407
+sasg6
+VStructural Clay Products
+p1408
+sg18
+V325
+p1409
+sa(dp1410
+g15
+(lp1411
+(dp1412
+g18
+V3261
+p1413
+sg6
+VVitreous China Plumbing Fixtures and China and Earthenware Fittings and Bathroom Accessories
+p1414
+sa(dp1415
+g18
+V3262
+p1416
+sg6
+VVitreous China Table and Kitchen Articles
+p1417
+sa(dp1418
+g18
+V3263
+p1419
+sg6
+VFine Earthenware (Whiteware) Table and Kitchen Articles
+p1420
+sa(dp1421
+g18
+V3264
+p1422
+sg6
+VPorcelain Electrical Supplies
+p1423
+sa(dp1424
+g18
+V3269
+p1425
+sg6
+VPottery Products, Not Elsewhere Classified
+p1426
+sasg6
+VPottery And Related Products
+p1427
+sg18
+V326
+p1428
+sa(dp1429
+g15
+(lp1430
+(dp1431
+g18
+V3271
+p1432
+sg6
+VConcrete Block and Brick
+p1433
+sa(dp1434
+g18
+V3272
+p1435
+sg6
+VConcrete Products, Except Block and Brick
+p1436
+sa(dp1437
+g18
+V3273
+p1438
+sg6
+VReady-Mixed Concrete
+p1439
+sa(dp1440
+g18
+V3274
+p1441
+sg6
+VLime
+p1442
+sa(dp1443
+g18
+V3275
+p1444
+sg6
+VGypsum Products
+p1445
+sasg6
+VConcrete, Gypsum, And Plaster Products
+p1446
+sg18
+V327
+p1447
+sa(dp1448
+g15
+(lp1449
+(dp1450
+g18
+V3281
+p1451
+sg6
+VCut Stone and Stone Products
+p1452
+sasg6
+VCut Stone And Stone Products
+p1453
+sg18
+V328
+p1454
+sasg18
+V32
+p1455
+sa(dp1456
+g6
+VPrimary Metal Industries
+p1457
+sg12
+(lp1458
+(dp1459
+g15
+(lp1460
+(dp1461
+g18
+V3312
+p1462
+sg6
+VSteel Works, Blast Furnaces (Including Coke Ovens), and Rolling Mills
+p1463
+sa(dp1464
+g18
+V3313
+p1465
+sg6
+VElectrometallurgical Products, Except Steel
+p1466
+sa(dp1467
+g18
+V3315
+p1468
+sg6
+VSteel Wiredrawing and Steel Nails and Spikes
+p1469
+sa(dp1470
+g18
+V3316
+p1471
+sg6
+VCold-Rolled Steel Sheet, Strip, and Bars
+p1472
+sa(dp1473
+g18
+V3317
+p1474
+sg6
+VSteel Pipe and Tubes
+p1475
+sasg6
+VSteel Works, Blast Furnaces, And Rolling And Finishing Mills
+p1476
+sg18
+V331
+p1477
+sa(dp1478
+g15
+(lp1479
+(dp1480
+g18
+V3321
+p1481
+sg6
+VGray and Ductile Iron Foundries
+p1482
+sa(dp1483
+g18
+V3322
+p1484
+sg6
+VMalleable Iron Foundries
+p1485
+sa(dp1486
+g18
+V3324
+p1487
+sg6
+VSteel Investment Foundries
+p1488
+sa(dp1489
+g18
+V3325
+p1490
+sg6
+VSteel Foundries, Not Elsewhere Classified
+p1491
+sasg6
+VIron And Steel Foundries
+p1492
+sg18
+V332
+p1493
+sa(dp1494
+g15
+(lp1495
+(dp1496
+g18
+V3331
+p1497
+sg6
+VPrimary Smelting and Refining of Copper
+p1498
+sa(dp1499
+g18
+V3334
+p1500
+sg6
+VPrimary Production of Aluminum
+p1501
+sa(dp1502
+g18
+V3339
+p1503
+sg6
+VPrimary Smelting and Refining of Nonferrous Metals, Except Copper and Aluminum
+p1504
+sasg6
+VPrimary Smelting And Refining Of Nonferrous
+p1505
+sg18
+V333
+p1506
+sa(dp1507
+g15
+(lp1508
+(dp1509
+g18
+V3341
+p1510
+sg6
+VSecondary Smelting and Refining of Nonferrous Metals
+p1511
+sasg6
+VSecondary Smelting And Refining Of Nonferrous
+p1512
+sg18
+V334
+p1513
+sa(dp1514
+g15
+(lp1515
+(dp1516
+g18
+V3351
+p1517
+sg6
+VRolling, Drawing, and Extruding Of Copper
+p1518
+sa(dp1519
+g18
+V3353
+p1520
+sg6
+VAluminum Sheet, Plate, and Foil
+p1521
+sa(dp1522
+g18
+V3354
+p1523
+sg6
+VAluminum Extruded Products
+p1524
+sa(dp1525
+g18
+V3355
+p1526
+sg6
+VAluminum Rolling and Drawing, Not Elsewhere Classified
+p1527
+sa(dp1528
+g18
+V3356
+p1529
+sg6
+VRolling, Drawing, and Extruding of Nonferrous Metals, Except Copper and Aluminum
+p1530
+sa(dp1531
+g18
+V3357
+p1532
+sg6
+VDrawing and Insulating of Nonferrous Wire
+p1533
+sasg6
+VRolling, Drawing, And Extruding Of Nonferrous
+p1534
+sg18
+V335
+p1535
+sa(dp1536
+g15
+(lp1537
+(dp1538
+g18
+V3363
+p1539
+sg6
+VAluminum Die-Castings
+p1540
+sa(dp1541
+g18
+V3364
+p1542
+sg6
+VNonferrous Die-Castings, Except Aluminum
+p1543
+sa(dp1544
+g18
+V3365
+p1545
+sg6
+VAluminum Foundries
+p1546
+sa(dp1547
+g18
+V3366
+p1548
+sg6
+VCopper Foundries
+p1549
+sa(dp1550
+g18
+V3369
+p1551
+sg6
+VNonferrous Foundries, Except Aluminum and Copper
+p1552
+sasg6
+VNonferrous Foundries (castings)
+p1553
+sg18
+V336
+p1554
+sasg18
+V33
+p1555
+sa(dp1556
+g6
+VFabricated Metal Products, Except Machinery And Transportation Equipment
+p1557
+sg12
+(lp1558
+(dp1559
+g15
+(lp1560
+(dp1561
+g18
+V3411
+p1562
+sg6
+VMetal Cans
+p1563
+sa(dp1564
+g18
+V3412
+p1565
+sg6
+VMetal Shipping Barrels, Drums, Kegs, and Pails
+p1566
+sasg6
+VMetal Cans And Shipping Containers
+p1567
+sg18
+V341
+p1568
+sa(dp1569
+g15
+(lp1570
+(dp1571
+g18
+V3421
+p1572
+sg6
+VCutlery
+p1573
+sa(dp1574
+g18
+V3423
+p1575
+sg6
+VHand and Edge Tools, Except Machine Tools and Handsaws
+p1576
+sa(dp1577
+g18
+V3425
+p1578
+sg6
+VSaw Blades and Handsaws
+p1579
+sa(dp1580
+g18
+V3429
+p1581
+sg6
+VHardware, Not Elsewhere Classified
+p1582
+sasg6
+VCutlery, Handtools, And General Hardware
+p1583
+sg18
+V342
+p1584
+sa(dp1585
+g15
+(lp1586
+(dp1587
+g18
+V3431
+p1588
+sg6
+VEnameled Iron and Metal Sanitary Ware
+p1589
+sa(dp1590
+g18
+V3432
+p1591
+sg6
+VPlumbing Fixture Fittings and Trim
+p1592
+sa(dp1593
+g18
+V3433
+p1594
+sg6
+VHeating Equipment, Except Electric and Warm Air Furnaces
+p1595
+sasg6
+VHeating Equipment, Except Electric And Warm Air;
+p1596
+sg18
+V343
+p1597
+sa(dp1598
+g15
+(lp1599
+(dp1600
+g18
+V3441
+p1601
+sg6
+VFabricated Structural Metal
+p1602
+sa(dp1603
+g18
+V3442
+p1604
+sg6
+VMetal Doors, Sash, Frames, Molding, and Trim Manufacturing
+p1605
+sa(dp1606
+g18
+V3443
+p1607
+sg6
+VFabricated Plate Work (Boiler Shops)
+p1608
+sa(dp1609
+g18
+V3444
+p1610
+sg6
+VSheet Metal Work
+p1611
+sa(dp1612
+g18
+V3446
+p1613
+sg6
+VArchitectural and Ornamental Metal Work
+p1614
+sa(dp1615
+g18
+V3448
+p1616
+sg6
+VPrefabricated Metal Buildings and Components
+p1617
+sa(dp1618
+g18
+V3449
+p1619
+sg6
+VMiscellaneous Structural Metal Work
+p1620
+sasg6
+VFabricated Structural Metal Products
+p1621
+sg18
+V344
+p1622
+sa(dp1623
+g15
+(lp1624
+(dp1625
+g18
+V3451
+p1626
+sg6
+VScrew Machine Products
+p1627
+sa(dp1628
+g18
+V3452
+p1629
+sg6
+VBolts, Nuts, Screws, Rivets, and Washers
+p1630
+sasg6
+VScrew Machine Products, And Bolts, Nuts, Screws, Rivets, And Washers
+p1631
+sg18
+V345
+p1632
+sa(dp1633
+g15
+(lp1634
+(dp1635
+g18
+V3462
+p1636
+sg6
+VIron and Steel Forgings
+p1637
+sa(dp1638
+g18
+V3463
+p1639
+sg6
+VNonferrous Forgings
+p1640
+sa(dp1641
+g18
+V3465
+p1642
+sg6
+VAutomotive Stampings
+p1643
+sa(dp1644
+g18
+V3466
+p1645
+sg6
+VCrowns and Closures
+p1646
+sa(dp1647
+g18
+V3469
+p1648
+sg6
+VMetal Stampings, Not Elsewhere Classified
+p1649
+sasg6
+VMetal Forgings And Stampings
+p1650
+sg18
+V346
+p1651
+sa(dp1652
+g15
+(lp1653
+(dp1654
+g18
+V3471
+p1655
+sg6
+VElectroplating, Plating, Polishing, Anodizing, and Coloring
+p1656
+sa(dp1657
+g18
+V3479
+p1658
+sg6
+VCoating, Engraving, and Allied Services, Not Elsewhere Classified
+p1659
+sasg6
+VCoating, Engraving, And Allied Services
+p1660
+sg18
+V347
+p1661
+sa(dp1662
+g15
+(lp1663
+(dp1664
+g18
+V3482
+p1665
+sg6
+VSmall Arms Ammunition
+p1666
+sa(dp1667
+g18
+V3483
+p1668
+sg6
+VAmmunition, Except for Small Arms
+p1669
+sa(dp1670
+g18
+V3484
+p1671
+sg6
+VSmall Arms
+p1672
+sa(dp1673
+g18
+V3489
+p1674
+sg6
+VOrdnance and Accessories, Not Elsewhere Classified
+p1675
+sasg6
+VOrdnance And Accessories, Except Vehicles And Guided Missiles
+p1676
+sg18
+V348
+p1677
+sasg18
+V34
+p1678
+sa(dp1679
+g6
+VIndustrial And Commercial Machinery And Computer Equipment
+p1680
+sg12
+(lp1681
+(dp1682
+g15
+(lp1683
+(dp1684
+g18
+V3511
+p1685
+sg6
+VSteam, Gas, and Hydraulic Turbines, and Turbine Generator Set Units
+p1686
+sa(dp1687
+g18
+V3519
+p1688
+sg6
+VInternal Combustion Engines, Not Elsewhere Classified
+p1689
+sasg6
+VEngines And Turbines
+p1690
+sg18
+V351
+p1691
+sa(dp1692
+g15
+(lp1693
+(dp1694
+g18
+V3523
+p1695
+sg6
+VFarm Machinery and Equipment
+p1696
+sa(dp1697
+g18
+V3524
+p1698
+sg6
+VLawn and Garden Tractors and Home Lawn and Garden Equipment
+p1699
+sasg6
+VFarm And Garden Machinery And Equipment
+p1700
+sg18
+V352
+p1701
+sa(dp1702
+g15
+(lp1703
+(dp1704
+g18
+V3531
+p1705
+sg6
+VConstruction Machinery and Equipment
+p1706
+sa(dp1707
+g18
+V3532
+p1708
+sg6
+VMining Machinery and Equipment, Except Oil and Gas Field Machinery and Equipment
+p1709
+sa(dp1710
+g18
+V3533
+p1711
+sg6
+VOil and Gas Field Machinery and Equipment
+p1712
+sa(dp1713
+g18
+V3534
+p1714
+sg6
+VElevators and Moving Stairways
+p1715
+sa(dp1716
+g18
+V3535
+p1717
+sg6
+VConveyors and Conveying Equipment
+p1718
+sa(dp1719
+g18
+V3536
+p1720
+sg6
+VOverhead Traveling Cranes, Hoists, and Monorail Systems
+p1721
+sa(dp1722
+g18
+V3537
+p1723
+sg6
+VIndustrial Trucks, Tractors, Trailers, and Stackers
+p1724
+sasg6
+VConstruction, Mining, And Materials Handling
+p1725
+sg18
+V353
+p1726
+sa(dp1727
+g15
+(lp1728
+(dp1729
+g18
+V3541
+p1730
+sg6
+VMachine Tools, Metal Cutting Types
+p1731
+sa(dp1732
+g18
+V3542
+p1733
+sg6
+VMachine Tools, Metal Forming Types
+p1734
+sa(dp1735
+g18
+V3543
+p1736
+sg6
+VIndustrial Patterns
+p1737
+sa(dp1738
+g18
+V3544
+p1739
+sg6
+VSpecial Dies and Tools, Die Sets, Jigs and Fixtures, and Industrial Molds
+p1740
+sa(dp1741
+g18
+V3545
+p1742
+sg6
+VCutting Tools, Machine Tool Accessories, and Machinists' Precision Measuring Devices
+p1743
+sa(dp1744
+g18
+V3546
+p1745
+sg6
+VPower-Driven Handtools
+p1746
+sa(dp1747
+g18
+V3547
+p1748
+sg6
+VRolling Mill Machinery and Equipment
+p1749
+sa(dp1750
+g18
+V3548
+p1751
+sg6
+VElectric and Gas Welding and Soldering Equipment
+p1752
+sa(dp1753
+g18
+V3549
+p1754
+sg6
+VMetalworking Machinery, Not Elsewhere Classified
+p1755
+sasg6
+VMetalworking Machinery And Equipment
+p1756
+sg18
+V354
+p1757
+sa(dp1758
+g15
+(lp1759
+(dp1760
+g18
+V3552
+p1761
+sg6
+VTextile Machinery
+p1762
+sa(dp1763
+g18
+V3553
+p1764
+sg6
+VWoodworking Machinery
+p1765
+sa(dp1766
+g18
+V3554
+p1767
+sg6
+VPaper Industries Machinery
+p1768
+sa(dp1769
+g18
+V3555
+p1770
+sg6
+VPrinting Trades Machinery and Equipment
+p1771
+sa(dp1772
+g18
+V3556
+p1773
+sg6
+VFood Products Machinery
+p1774
+sa(dp1775
+g18
+V3559
+p1776
+sg6
+VSpecial Industry Machinery, Not Elsewhere Classified
+p1777
+sasg6
+VSpecial Industry Machinery, Except Metalworking
+p1778
+sg18
+V355
+p1779
+sa(dp1780
+g15
+(lp1781
+(dp1782
+g18
+V3561
+p1783
+sg6
+VPumps and Pumping Equipment
+p1784
+sa(dp1785
+g18
+V3562
+p1786
+sg6
+VBall and Roller Bearings
+p1787
+sa(dp1788
+g18
+V3563
+p1789
+sg6
+VAir and Gas Compressors
+p1790
+sa(dp1791
+g18
+V3564
+p1792
+sg6
+VIndustrial and Commercial Fans and Blowers and Air Purification Equipment
+p1793
+sa(dp1794
+g18
+V3565
+p1795
+sg6
+VPackaging Machinery
+p1796
+sa(dp1797
+g18
+V3566
+p1798
+sg6
+VSpeed Changers, Industrial High-Speed Drives, and Gears
+p1799
+sa(dp1800
+g18
+V3567
+p1801
+sg6
+VIndustrial Process Furnaces and Ovens
+p1802
+sa(dp1803
+g18
+V3568
+p1804
+sg6
+VMechanical Power Transmission Equipment, Not Elsewhere Classified
+p1805
+sa(dp1806
+g18
+V3569
+p1807
+sg6
+VGeneral Industrial Machinery and Equipment, Not Elsewhere
+p1808
+sasg6
+VGeneral Industrial Machinery And Equipment
+p1809
+sg18
+V356
+p1810
+sa(dp1811
+g15
+(lp1812
+(dp1813
+g18
+V3571
+p1814
+sg6
+VElectronic Computers
+p1815
+sa(dp1816
+g18
+V3572
+p1817
+sg6
+VComputer Storage Devices
+p1818
+sa(dp1819
+g18
+V3575
+p1820
+sg6
+VComputer Terminals
+p1821
+sa(dp1822
+g18
+V3577
+p1823
+sg6
+VComputer Peripheral Equipment, Not Elsewhere Classified
+p1824
+sa(dp1825
+g18
+V3578
+p1826
+sg6
+VCalculating and Accounting Machines, Except Electronic Computers
+p1827
+sa(dp1828
+g18
+V3579
+p1829
+sg6
+VOffice Machines, Not Elsewhere Classified
+p1830
+sasg6
+VComputer And Office Equipment
+p1831
+sg18
+V357
+p1832
+sa(dp1833
+g15
+(lp1834
+(dp1835
+g18
+V3581
+p1836
+sg6
+VAutomatic Vending Machines
+p1837
+sa(dp1838
+g18
+V3582
+p1839
+sg6
+VCommercial Laundry, Drycleaning, and Pressing Machines
+p1840
+sa(dp1841
+g18
+V3585
+p1842
+sg6
+VAir-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment
+p1843
+sa(dp1844
+g18
+V3586
+p1845
+sg6
+VMeasuring and Dispensing Pumps
+p1846
+sa(dp1847
+g18
+V3589
+p1848
+sg6
+VService Industry Machinery, Not Elsewhere Classified
+p1849
+sasg6
+VRefrigeration And Service Industry Machinery
+p1850
+sg18
+V358
+p1851
+sasg18
+V35
+p1852
+sa(dp1853
+g6
+VElectronic And Other Electrical Equipment And Components, Except Computer Equipment
+p1854
+sg12
+(lp1855
+(dp1856
+g15
+(lp1857
+(dp1858
+g18
+V3612
+p1859
+sg6
+VPower, Distribution, and Specialty Transformers
+p1860
+sa(dp1861
+g18
+V3613
+p1862
+sg6
+VSwitchgear and Switchboard Apparatus
+p1863
+sasg6
+VElectric Transmission And Distribution Equipment
+p1864
+sg18
+V361
+p1865
+sa(dp1866
+g15
+(lp1867
+(dp1868
+g18
+V3621
+p1869
+sg6
+VMotors and Generators
+p1870
+sa(dp1871
+g18
+V3624
+p1872
+sg6
+VCarbon and Graphite Products
+p1873
+sa(dp1874
+g18
+V3625
+p1875
+sg6
+VRelays and Industrial Controls
+p1876
+sa(dp1877
+g18
+V3629
+p1878
+sg6
+VElectrical Industrial Apparatus, Not Elsewhere Classified
+p1879
+sasg6
+VElectrical Industrial Apparatus
+p1880
+sg18
+V362
+p1881
+sa(dp1882
+g15
+(lp1883
+(dp1884
+g18
+V3631
+p1885
+sg6
+VHousehold Cooking Equipment
+p1886
+sa(dp1887
+g18
+V3632
+p1888
+sg6
+VHousehold Refrigerators and HOme and Farm Freezers
+p1889
+sa(dp1890
+g18
+V3633
+p1891
+sg6
+VHousehold Laundry Equipment
+p1892
+sa(dp1893
+g18
+V3634
+p1894
+sg6
+VElectric Housewares and Fans
+p1895
+sa(dp1896
+g18
+V3635
+p1897
+sg6
+VHousehold Vacuum Cleaners
+p1898
+sa(dp1899
+g18
+V3639
+p1900
+sg6
+VHousehold Appliances, Not Elsewhere Classified
+p1901
+sasg6
+VHousehold Appliances
+p1902
+sg18
+V363
+p1903
+sa(dp1904
+g15
+(lp1905
+(dp1906
+g18
+V3641
+p1907
+sg6
+VElectric Lamp Bulbs and Tubes
+p1908
+sa(dp1909
+g18
+V3643
+p1910
+sg6
+VCurrent-Carrying Wiring Devices
+p1911
+sa(dp1912
+g18
+V3644
+p1913
+sg6
+VNoncurrent-Carrying Wiring Devices
+p1914
+sa(dp1915
+g18
+V3645
+p1916
+sg6
+VResidential Electric Lighting Fixtures
+p1917
+sa(dp1918
+g18
+V3646
+p1919
+sg6
+VCommercial, Industrial, and Institutional Electric Lighting Fixtures
+p1920
+sa(dp1921
+g18
+V3647
+p1922
+sg6
+VVehicular Lighting Equipment
+p1923
+sa(dp1924
+g18
+V3648
+p1925
+sg6
+VLighting Equipment, Not Elsewhere Classified
+p1926
+sasg6
+VElectric Lighting And Wiring Equipment
+p1927
+sg18
+V364
+p1928
+sa(dp1929
+g15
+(lp1930
+(dp1931
+g18
+V3651
+p1932
+sg6
+VHousehold Audio and Video Equipment
+p1933
+sa(dp1934
+g18
+V3652
+p1935
+sg6
+VPhonograph Records and Prerecorded Audio Tapes and Disks
+p1936
+sasg6
+VHousehold Audio And Video Equipment, And Audio
+p1937
+sg18
+V365
+p1938
+sa(dp1939
+g15
+(lp1940
+(dp1941
+g18
+V3661
+p1942
+sg6
+VTelephone and Telegraph Apparatus
+p1943
+sa(dp1944
+g18
+V3663
+p1945
+sg6
+VRadio and Television Broadcasting and Communications Equipment
+p1946
+sa(dp1947
+g18
+V3669
+p1948
+sg6
+VCommunications Equipment, Not Elsewhere Classified
+p1949
+sasg6
+VCommunications Equipment
+p1950
+sg18
+V366
+p1951
+sa(dp1952
+g15
+(lp1953
+(dp1954
+g18
+V3671
+p1955
+sg6
+VElectron Tubes
+p1956
+sa(dp1957
+g18
+V3672
+p1958
+sg6
+VPrinted Circuit Boards
+p1959
+sa(dp1960
+g18
+V3674
+p1961
+sg6
+VSemiconductors and Related Devices
+p1962
+sa(dp1963
+g18
+V3675
+p1964
+sg6
+VElectronic Capacitors
+p1965
+sa(dp1966
+g18
+V3676
+p1967
+sg6
+VElectronic Resistors
+p1968
+sa(dp1969
+g18
+V3677
+p1970
+sg6
+VElectronic Coils, Transformers, and Other Inductors
+p1971
+sa(dp1972
+g18
+V3678
+p1973
+sg6
+VElectronic Connectors
+p1974
+sa(dp1975
+g18
+V3679
+p1976
+sg6
+VElectronic Components, Not Elsewhere Classified
+p1977
+sasg6
+VElectronic Components And Accessories
+p1978
+sg18
+V367
+p1979
+sasg18
+V36
+p1980
+sa(dp1981
+g6
+VTransportation Equipment
+p1982
+sg12
+(lp1983
+(dp1984
+g15
+(lp1985
+(dp1986
+g18
+V3711
+p1987
+sg6
+VMotor Vehicles and Passenger Car Bodies
+p1988
+sa(dp1989
+g18
+V3713
+p1990
+sg6
+VTruck and Bus Bodies
+p1991
+sa(dp1992
+g18
+V3714
+p1993
+sg6
+VMotor Vehicle Parts and Accessories
+p1994
+sa(dp1995
+g18
+V3715
+p1996
+sg6
+VTruck Trailers
+p1997
+sa(dp1998
+g18
+V3716
+p1999
+sg6
+VMotor Homes
+p2000
+sasg6
+VMotor Vehicles And Motor Vehicle Equipment
+p2001
+sg18
+V371
+p2002
+sa(dp2003
+g15
+(lp2004
+(dp2005
+g18
+V3721
+p2006
+sg6
+VAircraft
+p2007
+sa(dp2008
+g18
+V3724
+p2009
+sg6
+VAircraft Engines and Engine Parts
+p2010
+sa(dp2011
+g18
+V3728
+p2012
+sg6
+VAircraft Parts and Auxiliary Equipment, Not Elsewhere Classified
+p2013
+sasg6
+VAircraft And Parts
+p2014
+sg18
+V372
+p2015
+sa(dp2016
+g15
+(lp2017
+(dp2018
+g18
+V3731
+p2019
+sg6
+VShip Building and Repairing
+p2020
+sa(dp2021
+g18
+V3732
+p2022
+sg6
+VBoat Building and Repairing
+p2023
+sasg6
+VShip And Boat Building And Repairing
+p2024
+sg18
+V373
+p2025
+sa(dp2026
+g15
+(lp2027
+(dp2028
+g18
+V3743
+p2029
+sg6
+VRailroad Equipment
+p2030
+sasg6
+VRailroad Equipment
+p2031
+sg18
+V374
+p2032
+sa(dp2033
+g15
+(lp2034
+(dp2035
+g18
+V3751
+p2036
+sg6
+VMotorcycles, Bicycles, and Parts
+p2037
+sasg6
+VMotorcycles, Bicycles, And Parts
+p2038
+sg18
+V375
+p2039
+sa(dp2040
+g15
+(lp2041
+(dp2042
+g18
+V3761
+p2043
+sg6
+VGuided Missiles and Space Vehicles
+p2044
+sa(dp2045
+g18
+V3764
+p2046
+sg6
+VGuided Missile and Space Vehicle Propulsion Units and Propulsion Unit Parts
+p2047
+sa(dp2048
+g18
+V3769
+p2049
+sg6
+VGuided Missile Space Vehicle Parts and Auxiliary Equipment, Not Elsewhere Classified
+p2050
+sasg6
+VGuided Missiles And Space Vehicles And Parts
+p2051
+sg18
+V376
+p2052
+sasg18
+V37
+p2053
+sa(dp2054
+g6
+VMeasuring, Analyzing, And Controlling Instruments; Photographic, Medical And Optical Goods; Watches And Clocks
+p2055
+sg12
+(lp2056
+(dp2057
+g15
+(lp2058
+(dp2059
+g18
+V3812
+p2060
+sg6
+VSearch, Detection, Navigation, Guidance, Aeronautical, and Nautical Systems and Instruments
+p2061
+sasg6
+VSearch, Detection, Navigation, Guidance, Aeronautical, and Nautical Systems, Instruments, and Equipment
+p2062
+sg18
+V381
+p2063
+sa(dp2064
+g15
+(lp2065
+(dp2066
+g18
+V3821
+p2067
+sg6
+VLaboratory Apparatus and Furniture
+p2068
+sa(dp2069
+g18
+V3822
+p2070
+sg6
+VAutomatic Controls for Regulating Residential and Commercial Environments and Appliances
+p2071
+sa(dp2072
+g18
+V3823
+p2073
+sg6
+VIndustrial Instruments for Measurement, Display, and Control of Process Variables; and Related Products
+p2074
+sa(dp2075
+g18
+V3824
+p2076
+sg6
+VTotalizing Fluid Meters and Counting Devices
+p2077
+sa(dp2078
+g18
+V3825
+p2079
+sg6
+VInstruments for Measuring and Testing of Electricity and Electrical Signals
+p2080
+sa(dp2081
+g18
+V3826
+p2082
+sg6
+VLaboratory Analytical Instruments
+p2083
+sa(dp2084
+g18
+V3827
+p2085
+sg6
+VOptical Instruments and Lenses
+p2086
+sa(dp2087
+g18
+V3829
+p2088
+sg6
+VMeasuring and Controlling Devices, Not Elsewhere Classified
+p2089
+sasg6
+VLaboratory Apparatus And Analytical, Optical,  Measuring, and Controlling Instruments
+p2090
+sg18
+V382
+p2091
+sa(dp2092
+g15
+(lp2093
+(dp2094
+g18
+V3841
+p2095
+sg6
+VSurgical and Medical Instruments and Apparatus
+p2096
+sa(dp2097
+g18
+V3842
+p2098
+sg6
+VOrthopedic, Prosthetic, and Surgical Appliances and Supplies
+p2099
+sa(dp2100
+g18
+V3843
+p2101
+sg6
+VDental Equipment and Supplies
+p2102
+sa(dp2103
+g18
+V3844
+p2104
+sg6
+VX-Ray Apparatus and Tubes and Related Irradiation Apparatus
+p2105
+sa(dp2106
+g18
+V3845
+p2107
+sg6
+VElectromedical and Electrotherapeutic Apparatus
+p2108
+sasg6
+VSurgical, Medical, And Dental Instruments And Supplies
+p2109
+sg18
+V384
+p2110
+sa(dp2111
+g15
+(lp2112
+(dp2113
+g18
+V3851
+p2114
+sg6
+VOphthalmic Goods
+p2115
+sasg6
+VOphthalmic Goods
+p2116
+sg18
+V385
+p2117
+sa(dp2118
+g15
+(lp2119
+(dp2120
+g18
+V3861
+p2121
+sg6
+VPhotographic Equipment and Supplies
+p2122
+sasg6
+VPhotographic Equipment And Supplies
+p2123
+sg18
+V386
+p2124
+sasg18
+V38
+p2125
+sa(dp2126
+g6
+VMiscellaneous Manufacturing Industries
+p2127
+sg12
+(lp2128
+(dp2129
+g15
+(lp2130
+(dp2131
+g18
+V3911
+p2132
+sg6
+VJewelry, Precious Metal
+p2133
+sa(dp2134
+g18
+V3914
+p2135
+sg6
+VSilverware, Plated Ware, and Stainless Steel Ware
+p2136
+sa(dp2137
+g18
+V3915
+p2138
+sg6
+VJewelers' Findings and Materials, and Lapidary Work
+p2139
+sasg6
+VJewelry, Silverware, And Plated Ware
+p2140
+sg18
+V391
+p2141
+sa(dp2142
+g15
+(lp2143
+(dp2144
+g18
+V3931
+p2145
+sg6
+VMusical Instruments
+p2146
+sasg6
+VMusical Instruments
+p2147
+sg18
+V393
+p2148
+sa(dp2149
+g15
+(lp2150
+(dp2151
+g18
+V3942
+p2152
+sg6
+VDolls and Stuffed Toys
+p2153
+sa(dp2154
+g18
+V3944
+p2155
+sg6
+VGames, Toys, and Children's Vehicles, Except Dolls and Bicycles
+p2156
+sa(dp2157
+g18
+V3949
+p2158
+sg6
+VSporting and Athletic Goods, Not Elsewhere Classified
+p2159
+sasg6
+VDolls, Toys, Games And Sporting And Athletic
+p2160
+sg18
+V394
+p2161
+sa(dp2162
+g15
+(lp2163
+(dp2164
+g18
+V3951
+p2165
+sg6
+VPens, Mechanical Pencils, and Parts
+p2166
+sa(dp2167
+g18
+V3952
+p2168
+sg6
+VLead Pencils, Crayons, and Artists' Materials
+p2169
+sa(dp2170
+g18
+V3953
+p2171
+sg6
+VMarking Devices
+p2172
+sa(dp2173
+g18
+V3955
+p2174
+sg6
+VCarbon Paper and Inked Ribbons
+p2175
+sasg6
+VPens, Pencils, And Other Artists Materials
+p2176
+sg18
+V395
+p2177
+sa(dp2178
+g15
+(lp2179
+(dp2180
+g18
+V3961
+p2181
+sg6
+VCostume Jewelry and Costume Novelties, Except Precious Metal
+p2182
+sa(dp2183
+g18
+V3965
+p2184
+sg6
+VFasteners, Buttons, Needles, and Pins
+p2185
+sasg6
+VCostume Jewelry, Costume Novelties, Buttons, And Miscellaneous Notions, Ecept Precious Metal
+p2186
+sg18
+V396
+p2187
+sasg18
+g520
+sasg18
+VD
+p2188
+sa(dp2189
+g2
+V40
+p2190
+sg4
+V49
+p2191
+sg6
+VTransportation, Communications, Electric, Gas, And Sanitary Services
+p2192
+sg8
+(lp2193
+(dp2194
+g6
+VRailroad Transportation
+p2195
+sg12
+(lp2196
+sg18
+g2190
+sa(dp2197
+g6
+VLocal And Suburban Transit And Interurban Highway Passenger Transportation
+p2198
+sg12
+(lp2199
+(dp2200
+g15
+(lp2201
+(dp2202
+g18
+V4111
+p2203
+sg6
+VLocal and Suburban Transit
+p2204
+sa(dp2205
+g18
+V4119
+p2206
+sg6
+VLocal Passenger Transportation, Not Elsewhere Classified
+p2207
+sasg6
+VLocal And Suburban Passenger Transportation
+p2208
+sg18
+V411
+p2209
+sa(dp2210
+g15
+(lp2211
+(dp2212
+g18
+V4121
+p2213
+sg6
+VTaxicabs
+p2214
+sasg6
+VTaxicabs
+p2215
+sg18
+V412
+p2216
+sa(dp2217
+g15
+(lp2218
+(dp2219
+g18
+V4131
+p2220
+sg6
+VIntercity and Rural Bus Transportation
+p2221
+sasg6
+VIntercity And Rural Bus Transportation
+p2222
+sg18
+V413
+p2223
+sa(dp2224
+g15
+(lp2225
+(dp2226
+g18
+V4141
+p2227
+sg6
+VLocal Bus Charter Service
+p2228
+sa(dp2229
+g18
+V4142
+p2230
+sg6
+VBus Charter Service, Except Local
+p2231
+sasg6
+VBus Charter Service
+p2232
+sg18
+V414
+p2233
+sa(dp2234
+g15
+(lp2235
+(dp2236
+g18
+V4151
+p2237
+sg6
+VSchool Buses
+p2238
+sasg6
+VSchool Buses
+p2239
+sg18
+V415
+p2240
+sasg18
+V41
+p2241
+sa(dp2242
+g6
+VMotor Freight Transportation And Warehousing
+p2243
+sg12
+(lp2244
+(dp2245
+g15
+(lp2246
+(dp2247
+g18
+V4212
+p2248
+sg6
+VLocal Trucking Without Storage
+p2249
+sa(dp2250
+g18
+V4213
+p2251
+sg6
+VTrucking, Except Local
+p2252
+sa(dp2253
+g18
+V4214
+p2254
+sg6
+VLocal Trucking With Storage
+p2255
+sa(dp2256
+g18
+V4215
+p2257
+sg6
+VCourier Services, Except by Air
+p2258
+sasg6
+VTrucking And Courier Services, Except Air
+p2259
+sg18
+V421
+p2260
+sa(dp2261
+g15
+(lp2262
+(dp2263
+g18
+V4221
+p2264
+sg6
+VFarm Product Warehousing and Storage
+p2265
+sa(dp2266
+g18
+V4222
+p2267
+sg6
+VRefrigerated Warehousing and Storage
+p2268
+sa(dp2269
+g18
+V4225
+p2270
+sg6
+VGeneral Warehousing and Storage
+p2271
+sa(dp2272
+g18
+V4226
+p2273
+sg6
+VSpecial Warehousing and Storage, Not Elsewhere Classified
+p2274
+sasg6
+VPublic Warehousing And Storage
+p2275
+sg18
+V422
+p2276
+sasg18
+V42
+p2277
+sa(dp2278
+g6
+VUnited States Postal Service
+p2279
+sg12
+(lp2280
+sg18
+V43
+p2281
+sa(dp2282
+g6
+VWater Transportation
+p2283
+sg12
+(lp2284
+(dp2285
+g15
+(lp2286
+(dp2287
+g18
+V4412
+p2288
+sg6
+VDeep Sea Foreign Transportation of Freight
+p2289
+sasg6
+VDeep Sea Foreign Transportation Of Freight
+p2290
+sg18
+V441
+p2291
+sa(dp2292
+g15
+(lp2293
+(dp2294
+g18
+V4424
+p2295
+sg6
+VDeep Sea Domestic Transportation of Freight
+p2296
+sasg6
+VDeep Sea Domestic Transportation Of Freight
+p2297
+sg18
+V442
+p2298
+sa(dp2299
+g15
+(lp2300
+(dp2301
+g18
+V4432
+p2302
+sg6
+VFreight Transportation on the Great Lakes-St. Lawrence Seaway
+p2303
+sasg6
+VFreight Transportation On The Great Lakes-st.
+p2304
+sg18
+V443
+p2305
+sa(dp2306
+g15
+(lp2307
+(dp2308
+g18
+V4449
+p2309
+sg6
+VWater Transportation of Freight, Not Elsewhere Classified
+p2310
+sasg6
+VWater Transportation Of Freight, Not Elsewhere
+p2311
+sg18
+V444
+p2312
+sa(dp2313
+g15
+(lp2314
+(dp2315
+g18
+V4481
+p2316
+sg6
+VDeep Sea Transportation of Passengers, Except by Ferry
+p2317
+sa(dp2318
+g18
+V4482
+p2319
+sg6
+VFerries
+p2320
+sa(dp2321
+g18
+V4489
+p2322
+sg6
+VWater Transportation of Passengers, Not Elsewhere Classified
+p2323
+sasg6
+VWater Transportation Of Passengers
+p2324
+sg18
+V448
+p2325
+sasg18
+V44
+p2326
+sa(dp2327
+g6
+VTransportation By Air
+p2328
+sg12
+(lp2329
+(dp2330
+g15
+(lp2331
+(dp2332
+g18
+V4512
+p2333
+sg6
+VAir Transportation, Scheduled
+p2334
+sa(dp2335
+g18
+V4513
+p2336
+sg6
+VAir Courier Services
+p2337
+sasg6
+VAir Transportation, Scheduled, And Air Courier
+p2338
+sg18
+V451
+p2339
+sa(dp2340
+g15
+(lp2341
+(dp2342
+g18
+V4522
+p2343
+sg6
+VAir Transportation, Nonscheduled
+p2344
+sasg6
+VAir Transportation, Nonscheduled
+p2345
+sg18
+V452
+p2346
+sasg18
+V45
+p2347
+sa(dp2348
+g6
+VPipelines, Except Natural Gas
+p2349
+sg12
+(lp2350
+sg18
+V46
+p2351
+sa(dp2352
+g6
+VTransportation Services
+p2353
+sg12
+(lp2354
+(dp2355
+g15
+(lp2356
+(dp2357
+g18
+V4724
+p2358
+sg6
+VTravel Agencies
+p2359
+sa(dp2360
+g18
+V4725
+p2361
+sg6
+VTour Operators
+p2362
+sa(dp2363
+g18
+V4729
+p2364
+sg6
+VArrangement of Passenger Transportation, Not Elsewhere Classified
+p2365
+sasg6
+VArrangement Of Passenger Transportation
+p2366
+sg18
+V472
+p2367
+sa(dp2368
+g15
+(lp2369
+(dp2370
+g18
+V4731
+p2371
+sg6
+VArrangement of Transportation of Freight and Cargo
+p2372
+sasg6
+VArrangement Of Transportation Of Freight And Cargo
+p2373
+sg18
+V473
+p2374
+sa(dp2375
+g15
+(lp2376
+(dp2377
+g18
+V4741
+p2378
+sg6
+VRental of Railroad Cars
+p2379
+sasg6
+VRental Of Railroad Cars
+p2380
+sg18
+V474
+p2381
+sasg18
+V47
+p2382
+sa(dp2383
+g6
+VCommunications
+p2384
+sg12
+(lp2385
+(dp2386
+g15
+(lp2387
+(dp2388
+g18
+V4812
+p2389
+sg6
+VRadiotelephone Communications
+p2390
+sa(dp2391
+g18
+V4813
+p2392
+sg6
+VTelephone Communications, Except Radiotelephone
+p2393
+sasg6
+VTelephone Communications
+p2394
+sg18
+V481
+p2395
+sa(dp2396
+g15
+(lp2397
+(dp2398
+g18
+V4822
+p2399
+sg6
+VTelegraph and Other Message Communications
+p2400
+sasg6
+VTelegraph And Other Message Communications
+p2401
+sg18
+V482
+p2402
+sa(dp2403
+g15
+(lp2404
+(dp2405
+g18
+V4832
+p2406
+sg6
+VRadio Broadcasting Stations
+p2407
+sa(dp2408
+g18
+V4833
+p2409
+sg6
+VTelevision Broadcasting Stations
+p2410
+sasg6
+VRadio And Television Broadcasting Stations
+p2411
+sg18
+V483
+p2412
+sa(dp2413
+g15
+(lp2414
+(dp2415
+g18
+V4841
+p2416
+sg6
+VCable and Other Pay Television Services
+p2417
+sasg6
+VCable And Other Pay Television Services
+p2418
+sg18
+V484
+p2419
+sasg18
+V48
+p2420
+sa(dp2421
+g6
+VElectric, Gas, And Sanitary Services
+p2422
+sg12
+(lp2423
+(dp2424
+g15
+(lp2425
+(dp2426
+g18
+V4911
+p2427
+sg6
+VElectric Services
+p2428
+sasg6
+VElectric Services
+p2429
+sg18
+V491
+p2430
+sa(dp2431
+g15
+(lp2432
+(dp2433
+g18
+V4922
+p2434
+sg6
+VNatural Gas Transmission
+p2435
+sa(dp2436
+g18
+V4923
+p2437
+sg6
+VNatural Gas Transmission and Distribution
+p2438
+sa(dp2439
+g18
+V4924
+p2440
+sg6
+VNatural Gas Distribution
+p2441
+sa(dp2442
+g18
+V4925
+p2443
+sg6
+VMixed, Manufactured, or Liquefied Petroleum Gas Production and/or
+p2444
+sasg6
+VGas Production And Distribution
+p2445
+sg18
+V492
+p2446
+sa(dp2447
+g15
+(lp2448
+(dp2449
+g18
+V4931
+p2450
+sg6
+VElectric and Other Services Combined
+p2451
+sa(dp2452
+g18
+V4932
+p2453
+sg6
+VGas and Other Services Combined
+p2454
+sa(dp2455
+g18
+V4939
+p2456
+sg6
+VCombination Utilities, Not Elsewhere Classified
+p2457
+sasg6
+VCombination Electric And Gas, And Other Utility
+p2458
+sg18
+V493
+p2459
+sa(dp2460
+g15
+(lp2461
+(dp2462
+g18
+V4941
+p2463
+sg6
+VWater Supply
+p2464
+sasg6
+VWater Supply
+p2465
+sg18
+V494
+p2466
+sa(dp2467
+g15
+(lp2468
+(dp2469
+g18
+V4952
+p2470
+sg6
+VSewerage Systems
+p2471
+sa(dp2472
+g18
+V4953
+p2473
+sg6
+VRefuse Systems
+p2474
+sa(dp2475
+g18
+V4959
+p2476
+sg6
+VSanitary Services, Not Elsewhere Classified
+p2477
+sasg6
+VSanitary Services
+p2478
+sg18
+V495
+p2479
+sa(dp2480
+g15
+(lp2481
+(dp2482
+g18
+V4961
+p2483
+sg6
+VSteam and Air-Conditioning Supply
+p2484
+sasg6
+VSteam And Air-conditioning Supply
+p2485
+sg18
+V496
+p2486
+sasg18
+g2191
+sasg18
+VE
+p2487
+sa(dp2488
+g2
+V50
+p2489
+sg4
+V51
+p2490
+sg6
+VWholesale Trade
+p2491
+sg8
+(lp2492
+(dp2493
+g6
+VWholesale Trade-durable Goods
+p2494
+sg12
+(lp2495
+(dp2496
+g15
+(lp2497
+(dp2498
+g18
+V5012
+p2499
+sg6
+VAutomobiles and Other Motor Vehicles
+p2500
+sa(dp2501
+g18
+V5013
+p2502
+sg6
+VMotor Vehicle Supplies and New Parts
+p2503
+sa(dp2504
+g18
+V5014
+p2505
+sg6
+VTires and Tubes
+p2506
+sa(dp2507
+g18
+V5015
+p2508
+sg6
+VMotor Vehicle Parts, Used
+p2509
+sasg6
+VMotor Vehicles And Motor Vehicle Parts And Supplies
+p2510
+sg18
+V501
+p2511
+sa(dp2512
+g15
+(lp2513
+(dp2514
+g18
+V5021
+p2515
+sg6
+VFurniture
+p2516
+sa(dp2517
+g18
+V5023
+p2518
+sg6
+VHome furnishings
+p2519
+sasg6
+VFurniture And Home Furnishings
+p2520
+sg18
+V502
+p2521
+sa(dp2522
+g15
+(lp2523
+(dp2524
+g18
+V5031
+p2525
+sg6
+VLumber, Plywood, Millwork, and Wood Panels
+p2526
+sa(dp2527
+g18
+V5032
+p2528
+sg6
+VBrick, Stone, and Related Construction Materials
+p2529
+sa(dp2530
+g18
+V5033
+p2531
+sg6
+VRoofing, Siding, and Insulation Materials
+p2532
+sa(dp2533
+g18
+V5039
+p2534
+sg6
+VConstruction Materials, Not Elsewhere Classified
+p2535
+sasg6
+VLumber And Other Construction Materials
+p2536
+sg18
+V503
+p2537
+sa(dp2538
+g15
+(lp2539
+(dp2540
+g18
+V5043
+p2541
+sg6
+VPhotographic Equipment and Supplies
+p2542
+sa(dp2543
+g18
+V5044
+p2544
+sg6
+VOffice Equipment
+p2545
+sa(dp2546
+g18
+V5045
+p2547
+sg6
+VComputers and Computer Peripheral Equipment and Software
+p2548
+sa(dp2549
+g18
+V5046
+p2550
+sg6
+VCommercial Equipment, Not Elsewhere Classified
+p2551
+sa(dp2552
+g18
+V5047
+p2553
+sg6
+VMedical, Dental, and Hospital Equipment and Supplies
+p2554
+sa(dp2555
+g18
+V5048
+p2556
+sg6
+VOphthalmic Goods
+p2557
+sa(dp2558
+g18
+V5049
+p2559
+sg6
+VProfessional Equipment and Supplies, Not Elsewhere Classified
+p2560
+sasg6
+VProfessional And Commercial Equipment And Supplies
+p2561
+sg18
+V504
+p2562
+sa(dp2563
+g15
+(lp2564
+(dp2565
+g18
+V5051
+p2566
+sg6
+VMetals Service Centers and Offices
+p2567
+sa(dp2568
+g18
+V5052
+p2569
+sg6
+VCoal and Other Minerals and Ores
+p2570
+sasg6
+VMetals And Minerals, Except Petroleum
+p2571
+sg18
+V505
+p2572
+sa(dp2573
+g15
+(lp2574
+(dp2575
+g18
+V5063
+p2576
+sg6
+VElectrical Apparatus and Equipment Wiring Supplies, and Construction Materials
+p2577
+sa(dp2578
+g18
+V5064
+p2579
+sg6
+VElectrical Appliances, Television and Radio Sets
+p2580
+sa(dp2581
+g18
+V5065
+p2582
+sg6
+VElectronic Parts and Equipment, Not Elsewhere Classified
+p2583
+sasg6
+VElectrical Goods
+p2584
+sg18
+V506
+p2585
+sa(dp2586
+g15
+(lp2587
+(dp2588
+g18
+V5072
+p2589
+sg6
+VHardware
+p2590
+sa(dp2591
+g18
+V5074
+p2592
+sg6
+VPlumbing and Heating Equipment and Supplies (Hydronics)
+p2593
+sa(dp2594
+g18
+V5075
+p2595
+sg6
+VWarm Air Heating and Air-Conditioning Equipment and Supplies
+p2596
+sa(dp2597
+g18
+V5078
+p2598
+sg6
+VRefrigeration Equipment and Supplies
+p2599
+sasg6
+VHardware, And Plumbing And Heating Equipment
+p2600
+sg18
+V507
+p2601
+sa(dp2602
+g15
+(lp2603
+(dp2604
+g18
+V5082
+p2605
+sg6
+VConstruction and Mining (Except Petroleum) Machinery and Equipment
+p2606
+sa(dp2607
+g18
+V5083
+p2608
+sg6
+VFarm and Garden Machinery and Equipment
+p2609
+sa(dp2610
+g18
+V5084
+p2611
+sg6
+VIndustrial Machinery and Equipment
+p2612
+sa(dp2613
+g18
+V5085
+p2614
+sg6
+VIndustrial Supplies
+p2615
+sa(dp2616
+g18
+V5087
+p2617
+sg6
+VService Establishment Equipment and Supplies
+p2618
+sa(dp2619
+g18
+V5088
+p2620
+sg6
+VTransportation Equipment and Supplies, Except Motor Vehicles
+p2621
+sasg6
+VMachinery, Equipment, And Supplies
+p2622
+sg18
+V508
+p2623
+sasg18
+g2489
+sa(dp2624
+g6
+VWholesale Trade-non-durable Goods
+p2625
+sg12
+(lp2626
+(dp2627
+g15
+(lp2628
+(dp2629
+g18
+V5111
+p2630
+sg6
+VPrinting and Writing Paper
+p2631
+sa(dp2632
+g18
+V5112
+p2633
+sg6
+VStationery and Office Supplies
+p2634
+sa(dp2635
+g18
+V5113
+p2636
+sg6
+VIndustrial and Personal Service Paper
+p2637
+sasg6
+VPaper And Paper Products
+p2638
+sg18
+V511
+p2639
+sa(dp2640
+g15
+(lp2641
+(dp2642
+g18
+V5122
+p2643
+sg6
+VDrugs, Drug Proprietaries, and Druggists' Sundries
+p2644
+sasg6
+VDrugs, Drug Proprietaries, And Druggists' Sundries
+p2645
+sg18
+V512
+p2646
+sa(dp2647
+g15
+(lp2648
+(dp2649
+g18
+V5131
+p2650
+sg6
+VPiece Goods, Notions, and Other Dry Good
+p2651
+sa(dp2652
+g18
+V5136
+p2653
+sg6
+VMen's and Boy's Clothing and Furnishings
+p2654
+sa(dp2655
+g18
+V5137
+p2656
+sg6
+VWomen's, Children's, and Infants' Clothing and Accessories
+p2657
+sa(dp2658
+g18
+V5139
+p2659
+sg6
+VFootwear
+p2660
+sasg6
+VApparel, Piece Goods, And Notions
+p2661
+sg18
+V513
+p2662
+sa(dp2663
+g15
+(lp2664
+(dp2665
+g18
+V5141
+p2666
+sg6
+VGroceries, General Line
+p2667
+sa(dp2668
+g18
+V5142
+p2669
+sg6
+VPackaged Frozen Foods
+p2670
+sa(dp2671
+g18
+V5143
+p2672
+sg6
+VDairy Products, Except Dried or Canned
+p2673
+sa(dp2674
+g18
+V5144
+p2675
+sg6
+VPoultry and Poultry Products
+p2676
+sa(dp2677
+g18
+V5145
+p2678
+sg6
+VConfectionery
+p2679
+sa(dp2680
+g18
+V5146
+p2681
+sg6
+VFish and Seafoods
+p2682
+sa(dp2683
+g18
+V5147
+p2684
+sg6
+VMeats and Meat Products
+p2685
+sa(dp2686
+g18
+V5148
+p2687
+sg6
+VFresh Fruits and Vegetables
+p2688
+sa(dp2689
+g18
+V5149
+p2690
+sg6
+VGroceries and Related Products, Not Elsewhere Classified
+p2691
+sasg6
+VGroceries And Related Products
+p2692
+sg18
+V514
+p2693
+sa(dp2694
+g15
+(lp2695
+(dp2696
+g18
+V5153
+p2697
+sg6
+VGrain and Field Beans
+p2698
+sa(dp2699
+g18
+V5154
+p2700
+sg6
+VLivestock
+p2701
+sa(dp2702
+g18
+V5159
+p2703
+sg6
+VFarm-Product Raw Materials, Not Elsewhere Classified
+p2704
+sasg6
+VFarm-product Raw Materials
+p2705
+sg18
+V515
+p2706
+sa(dp2707
+g15
+(lp2708
+(dp2709
+g18
+V5162
+p2710
+sg6
+VPlastics Materials and Basic Forms and Shapes
+p2711
+sa(dp2712
+g18
+V5169
+p2713
+sg6
+VChemicals and Allied Products, Not Elsewhere Classified
+p2714
+sasg6
+VChemicals And Allied Products
+p2715
+sg18
+V516
+p2716
+sa(dp2717
+g15
+(lp2718
+(dp2719
+g18
+V5171
+p2720
+sg6
+VPetroleum Bulk stations and Terminals
+p2721
+sa(dp2722
+g18
+V5172
+p2723
+sg6
+VPetroleum and Petroleum Products Wholesalers, Except Bulk Stations and Terminals
+p2724
+sasg6
+VPetroleum And Petroleum Products
+p2725
+sg18
+V517
+p2726
+sa(dp2727
+g15
+(lp2728
+(dp2729
+g18
+V5181
+p2730
+sg6
+VBeer and Ale
+p2731
+sa(dp2732
+g18
+V5182
+p2733
+sg6
+VWine and Distilled Alcoholic Beverages
+p2734
+sasg6
+VBeer, Wine, And Distilled Alcoholic Beverages
+p2735
+sg18
+V518
+p2736
+sasg18
+g2490
+sasg18
+VF
+p2737
+sa(dp2738
+g2
+V52
+p2739
+sg4
+V59
+p2740
+sg6
+VRetail Trade
+p2741
+sg8
+(lp2742
+(dp2743
+g6
+VBuilding Materials, Hardware, Garden Supply, And Mobile Home Dealers
+p2744
+sg12
+(lp2745
+(dp2746
+g15
+(lp2747
+(dp2748
+g18
+V5211
+p2749
+sg6
+VLumber and Other Building Materials Dealers
+p2750
+sasg6
+VLumber And Other Building Materials Dealers
+p2751
+sg18
+V521
+p2752
+sa(dp2753
+g15
+(lp2754
+(dp2755
+g18
+V5231
+p2756
+sg6
+VPaint, Glass, and Wallpaper Stores
+p2757
+sasg6
+VPaint, Glass And Wallpaper Stores
+p2758
+sg18
+V523
+p2759
+sa(dp2760
+g15
+(lp2761
+(dp2762
+g18
+V5251
+p2763
+sg6
+VHardware Stores
+p2764
+sasg6
+VHardware Stores
+p2765
+sg18
+V525
+p2766
+sa(dp2767
+g15
+(lp2768
+(dp2769
+g18
+V5261
+p2770
+sg6
+VRetail Nurseries, Lawn and Garden Supply Stores
+p2771
+sasg6
+VRetail Nurseries, Lawn And Garden Supply Stores
+p2772
+sg18
+V526
+p2773
+sasg18
+g2739
+sa(dp2774
+g6
+VGeneral Merchandise Stores
+p2775
+sg12
+(lp2776
+(dp2777
+g15
+(lp2778
+(dp2779
+g18
+V5311
+p2780
+sg6
+VDepartment Stores
+p2781
+sasg6
+VDepartment Stores
+p2782
+sg18
+V531
+p2783
+sa(dp2784
+g15
+(lp2785
+(dp2786
+g18
+V5331
+p2787
+sg6
+VVariety Stores
+p2788
+sasg6
+VVariety Stores
+p2789
+sg18
+V533
+p2790
+sasg18
+V53
+p2791
+sa(dp2792
+g6
+VFood Stores
+p2793
+sg12
+(lp2794
+(dp2795
+g15
+(lp2796
+(dp2797
+g18
+V5411
+p2798
+sg6
+VGrocery Stores
+p2799
+sasg6
+VGrocery Stores
+p2800
+sg18
+V541
+p2801
+sa(dp2802
+g15
+(lp2803
+(dp2804
+g18
+V5421
+p2805
+sg6
+VMeat and Fish (Seafood) Markets, Including Freezer Provisioners
+p2806
+sasg6
+VMeat And Fish (seafood) Markets, Including
+p2807
+sg18
+V542
+p2808
+sa(dp2809
+g15
+(lp2810
+(dp2811
+g18
+V5431
+p2812
+sg6
+VFruit and Vegetable Markets
+p2813
+sasg6
+VFruit And Vegetable Markets
+p2814
+sg18
+V543
+p2815
+sa(dp2816
+g15
+(lp2817
+(dp2818
+g18
+V5441
+p2819
+sg6
+VCandy, Nut, and Confectionery Stores
+p2820
+sasg6
+VCandy, Nut, And Confectionery Stores
+p2821
+sg18
+V544
+p2822
+sa(dp2823
+g15
+(lp2824
+(dp2825
+g18
+V5451
+p2826
+sg6
+VDairy Products Stores
+p2827
+sasg6
+VDairy Products Stores
+p2828
+sg18
+V545
+p2829
+sa(dp2830
+g15
+(lp2831
+(dp2832
+g18
+V5461
+p2833
+sg6
+VRetail Bakeries
+p2834
+sasg6
+VRetail Bakeries
+p2835
+sg18
+V546
+p2836
+sasg18
+V54
+p2837
+sa(dp2838
+g6
+VAutomotive Dealers And Gasoline Service Stations
+p2839
+sg12
+(lp2840
+(dp2841
+g15
+(lp2842
+(dp2843
+g18
+V5511
+p2844
+sg6
+VMotor Vehicle Dealers (New and Used)
+p2845
+sasg6
+VMotor Vehicle Dealers (new And Used)
+p2846
+sg18
+V551
+p2847
+sa(dp2848
+g15
+(lp2849
+(dp2850
+g18
+V5521
+p2851
+sg6
+VMotor Vehicle Dealers (Used Only)
+p2852
+sasg6
+VMotor Vehicle Dealers (used Only)
+p2853
+sg18
+V552
+p2854
+sa(dp2855
+g15
+(lp2856
+(dp2857
+g18
+V5531
+p2858
+sg6
+VAuto and Home Supply Stores
+p2859
+sasg6
+VAuto And Home Supply Stores
+p2860
+sg18
+V553
+p2861
+sa(dp2862
+g15
+(lp2863
+(dp2864
+g18
+V5541
+p2865
+sg6
+VGasoline Service Stations
+p2866
+sasg6
+VGasoline Service Stations
+p2867
+sg18
+V554
+p2868
+sa(dp2869
+g15
+(lp2870
+(dp2871
+g18
+V5551
+p2872
+sg6
+VBoat Dealers
+p2873
+sasg6
+VBoat Dealers
+p2874
+sg18
+V555
+p2875
+sa(dp2876
+g15
+(lp2877
+(dp2878
+g18
+V5561
+p2879
+sg6
+VRecreational Vehicle Dealers
+p2880
+sasg6
+VRecreational Vehicle Dealers
+p2881
+sg18
+V556
+p2882
+sa(dp2883
+g15
+(lp2884
+(dp2885
+g18
+V5571
+p2886
+sg6
+VMotorcycle Dealers
+p2887
+sasg6
+VMotorcycle Dealers
+p2888
+sg18
+V557
+p2889
+sasg18
+V55
+p2890
+sa(dp2891
+g6
+VApparel And Accessory Stores
+p2892
+sg12
+(lp2893
+(dp2894
+g15
+(lp2895
+(dp2896
+g18
+V5611
+p2897
+sg6
+VMen's and Boys' Clothing and Accessory Stores
+p2898
+sasg6
+VMen's And Boys' Clothing And Accessory Stores
+p2899
+sg18
+V561
+p2900
+sa(dp2901
+g15
+(lp2902
+(dp2903
+g18
+V5621
+p2904
+sg6
+VWomen's Clothing Stores
+p2905
+sasg6
+VWomen's Clothing Stores
+p2906
+sg18
+V562
+p2907
+sa(dp2908
+g15
+(lp2909
+(dp2910
+g18
+V5632
+p2911
+sg6
+VWomen's Accessory and Specialty Stores
+p2912
+sasg6
+VWomen's Accessory And Specialty Stores
+p2913
+sg18
+V563
+p2914
+sa(dp2915
+g15
+(lp2916
+(dp2917
+g18
+V5641
+p2918
+sg6
+VChildren's and Infants' Wear Stores
+p2919
+sasg6
+VChildren's And Infants' Wear Stores
+p2920
+sg18
+V564
+p2921
+sa(dp2922
+g15
+(lp2923
+(dp2924
+g18
+V5651
+p2925
+sg6
+VFamily Clothing Stores
+p2926
+sasg6
+VFamily Clothing Stores
+p2927
+sg18
+V565
+p2928
+sa(dp2929
+g15
+(lp2930
+(dp2931
+g18
+V5661
+p2932
+sg6
+VShoe Stores
+p2933
+sasg6
+VShoe Stores
+p2934
+sg18
+V566
+p2935
+sasg18
+V56
+p2936
+sa(dp2937
+g6
+VHome Furniture, Furnishings, And Equipment Stores
+p2938
+sg12
+(lp2939
+(dp2940
+g15
+(lp2941
+(dp2942
+g18
+V5712
+p2943
+sg6
+VFurniture Stores
+p2944
+sa(dp2945
+g18
+V5713
+p2946
+sg6
+VFloor Covering Stores
+p2947
+sa(dp2948
+g18
+V5714
+p2949
+sg6
+VDrapery, Curtain, and Upholstery Stores
+p2950
+sa(dp2951
+g18
+V5719
+p2952
+sg6
+VMiscellaneous home furnishings Stores
+p2953
+sasg6
+VHome Furniture And Furnishings Stores
+p2954
+sg18
+V571
+p2955
+sa(dp2956
+g15
+(lp2957
+(dp2958
+g18
+V5722
+p2959
+sg6
+VHousehold Appliance Stores
+p2960
+sasg6
+VHousehold Appliance Stores
+p2961
+sg18
+V572
+p2962
+sasg18
+V57
+p2963
+sa(dp2964
+g6
+VEating And Drinking Places
+p2965
+sg12
+(lp2966
+sg18
+V58
+p2967
+sa(dp2968
+g6
+VMiscellaneous Retail
+p2969
+sg12
+(lp2970
+(dp2971
+g15
+(lp2972
+(dp2973
+g18
+V5912
+p2974
+sg6
+VDrug Stores and Proprietary Stores
+p2975
+sasg6
+VDrug Stores And Proprietary Stores
+p2976
+sg18
+V591
+p2977
+sa(dp2978
+g15
+(lp2979
+(dp2980
+g18
+V5921
+p2981
+sg6
+VLiquor Stores
+p2982
+sasg6
+VLiquor Stores
+p2983
+sg18
+V592
+p2984
+sa(dp2985
+g15
+(lp2986
+(dp2987
+g18
+V5932
+p2988
+sg6
+VUsed Merchandise Stores
+p2989
+sasg6
+VUsed Merchandise Stores
+p2990
+sg18
+V593
+p2991
+sa(dp2992
+g15
+(lp2993
+(dp2994
+g18
+V5941
+p2995
+sg6
+VSporting Goods Stores and Bicycle Shops
+p2996
+sa(dp2997
+g18
+V5942
+p2998
+sg6
+VBook Stores
+p2999
+sa(dp3000
+g18
+V5943
+p3001
+sg6
+VStationery Stores
+p3002
+sa(dp3003
+g18
+V5944
+p3004
+sg6
+VJewelry Stores
+p3005
+sa(dp3006
+g18
+V5945
+p3007
+sg6
+VHobby, Toy, and Game Shops
+p3008
+sa(dp3009
+g18
+V5946
+p3010
+sg6
+VCamera and Photographic Supply Stores
+p3011
+sa(dp3012
+g18
+V5947
+p3013
+sg6
+VGift, Novelty, and Souvenir Shops
+p3014
+sa(dp3015
+g18
+V5948
+p3016
+sg6
+VLuggage and Leather Goods Stores
+p3017
+sa(dp3018
+g18
+V5949
+p3019
+sg6
+VSewing, Needlework, and Piece Goods Stores
+p3020
+sasg6
+VMiscellaneous Shopping Goods Stores
+p3021
+sg18
+V594
+p3022
+sa(dp3023
+g15
+(lp3024
+(dp3025
+g18
+V5961
+p3026
+sg6
+VCatalog and Mail-Order Houses
+p3027
+sa(dp3028
+g18
+V5962
+p3029
+sg6
+VAutomatic Merchandising Machine Operators
+p3030
+sa(dp3031
+g18
+V5963
+p3032
+sg6
+VDirect Selling Establishments
+p3033
+sasg6
+VNonstore Retailers
+p3034
+sg18
+V596
+p3035
+sa(dp3036
+g15
+(lp3037
+(dp3038
+g18
+V5983
+p3039
+sg6
+VFuel Oil Dealers
+p3040
+sa(dp3041
+g18
+V5984
+p3042
+sg6
+VLiquefied Petroleum Gas (Bottled Gas) Dealers
+p3043
+sa(dp3044
+g18
+V5989
+p3045
+sg6
+VFuel Dealers, Not Elsewhere Classified
+p3046
+sasg6
+VFuel Dealers
+p3047
+sg18
+V598
+p3048
+sasg18
+g2740
+sasg18
+VG
+p3049
+sa(dp3050
+g2
+V60
+p3051
+sg4
+V67
+p3052
+sg6
+VFinance, Insurance, And Real Estate
+p3053
+sg8
+(lp3054
+(dp3055
+g6
+VDepository Institutions
+p3056
+sg12
+(lp3057
+(dp3058
+g15
+(lp3059
+(dp3060
+g18
+V6011
+p3061
+sg6
+VFederal Reserve Banks
+p3062
+sa(dp3063
+g18
+V6019
+p3064
+sg6
+VCentral Reserve Depository Institutions, Not Elsewhere Classified
+p3065
+sasg6
+VCentral Reserve Depository Institutions
+p3066
+sg18
+V601
+p3067
+sa(dp3068
+g15
+(lp3069
+(dp3070
+g18
+V6021
+p3071
+sg6
+VNational Commercial Banks
+p3072
+sa(dp3073
+g18
+V6022
+p3074
+sg6
+VState Commercial Banks
+p3075
+sa(dp3076
+g18
+V6029
+p3077
+sg6
+VCommercial Banks, Not Elsewhere Classified
+p3078
+sasg6
+VCommercial Banks
+p3079
+sg18
+V602
+p3080
+sa(dp3081
+g15
+(lp3082
+(dp3083
+g18
+V6035
+p3084
+sg6
+VSavings Institutions, Federally Chartered
+p3085
+sa(dp3086
+g18
+V6036
+p3087
+sg6
+VSavings Institutions, Not Federally Chartered
+p3088
+sasg6
+VSavings Institutions
+p3089
+sg18
+V603
+p3090
+sa(dp3091
+g15
+(lp3092
+(dp3093
+g18
+V6061
+p3094
+sg6
+VCredit Unions, Federally Chartered
+p3095
+sa(dp3096
+g18
+V6062
+p3097
+sg6
+VCredit Unions, Not Federally Chartered
+p3098
+sasg6
+VCredit Unions
+p3099
+sg18
+V606
+p3100
+sa(dp3101
+g15
+(lp3102
+(dp3103
+g18
+V6081
+p3104
+sg6
+VBranches and Agencies of Foreign Banks
+p3105
+sa(dp3106
+g18
+V6082
+p3107
+sg6
+VForeign Trade and International Banking Institutions
+p3108
+sasg6
+VForeign Banking And Branches And Agencies Of
+p3109
+sg18
+V608
+p3110
+sasg18
+g3051
+sa(dp3111
+g6
+VNon-depository Credit Institutions
+p3112
+sg12
+(lp3113
+(dp3114
+g15
+(lp3115
+(dp3116
+g18
+V6111
+p3117
+sg6
+VFederal and Federally-Sponsored Credit Agencies
+p3118
+sasg6
+VFederal And Federally-sponsored Credit Agencies
+p3119
+sg18
+V611
+p3120
+sa(dp3121
+g15
+(lp3122
+(dp3123
+g18
+V6141
+p3124
+sg6
+VPersonal Credit Institutions
+p3125
+sasg6
+VPersonal Credit Institutions
+p3126
+sg18
+V614
+p3127
+sa(dp3128
+g15
+(lp3129
+(dp3130
+g18
+V6153
+p3131
+sg6
+VShort-Term Business Credit Institutions, Except Agricultural
+p3132
+sa(dp3133
+g18
+V6159
+p3134
+sg6
+VMiscellaneous business Credit Institutions
+p3135
+sasg6
+VBusiness Credit Institutions
+p3136
+sg18
+V615
+p3137
+sasg18
+V61
+p3138
+sa(dp3139
+g6
+VSecurity And Commodity Brokers, Dealers, Exchanges, And Services
+p3140
+sg12
+(lp3141
+(dp3142
+g15
+(lp3143
+(dp3144
+g18
+V6211
+p3145
+sg6
+VSecurity Brokers, Dealers, and Flotation Companies
+p3146
+sasg6
+VSecurity Brokers, Dealers, And Flotation
+p3147
+sg18
+V621
+p3148
+sa(dp3149
+g15
+(lp3150
+(dp3151
+g18
+V6221
+p3152
+sg6
+VCommodity Contracts Brokers and Dealers
+p3153
+sasg6
+VCommodity Contracts Brokers And Dealers
+p3154
+sg18
+V622
+p3155
+sa(dp3156
+g15
+(lp3157
+(dp3158
+g18
+V6231
+p3159
+sg6
+VSecurity and Commodity Exchanges
+p3160
+sasg6
+VSecurity And Commodity Exchanges
+p3161
+sg18
+V623
+p3162
+sasg18
+V62
+p3163
+sa(dp3164
+g6
+VInsurance Carriers
+p3165
+sg12
+(lp3166
+(dp3167
+g15
+(lp3168
+(dp3169
+g18
+V6311
+p3170
+sg6
+VLife Insurance
+p3171
+sasg6
+VLife Insurance
+p3172
+sg18
+V631
+p3173
+sa(dp3174
+g15
+(lp3175
+(dp3176
+g18
+V6321
+p3177
+sg6
+VAccident and Health Insurance
+p3178
+sa(dp3179
+g18
+V6324
+p3180
+sg6
+VHospital and Medical Service Plans
+p3181
+sasg6
+VAccident And Health Insurance And Medical
+p3182
+sg18
+V632
+p3183
+sa(dp3184
+g15
+(lp3185
+(dp3186
+g18
+V6331
+p3187
+sg6
+VFire, Marine, and Casualty Insurance
+p3188
+sasg6
+VFire, Marine, And Casualty Insurance
+p3189
+sg18
+V633
+p3190
+sa(dp3191
+g15
+(lp3192
+(dp3193
+g18
+V6351
+p3194
+sg6
+VSurety Insurance
+p3195
+sasg6
+VSurety Insurance
+p3196
+sg18
+V635
+p3197
+sa(dp3198
+g15
+(lp3199
+(dp3200
+g18
+V6361
+p3201
+sg6
+VTitle Insurance
+p3202
+sasg6
+VTitle Insurance
+p3203
+sg18
+V636
+p3204
+sa(dp3205
+g15
+(lp3206
+(dp3207
+g18
+V6371
+p3208
+sg6
+VPension, Health, and Welfare Funds
+p3209
+sasg6
+VPension, Health, And Welfare Funds
+p3210
+sg18
+V637
+p3211
+sasg18
+V63
+p3212
+sa(dp3213
+g6
+VInsurance Agents, Brokers, And Service
+p3214
+sg12
+(lp3215
+sg18
+V64
+p3216
+sa(dp3217
+g6
+VReal Estate
+p3218
+sg12
+(lp3219
+(dp3220
+g15
+(lp3221
+(dp3222
+g18
+V6512
+p3223
+sg6
+VOperators of Nonresidential Buildings
+p3224
+sa(dp3225
+g18
+V6513
+p3226
+sg6
+VOperators of Apartment Buildings
+p3227
+sa(dp3228
+g18
+V6514
+p3229
+sg6
+VOperators of Dwellings Other Than Apartment Buildings
+p3230
+sa(dp3231
+g18
+V6515
+p3232
+sg6
+VOperators of Residential Mobile Home Sites
+p3233
+sa(dp3234
+g18
+V6517
+p3235
+sg6
+VLessors of Railroad Property
+p3236
+sa(dp3237
+g18
+V6519
+p3238
+sg6
+VLessors of Real Property, Not Elsewhere Classified
+p3239
+sasg6
+VReal Estate Operators (except Developers) And Lessors
+p3240
+sg18
+V651
+p3241
+sa(dp3242
+g15
+(lp3243
+(dp3244
+g18
+V6531
+p3245
+sg6
+VReal Estate Agents and Managers
+p3246
+sasg6
+VReal Estate Agents And Managers
+p3247
+sg18
+V653
+p3248
+sa(dp3249
+g15
+(lp3250
+(dp3251
+g18
+V6541
+p3252
+sg6
+VTitle Abstract Offices
+p3253
+sasg6
+VTitle Abstract Offices
+p3254
+sg18
+V654
+p3255
+sasg18
+V65
+p3256
+sa(dp3257
+g6
+VHolding And Other Investment Offices
+p3258
+sg12
+(lp3259
+(dp3260
+g15
+(lp3261
+(dp3262
+g18
+V6712
+p3263
+sg6
+VOffices of Bank Holding Companies
+p3264
+sa(dp3265
+g18
+V6719
+p3266
+sg6
+VOffices of Holding Companies, Not Elsewhere Classified
+p3267
+sasg6
+VHolding Offices
+p3268
+sg18
+V671
+p3269
+sa(dp3270
+g15
+(lp3271
+(dp3272
+g18
+V6722
+p3273
+sg6
+VManagement Investment Offices, Open-End
+p3274
+sa(dp3275
+g18
+V6726
+p3276
+sg6
+VUnit Investment Trusts, Face-Amount Certificate Offices, and Closed-End Management Investment Offices
+p3277
+sasg6
+VInvestment Offices
+p3278
+sg18
+V672
+p3279
+sa(dp3280
+g15
+(lp3281
+(dp3282
+g18
+V6732
+p3283
+sg6
+VEducational, Religious, and Charitable Trusts
+p3284
+sa(dp3285
+g18
+V6733
+p3286
+sg6
+VTrusts, Except Educational, Religious, and Charitable
+p3287
+sasg6
+VTrusts
+p3288
+sg18
+V673
+p3289
+sasg18
+g3052
+sasg18
+VH
+p3290
+sa(dp3291
+g2
+V70
+p3292
+sg4
+V89
+p3293
+sg6
+VServices
+p3294
+sg8
+(lp3295
+(dp3296
+g6
+VHotels, Rooming Houses, Camps, And Other Lodging Places
+p3297
+sg12
+(lp3298
+(dp3299
+g15
+(lp3300
+(dp3301
+g18
+V7011
+p3302
+sg6
+VHotels and Motels
+p3303
+sasg6
+VHotels And Motels
+p3304
+sg18
+V701
+p3305
+sa(dp3306
+g15
+(lp3307
+(dp3308
+g18
+V7021
+p3309
+sg6
+VRooming and Boarding Houses
+p3310
+sasg6
+VRooming And Boarding Houses
+p3311
+sg18
+V702
+p3312
+sa(dp3313
+g15
+(lp3314
+(dp3315
+g18
+V7032
+p3316
+sg6
+VSporting and Recreational Camps
+p3317
+sa(dp3318
+g18
+V7033
+p3319
+sg6
+VRecreational Vehicle Parks and Campsites
+p3320
+sasg6
+VCamps And Recreational Vehicle Parks
+p3321
+sg18
+V703
+p3322
+sasg18
+g3292
+sa(dp3323
+g6
+VPersonal Services
+p3324
+sg12
+(lp3325
+(dp3326
+g15
+(lp3327
+(dp3328
+g18
+V7211
+p3329
+sg6
+VPower Laundries, Family and Commercial
+p3330
+sa(dp3331
+g18
+V7212
+p3332
+sg6
+VGarment Pressing, and Agents for Laundries and Drycleaners
+p3333
+sa(dp3334
+g18
+V7213
+p3335
+sg6
+VLinen Supply
+p3336
+sa(dp3337
+g18
+V7215
+p3338
+sg6
+VCoin-Operated Laundries and Drycleaning
+p3339
+sa(dp3340
+g18
+V7216
+p3341
+sg6
+VDrycleaning Plants, Except Rug Cleaning
+p3342
+sa(dp3343
+g18
+V7217
+p3344
+sg6
+VCarpet and Upholstery Cleaning
+p3345
+sa(dp3346
+g18
+V7218
+p3347
+sg6
+VIndustrial Launderers
+p3348
+sa(dp3349
+g18
+V7219
+p3350
+sg6
+VLaundry and Garment Services, Not Elsewhere Classified
+p3351
+sasg6
+VLaundry, Cleaning, And Garment Services
+p3352
+sg18
+V721
+p3353
+sa(dp3354
+g15
+(lp3355
+(dp3356
+g18
+V7221
+p3357
+sg6
+VPhotographic Studios, Portrait
+p3358
+sasg6
+VPhotographic Studios, Portrait
+p3359
+sg18
+V722
+p3360
+sa(dp3361
+g15
+(lp3362
+(dp3363
+g18
+V7231
+p3364
+sg6
+VBeauty Shops
+p3365
+sasg6
+VBeauty Shops
+p3366
+sg18
+V723
+p3367
+sa(dp3368
+g15
+(lp3369
+(dp3370
+g18
+V7241
+p3371
+sg6
+VBarber Shops
+p3372
+sasg6
+VBarber Shops
+p3373
+sg18
+V724
+p3374
+sa(dp3375
+g15
+(lp3376
+(dp3377
+g18
+V7251
+p3378
+sg6
+VShoe Repair Shops and Shoeshine Parlors
+p3379
+sasg6
+VShoe Repair Shops And Shoeshine Parlors
+p3380
+sg18
+V725
+p3381
+sa(dp3382
+g15
+(lp3383
+(dp3384
+g18
+V7261
+p3385
+sg6
+VFuneral Service and Crematories
+p3386
+sasg6
+VFuneral Service And Crematories
+p3387
+sg18
+V726
+p3388
+sasg18
+V72
+p3389
+sa(dp3390
+g6
+VBusiness Services
+p3391
+sg12
+(lp3392
+(dp3393
+g15
+(lp3394
+(dp3395
+g18
+V7311
+p3396
+sg6
+VAdvertising Agencies
+p3397
+sa(dp3398
+g18
+V7312
+p3399
+sg6
+VOutdoor Advertising Services
+p3400
+sa(dp3401
+g18
+V7313
+p3402
+sg6
+VRadio, Television, and Publishers' Advertising Representatives
+p3403
+sa(dp3404
+g18
+V7319
+p3405
+sg6
+VAdvertising, Not Elsewhere Classified
+p3406
+sasg6
+VAdvertising
+p3407
+sg18
+V731
+p3408
+sa(dp3409
+g15
+(lp3410
+(dp3411
+g18
+V7322
+p3412
+sg6
+VAdjustment and Collection Services
+p3413
+sa(dp3414
+g18
+V7323
+p3415
+sg6
+VCredit Reporting Services
+p3416
+sasg6
+VConsumer Credit Reporting Agencies, Mercantile
+p3417
+sg18
+V732
+p3418
+sa(dp3419
+g15
+(lp3420
+(dp3421
+g18
+V7331
+p3422
+sg6
+VDirect Mail Advertising Services
+p3423
+sa(dp3424
+g18
+V7334
+p3425
+sg6
+VPhotocopying and Duplicating Services
+p3426
+sa(dp3427
+g18
+V7335
+p3428
+sg6
+VCommercial Photography
+p3429
+sa(dp3430
+g18
+V7336
+p3431
+sg6
+VCommercial Art and Graphic Design
+p3432
+sa(dp3433
+g18
+V7338
+p3434
+sg6
+VSecretarial and Court Reporting Services
+p3435
+sasg6
+VMailing, Reproduction, Commercial Art And Photography, and Stenographic Services
+p3436
+sg18
+V733
+p3437
+sa(dp3438
+g15
+(lp3439
+(dp3440
+g18
+V7342
+p3441
+sg6
+VDisinfecting and Pest Control Services
+p3442
+sa(dp3443
+g18
+V7349
+p3444
+sg6
+VBuilding Cleaning and Maintenance Services, Not Elsewhere
+p3445
+sasg6
+VServices To Dwellings And Other Buildings
+p3446
+sg18
+V734
+p3447
+sa(dp3448
+g15
+(lp3449
+(dp3450
+g18
+V7352
+p3451
+sg6
+VMedical Equipment Rental and Leasing
+p3452
+sa(dp3453
+g18
+V7353
+p3454
+sg6
+VHeavy Construction Equipment Rental and Leasing
+p3455
+sa(dp3456
+g18
+V7359
+p3457
+sg6
+VEquipment Rental and Leasing, Not Elsewhere Classified
+p3458
+sasg6
+VMiscellaneous Equipment Rental And Leasing
+p3459
+sg18
+V735
+p3460
+sa(dp3461
+g15
+(lp3462
+(dp3463
+g18
+V7361
+p3464
+sg6
+VEmployment Agencies
+p3465
+sa(dp3466
+g18
+V7363
+p3467
+sg6
+VHelp Supply Services
+p3468
+sasg6
+VPersonnel Supply Services
+p3469
+sg18
+V736
+p3470
+sa(dp3471
+g15
+(lp3472
+(dp3473
+g18
+V7371
+p3474
+sg6
+VComputer Programming Services
+p3475
+sa(dp3476
+g18
+V7372
+p3477
+sg6
+VPrepackaged Software
+p3478
+sa(dp3479
+g18
+V7373
+p3480
+sg6
+VComputer Integrated Systems Design
+p3481
+sa(dp3482
+g18
+V7374
+p3483
+sg6
+VComputer Processing and Data Preparation and Processing Services
+p3484
+sa(dp3485
+g18
+V7375
+p3486
+sg6
+VInformation Retrieval Services
+p3487
+sa(dp3488
+g18
+V7376
+p3489
+sg6
+VComputer Facilities Management Services
+p3490
+sa(dp3491
+g18
+V7377
+p3492
+sg6
+VComputer Rental and Leasing
+p3493
+sa(dp3494
+g18
+V7378
+p3495
+sg6
+VComputer Maintenance and Repair
+p3496
+sa(dp3497
+g18
+V7379
+p3498
+sg6
+VComputer Related Services, Not Elsewhere Classified
+p3499
+sasg6
+VComputer Programming, Data Processing, And Other Computer Related Services
+p3500
+sg18
+V737
+p3501
+sasg18
+V73
+p3502
+sa(dp3503
+g6
+VAutomotive Repair, Services, And Parking
+p3504
+sg12
+(lp3505
+(dp3506
+g15
+(lp3507
+(dp3508
+g18
+V7513
+p3509
+sg6
+VTruck Rental and Leasing, Without Drivers
+p3510
+sa(dp3511
+g18
+V7514
+p3512
+sg6
+VPassenger Car Rental
+p3513
+sa(dp3514
+g18
+V7515
+p3515
+sg6
+VPassenger Car Leasing
+p3516
+sa(dp3517
+g18
+V7519
+p3518
+sg6
+VUtility Trailer and Recreational Vehicle Rental
+p3519
+sasg6
+VAutomotive Rental And Leasing, Without Drivers
+p3520
+sg18
+V751
+p3521
+sa(dp3522
+g15
+(lp3523
+(dp3524
+g18
+V7521
+p3525
+sg6
+VAutomobile Parking
+p3526
+sasg6
+VAutomobile Parking
+p3527
+sg18
+V752
+p3528
+sa(dp3529
+g15
+(lp3530
+(dp3531
+g18
+V7532
+p3532
+sg6
+VTop, Body, and Upholstery Repair Shops and Paint Shops
+p3533
+sa(dp3534
+g18
+V7533
+p3535
+sg6
+VAutomotive Exhaust System Repair Shops
+p3536
+sa(dp3537
+g18
+V7534
+p3538
+sg6
+VTire Retreading and Repair Shops
+p3539
+sa(dp3540
+g18
+V7536
+p3541
+sg6
+VAutomotive Glass Replacement Shops
+p3542
+sa(dp3543
+g18
+V7537
+p3544
+sg6
+VAutomotive Transmission Repair Shops
+p3545
+sa(dp3546
+g18
+V7538
+p3547
+sg6
+VGeneral Automotive Repair Shops
+p3548
+sa(dp3549
+g18
+V7539
+p3550
+sg6
+VAutomotive Repair Shops, Not Elsewhere Classified
+p3551
+sasg6
+VAutomotive Repair Shops
+p3552
+sg18
+V753
+p3553
+sasg18
+V75
+p3554
+sa(dp3555
+g6
+VMiscellaneous Repair Services
+p3556
+sg12
+(lp3557
+(dp3558
+g15
+(lp3559
+(dp3560
+g18
+V7622
+p3561
+sg6
+VRadio and Television Repair Shops
+p3562
+sa(dp3563
+g18
+V7623
+p3564
+sg6
+VRefrigeration and Air-Conditioning Service and Repair Shops
+p3565
+sa(dp3566
+g18
+V7629
+p3567
+sg6
+VElectrical and Electronic Repair Shops, Not Elsewhere Classified
+p3568
+sasg6
+VElectrical Repair Shops
+p3569
+sg18
+V762
+p3570
+sa(dp3571
+g15
+(lp3572
+(dp3573
+g18
+V7631
+p3574
+sg6
+VWatch, Clock, and Jewelry Repair
+p3575
+sasg6
+VWatch, Clock, And Jewelry Repair
+p3576
+sg18
+V763
+p3577
+sa(dp3578
+g15
+(lp3579
+(dp3580
+g18
+V7641
+p3581
+sg6
+VReupholstery and Furniture Repair
+p3582
+sasg6
+VReupholstery And Furniture Repair
+p3583
+sg18
+V764
+p3584
+sasg18
+V76
+p3585
+sa(dp3586
+g6
+VMotion Pictures
+p3587
+sg12
+(lp3588
+(dp3589
+g15
+(lp3590
+(dp3591
+g18
+V7812
+p3592
+sg6
+VMotion Picture and Video Tape Production
+p3593
+sa(dp3594
+g18
+V7819
+p3595
+sg6
+VServices Allied to Motion Picture Production
+p3596
+sasg6
+VMotion Picture Production And Allied Services
+p3597
+sg18
+V781
+p3598
+sa(dp3599
+g15
+(lp3600
+(dp3601
+g18
+V7822
+p3602
+sg6
+VMotion Picture and Video Tape Distribution
+p3603
+sa(dp3604
+g18
+V7829
+p3605
+sg6
+VServices Allied to Motion Picture Distribution
+p3606
+sasg6
+VMotion Picture Distribution And Allied Services
+p3607
+sg18
+V782
+p3608
+sa(dp3609
+g15
+(lp3610
+(dp3611
+g18
+V7832
+p3612
+sg6
+VMotion Picture Theaters, Except Drive-In
+p3613
+sa(dp3614
+g18
+V7833
+p3615
+sg6
+VDrive-In Motion Picture Theaters
+p3616
+sasg6
+VMotion Picture Theaters
+p3617
+sg18
+V783
+p3618
+sasg18
+V78
+p3619
+sa(dp3620
+g6
+VAmusement And Recreation Services
+p3621
+sg12
+(lp3622
+(dp3623
+g15
+(lp3624
+(dp3625
+g18
+V7911
+p3626
+sg6
+VDance Studios, Schools, and Halls
+p3627
+sasg6
+VDance Studios, Schools, And Halls
+p3628
+sg18
+V791
+p3629
+sa(dp3630
+g15
+(lp3631
+(dp3632
+g18
+V7922
+p3633
+sg6
+VTheatrical Producers (Except Motion Picture) and Miscellaneous Theatrical Services
+p3634
+sa(dp3635
+g18
+V7929
+p3636
+sg6
+VBands, Orchestras, Actors, and Other Entertainers and Entertainment Groups
+p3637
+sasg6
+VTheatrical Producers (except Motion Picture),
+p3638
+sg18
+V792
+p3639
+sa(dp3640
+g15
+(lp3641
+(dp3642
+g18
+V7933
+p3643
+sg6
+VBowling Centers
+p3644
+sasg6
+VBowling Centers
+p3645
+sg18
+V793
+p3646
+sa(dp3647
+g15
+(lp3648
+(dp3649
+g18
+V7941
+p3650
+sg6
+VProfessional Sports Clubs and Promoters
+p3651
+sa(dp3652
+g18
+V7948
+p3653
+sg6
+VRacing, Including Track Operation
+p3654
+sasg6
+VCommercial Sports
+p3655
+sg18
+V794
+p3656
+sasg18
+V79
+p3657
+sa(dp3658
+g6
+VHealth Services
+p3659
+sg12
+(lp3660
+(dp3661
+g15
+(lp3662
+(dp3663
+g18
+V8011
+p3664
+sg6
+VOffices and Clinics of Doctors of Medicine
+p3665
+sasg6
+VOffices And Clinics Of Doctors Of Medicine
+p3666
+sg18
+V801
+p3667
+sa(dp3668
+g15
+(lp3669
+(dp3670
+g18
+V8021
+p3671
+sg6
+VOffices and Clinics of Dentists
+p3672
+sasg6
+VOffices And Clinics Of Dentists
+p3673
+sg18
+V802
+p3674
+sa(dp3675
+g15
+(lp3676
+(dp3677
+g18
+V8031
+p3678
+sg6
+VOffices and Clinics of Doctors of Osteopathy
+p3679
+sasg6
+VOffices And Clinics Of Doctors Of Osteopathy
+p3680
+sg18
+V803
+p3681
+sa(dp3682
+g15
+(lp3683
+(dp3684
+g18
+V8041
+p3685
+sg6
+VOffices and Clinics of Chiropractors
+p3686
+sa(dp3687
+g18
+V8042
+p3688
+sg6
+VOffices and Clinics of Optometrists
+p3689
+sa(dp3690
+g18
+V8043
+p3691
+sg6
+VOffices and Clinics of Podiatrists
+p3692
+sa(dp3693
+g18
+V8049
+p3694
+sg6
+VOffices and Clinics of Health Practitioners, Not Elsewhere Classified
+p3695
+sasg6
+VOffices And Clinics Of Other Health Practitioners
+p3696
+sg18
+V804
+p3697
+sa(dp3698
+g15
+(lp3699
+(dp3700
+g18
+V8051
+p3701
+sg6
+VSkilled Nursing Care Facilities
+p3702
+sa(dp3703
+g18
+V8052
+p3704
+sg6
+VIntermediate Care Facilities
+p3705
+sa(dp3706
+g18
+V8059
+p3707
+sg6
+VNursing and Personal Care Facilities, Not Elsewhere Classified
+p3708
+sasg6
+VNursing And Personal Care Facilities
+p3709
+sg18
+V805
+p3710
+sa(dp3711
+g15
+(lp3712
+(dp3713
+g18
+V8062
+p3714
+sg6
+VGeneral Medical and Surgical Hospitals
+p3715
+sa(dp3716
+g18
+V8063
+p3717
+sg6
+VPsychiatric Hospitals
+p3718
+sa(dp3719
+g18
+V8069
+p3720
+sg6
+VSpecialty Hospitals, Except Psychiatric
+p3721
+sasg6
+VHospitals
+p3722
+sg18
+V806
+p3723
+sa(dp3724
+g15
+(lp3725
+(dp3726
+g18
+V8071
+p3727
+sg6
+VMedical Laboratories
+p3728
+sa(dp3729
+g18
+V8072
+p3730
+sg6
+VDental Laboratories
+p3731
+sasg6
+VMedical And Dental Laboratories
+p3732
+sg18
+V807
+p3733
+sa(dp3734
+g15
+(lp3735
+(dp3736
+g18
+V8082
+p3737
+sg6
+VHome Health Care Services
+p3738
+sasg6
+VHome Health Care Services
+p3739
+sg18
+V808
+p3740
+sasg18
+V80
+p3741
+sa(dp3742
+g6
+VLegal Services
+p3743
+sg12
+(lp3744
+sg18
+V81
+p3745
+sa(dp3746
+g6
+VEducational Services
+p3747
+sg12
+(lp3748
+(dp3749
+g15
+(lp3750
+(dp3751
+g18
+V8211
+p3752
+sg6
+VElementary and Secondary Schools
+p3753
+sasg6
+VElementary And Secondary Schools
+p3754
+sg18
+V821
+p3755
+sa(dp3756
+g15
+(lp3757
+(dp3758
+g18
+V8221
+p3759
+sg6
+VColleges, Universities, and Professional Schools
+p3760
+sa(dp3761
+g18
+V8222
+p3762
+sg6
+VJunior Colleges and Technical Institutes
+p3763
+sasg6
+VColleges, Universities, Professional Schools, And
+p3764
+sg18
+V822
+p3765
+sa(dp3766
+g15
+(lp3767
+(dp3768
+g18
+V8231
+p3769
+sg6
+VLibraries
+p3770
+sasg6
+VLibraries
+p3771
+sg18
+V823
+p3772
+sa(dp3773
+g15
+(lp3774
+(dp3775
+g18
+V8243
+p3776
+sg6
+VData Processing Schools
+p3777
+sa(dp3778
+g18
+V8244
+p3779
+sg6
+VBusiness and Secretarial Schools
+p3780
+sa(dp3781
+g18
+V8249
+p3782
+sg6
+VVocational Schools, Not Elsewhere Classified
+p3783
+sasg6
+VVocational Schools
+p3784
+sg18
+V824
+p3785
+sasg18
+V82
+p3786
+sa(dp3787
+g6
+VSocial Services
+p3788
+sg12
+(lp3789
+(dp3790
+g15
+(lp3791
+(dp3792
+g18
+V8322
+p3793
+sg6
+VIndividual and Family Social Services
+p3794
+sasg6
+VIndividual And Family Social Services
+p3795
+sg18
+V832
+p3796
+sa(dp3797
+g15
+(lp3798
+(dp3799
+g18
+V8331
+p3800
+sg6
+VJob Training and Vocational Rehabilitation Services
+p3801
+sasg6
+VJob Training And Vocational Rehabilitation
+p3802
+sg18
+V833
+p3803
+sa(dp3804
+g15
+(lp3805
+(dp3806
+g18
+V8351
+p3807
+sg6
+VChild Day Care Services
+p3808
+sasg6
+VChild Day Care Services
+p3809
+sg18
+V835
+p3810
+sa(dp3811
+g15
+(lp3812
+(dp3813
+g18
+V8361
+p3814
+sg6
+VResidential Care
+p3815
+sasg6
+VResidential Care
+p3816
+sg18
+V836
+p3817
+sasg18
+V83
+p3818
+sa(dp3819
+g6
+VMuseums, Art Galleries, And Botanical And Zoological Gardens
+p3820
+sg12
+(lp3821
+(dp3822
+g15
+(lp3823
+(dp3824
+g18
+V8412
+p3825
+sg6
+VMuseums and Art Galleries
+p3826
+sasg6
+VMuseums And Art Galleries
+p3827
+sg18
+V841
+p3828
+sasg18
+V84
+p3829
+sa(dp3830
+g6
+VMembership Organizations
+p3831
+sg12
+(lp3832
+(dp3833
+g15
+(lp3834
+(dp3835
+g18
+V8611
+p3836
+sg6
+VBusiness Associations
+p3837
+sasg6
+VBusiness Associations
+p3838
+sg18
+V861
+p3839
+sa(dp3840
+g15
+(lp3841
+(dp3842
+g18
+V8621
+p3843
+sg6
+VProfessional Membership Organizations
+p3844
+sasg6
+VProfessional Membership Organizations
+p3845
+sg18
+V862
+p3846
+sa(dp3847
+g15
+(lp3848
+(dp3849
+g18
+V8631
+p3850
+sg6
+VLabor Unions and Similar Labor Organizations
+p3851
+sasg6
+VLabor Unions And Similar Labor Organizations
+p3852
+sg18
+V863
+p3853
+sa(dp3854
+g15
+(lp3855
+(dp3856
+g18
+V8641
+p3857
+sg6
+VCivic, Social, and Fraternal Associations
+p3858
+sasg6
+VCivic, Social, And Fraternal Associations
+p3859
+sg18
+V864
+p3860
+sa(dp3861
+g15
+(lp3862
+(dp3863
+g18
+V8651
+p3864
+sg6
+VPolitical Organizations
+p3865
+sasg6
+VPolitical Organizations
+p3866
+sg18
+V865
+p3867
+sa(dp3868
+g15
+(lp3869
+(dp3870
+g18
+V8661
+p3871
+sg6
+VReligious Organizations
+p3872
+sasg6
+VReligious Organizations
+p3873
+sg18
+V866
+p3874
+sasg18
+V86
+p3875
+sa(dp3876
+g6
+VEngineering, Accounting, Research, Management, And Related Services
+p3877
+sg12
+(lp3878
+(dp3879
+g15
+(lp3880
+(dp3881
+g18
+V8711
+p3882
+sg6
+VEngineering Services
+p3883
+sa(dp3884
+g18
+V8712
+p3885
+sg6
+VArchitectural Services
+p3886
+sa(dp3887
+g18
+V8713
+p3888
+sg6
+VSurveying Services
+p3889
+sasg6
+VEngineering, Architectural, And Surveying
+p3890
+sg18
+V871
+p3891
+sa(dp3892
+g15
+(lp3893
+(dp3894
+g18
+V8721
+p3895
+sg6
+VAccounting, Auditing, and Bookkeeping Services
+p3896
+sasg6
+VAccounting, Auditing, And Bookkeeping Services
+p3897
+sg18
+V872
+p3898
+sa(dp3899
+g15
+(lp3900
+(dp3901
+g18
+V8731
+p3902
+sg6
+VCommercial Physical and Biological Research
+p3903
+sa(dp3904
+g18
+V8732
+p3905
+sg6
+VCommercial Economic, Sociological, and Educational Research
+p3906
+sa(dp3907
+g18
+V8733
+p3908
+sg6
+VNoncommercial Research Organizations
+p3909
+sa(dp3910
+g18
+V8734
+p3911
+sg6
+VTesting Laboratories
+p3912
+sasg6
+VResearch, Development, And Testing Services
+p3913
+sg18
+V873
+p3914
+sasg18
+V87
+p3915
+sa(dp3916
+g6
+VPrivate Households
+p3917
+sg12
+(lp3918
+sg18
+V88
+p3919
+sa(dp3920
+g6
+VMiscellaneous Services
+p3921
+sg12
+(lp3922
+sg18
+g3293
+sasg18
+VI
+p3923
+sa(dp3924
+g2
+V91
+p3925
+sg4
+V99
+p3926
+sg6
+VPublic Administration
+p3927
+sg8
+(lp3928
+(dp3929
+g6
+VExecutive, Legislative, And General Government, Except Finance
+p3930
+sg12
+(lp3931
+(dp3932
+g15
+(lp3933
+(dp3934
+g18
+V9111
+p3935
+sg6
+VExecutive Offices
+p3936
+sasg6
+VExecutive Offices
+p3937
+sg18
+V911
+p3938
+sa(dp3939
+g15
+(lp3940
+(dp3941
+g18
+V9121
+p3942
+sg6
+VLegislative Bodies
+p3943
+sasg6
+VLegislative Bodies
+p3944
+sg18
+V912
+p3945
+sa(dp3946
+g15
+(lp3947
+(dp3948
+g18
+V9131
+p3949
+sg6
+VExecutive and Legislative Offices Combined
+p3950
+sasg6
+VExecutive And Legislative Offices Combined
+p3951
+sg18
+V913
+p3952
+sasg18
+g3925
+sa(dp3953
+g6
+VJustice, Public Order, And Safety
+p3954
+sg12
+(lp3955
+(dp3956
+g15
+(lp3957
+(dp3958
+g18
+V9211
+p3959
+sg6
+VCourts
+p3960
+sasg6
+VCourts
+p3961
+sg18
+V921
+p3962
+sasg18
+V92
+p3963
+sa(dp3964
+g6
+VPublic Finance, Taxation, And Monetary Policy
+p3965
+sg12
+(lp3966
+sg18
+V93
+p3967
+sa(dp3968
+g6
+VAdministration Of Human Resource Programs
+p3969
+sg12
+(lp3970
+(dp3971
+g15
+(lp3972
+(dp3973
+g18
+V9411
+p3974
+sg6
+VAdministration of Educational Programs
+p3975
+sasg6
+VAdministration Of Educational Programs
+p3976
+sg18
+V941
+p3977
+sa(dp3978
+g15
+(lp3979
+(dp3980
+g18
+V9431
+p3981
+sg6
+VAdministration of Public Health Programs
+p3982
+sasg6
+VAdministration Of Public Health Programs
+p3983
+sg18
+V943
+p3984
+sa(dp3985
+g15
+(lp3986
+(dp3987
+g18
+V9441
+p3988
+sg6
+VAdministration of Social, Human Resource and Income Maintenance Programs
+p3989
+sasg6
+VAdministration Of Social, Human Resource And
+p3990
+sg18
+V944
+p3991
+sasg18
+V94
+p3992
+sa(dp3993
+g6
+VAdministration Of Environmental Quality And Housing Programs
+p3994
+sg12
+(lp3995
+(dp3996
+g15
+(lp3997
+(dp3998
+g18
+V9511
+p3999
+sg6
+VAir and Water Resource and Solid Waste Management
+p4000
+sa(dp4001
+g18
+V9512
+p4002
+sg6
+VLand, Mineral, Wildlife, and Forest Conservation
+p4003
+sasg6
+VAdministration Of Environmental Quality
+p4004
+sg18
+V951
+p4005
+sasg18
+V95
+p4006
+sa(dp4007
+g6
+VAdministration Of Economic Programs
+p4008
+sg12
+(lp4009
+(dp4010
+g15
+(lp4011
+(dp4012
+g18
+V9611
+p4013
+sg6
+VAdministration of General Economic Programs
+p4014
+sasg6
+VAdministration Of General Economic Programs
+p4015
+sg18
+V961
+p4016
+sa(dp4017
+g15
+(lp4018
+(dp4019
+g18
+V9621
+p4020
+sg6
+VRegulation and Administration of Transportation Programs
+p4021
+sasg6
+VRegulation And Administration Of Transportation
+p4022
+sg18
+V962
+p4023
+sa(dp4024
+g15
+(lp4025
+(dp4026
+g18
+V9631
+p4027
+sg6
+VRegulation and Administration of Communications, Electric, Gas, and Other Utilities
+p4028
+sasg6
+VRegulation And Administration Of
+p4029
+sg18
+V963
+p4030
+sa(dp4031
+g15
+(lp4032
+(dp4033
+g18
+V9641
+p4034
+sg6
+VRegulation of Agricultural Marketing and Commodities
+p4035
+sasg6
+VRegulation Of Agricultural Marketing And
+p4036
+sg18
+V964
+p4037
+sa(dp4038
+g15
+(lp4039
+(dp4040
+g18
+V9651
+p4041
+sg6
+VRegulation, Licensing, and Inspection of Miscellaneous Commercial Sectors
+p4042
+sasg6
+VRegulation, Licensing, And Inspection Of
+p4043
+sg18
+V965
+p4044
+sasg18
+V96
+p4045
+sa(dp4046
+g6
+VNational Security And International Affairs
+p4047
+sg12
+(lp4048
+(dp4049
+g15
+(lp4050
+(dp4051
+g18
+V9711
+p4052
+sg6
+VNational Security
+p4053
+sasg6
+VNational Security
+p4054
+sg18
+V971
+p4055
+sasg18
+V97
+p4056
+sa(dp4057
+g6
+VNonclassifiable Establishments
+p4058
+sg12
+(lp4059
+sg18
+g3926
+sasg18
+VJ
+p4060
+sa.
