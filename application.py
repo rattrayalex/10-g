@@ -113,6 +113,15 @@ def old_index():
       'Depreciation & Amortization',
     ]},
   ]
+  divisions = [ 
+    {'name':'Agriculture, Forestry, And Fishing', 'id':'A', 'start':'01', 'end':'09', 'major_groups': [
+      {'name':'Agricultural Production Crops', 'id':'01', 'industry_groups': [
+        {'name':'Wheat', 'id':'0111'},
+        ]
+      },
+      ]
+    },
+  ]
   return render_template('old_index.html', statements=statements)
 
 if __name__ == '__main__':
