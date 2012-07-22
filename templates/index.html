@@ -4,27 +4,45 @@
 <div id="content-wrapper">
 	<div id="sidebar">
 		<div class="accordion" id="main_accordion">
-			<div class="accordion-group">
-				<div class="according-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#main_accordion" href="#balance_sheet">
-            Balance Sheet
-	        </a>
-				</div>
-				<div class="accordion-body collapse" id="balance_sheet">
-          <div class="accordion" id="balance_sheet_inner">
-            <div class="accordion-group">
-              <div class="according-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#balance_sheet_inner" href="#inner_inner">
-                  Assets
-                </a>
+      {% for statement in statements %}
+  			<div class="accordion-group" id="{{statement.slug}}_group">
+  				<div class="according-heading">
+  					<a class="accordion-toggle" data-toggle="collapse" data-parent="#main_accordion" href="#{{statement.slug}}_body">
+              {{statement.name}}
+  	        </a>
+  				</div>
+  				<div class="accordion-body collapse" id="{{statement.slug}}_body">
+            <table class="table-striped table-condensed">
+              <tbody>
+                {% for field in statement.fields %}
+                  <tr>
+                    <td>{{ field }}</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>size</td>
+                    <td>color</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+  <!--           <div class="accordion" id="balance_sheet_inner">
+              <div class="accordion-group">
+                <div class="according-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#balance_sheet_inner" href="#inner_inner">
+                    Assets
+                  </a>
+                </div>
+                <div class="accordion-body collapse" id="inner_inner">
+                  aslfjasldfj
+                </div>
               </div>
-              <div class="accordion-body collapse" id="inner_inner">
-              </div>
-            </div>
-          </div>
-				</div>
-			</div>
+            </div> -->
+  				</div>
+  			</div>
+      {% endfor %}
+
     </div>
+
 		<hr>
      	<footer>
         	<p>&copy; Company 2012</p>
