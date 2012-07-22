@@ -4,7 +4,37 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('index.html')
+  statements = [
+    {'name':'Balance Sheet', 'slug':'balance_sheet', 'fields':[
+      'Total Cash',
+      'Accounts Receivable',
+      'Inventories',
+      'PP&E',
+      'Long Term Assets', # total - current
+      'Total Assets', 
+      'Current Liabilities',
+      'Long-Term Liabilities',
+      'Total Liabilities',
+      'Total Equity',
+    ]}, 
+    {'name':'Income Statement', 'slug':'income_statement', 'fields':[
+      'Total Revenue',
+      'Cost of Revenue',
+      'SG&A', # calc: oi - rev + cogs
+      # 'Research and Development',
+      'Operating Expense', # calc: cogs + sga
+      'Operating Income',
+      'Net Income',
+    ]},
+    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'fields':[
+      'Net Cash from Operations',
+      'Net Cash from Financing',
+      'Net Cash used in Investing',
+      'Net Change in Cash',
+      'Depreciation & Amortization',
+    ]},
+  ]
+  return render_template('index.html', statements=statements)
 
 @app.route('/api/example/')
 def api_example():
@@ -25,6 +55,8 @@ def api_example():
   order_by = columns_order[0]
   # infile = 'cik_ticker.txt'
   # companies = api.get_companies_dict(infile)
+  # ciks = [c['cik'] for t, c in companies.items()]
+  # print ciks
   # for ticker, company in companies.items():
   #     print company['cik'], ticker, company['name']
   ciks = ['0000789019', #msft
@@ -50,28 +82,35 @@ def api_example():
 
 @app.route('/old/')
 def old_index():
+  # size = assets, color = NI/Revenue, x = revenue, y = cogs/Revenue
   statements = [
     {'name':'Balance Sheet', 'slug':'balance_sheet', 'fields':[
+      'Total Cash',
+      'Accounts Receivable',
+      'Inventories',
+      'PP&E',
+      'Long Term Assets', # total - current
       'Total Assets', 
+      'Current Liabilities',
+      'Long-Term Liabilities',
       'Total Liabilities',
-      'Total Shareholder\'s Equity',
+      'Total Equity',
     ]}, 
-    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'fields':[
+    {'name':'Income Statement', 'slug':'income_statement', 'fields':[
+      'Total Revenue',
+      'Cost of Revenue',
+      'SG&A', # calc: oi - rev + cogs
+      # 'Research and Development',
+      'Operating Expense', # calc: cogs + sga
+      'Operating Income',
       'Net Income',
+    ]},
+    {'name':'Statement of Cash Flows', 'slug':'cash_flows', 'fields':[
       'Net Cash from Operations',
       'Net Cash from Financing',
       'Net Cash used in Investing',
-      'Net change in Cash',
-    ]},
-    {'name':'Income Statement', 'slug':'income_statement', 'fields':[
-      'Total Revenue',
-      'Net Income',
-      'SG&A',
-      'Research and Development',
-      'Cost of Revenue',
-      'Total Operating Expenses',
-      'Earnings Per Share (Diluted)',
-      'Earnings Per Share (Basic)',
+      'Net Change in Cash',
+      'Depreciation & Amortization',
     ]},
   ]
   return render_template('old_index.html', statements=statements)

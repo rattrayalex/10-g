@@ -3,14 +3,42 @@
 {% block content %}
 <div id="content-wrapper">
 	<div id="sidebar">
-    <p>hi there</p>
+    <div class="accordion" id="statements_accordion">
+      {% for statement in statements %}
+        <div class="accordion-group" id="{{statement.slug}}_group">
+          <div class="according-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#statements_accordion" href="#{{statement.slug}}_body">
+              {{statement.name}}
+            </a>
+          </div>
+          <div class="accordion-body collapse" id="{{statement.slug}}_body">
+            <table class="table-striped table-condensed">
+              <tbody>
+                {% for field in statement.fields %}
+                  <tr>
+                    <td>{{ field }}</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>size</td>
+                    <td>color</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
 		<hr>
      	<footer>
         	<p>&copy; Company 2012</p>
       	</footer>
 	</div>
 	<div id="graph-wrapper">
-		<div id="chart_div" style="height:100%;">hi</div>
+		<div id="chart_div" style="height:100%;">
+      <center><h1><small>Loading...</small></h1></small>
+    </div>
 	</div>
 </div>
 {% endblock content %}
