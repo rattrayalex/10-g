@@ -1,0 +1,3 @@
+host='public.xbrl.us'
+dbname='edgar_db'
+user='challenge_rattray'
